@@ -10,11 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shadowlibs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shadowlibsConfig.cmake.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shadow_planning.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shadowlibsConfig.cmake.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shadow_finger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_finger.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shadow_utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_utils.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -32,26 +37,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            <state relative-caret-position="252">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#82#330#0" />
+                <element signature="e#332#585#0" />
+                <element signature="e#587#1157#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shadow_utils.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="425" column="19" selection-start-line="425" selection-start-column="19" selection-end-line="425" selection-end-column="19" />
+            <state relative-caret-position="205">
+              <caret line="293" column="20" lean-forward="true" selection-start-line="293" selection-end-line="294" />
               <folding>
                 <element signature="e#93#498#0" />
                 <element signature="e#500#774#0" />
@@ -71,16 +81,7 @@
                 <element signature="e#10449#10758#0" />
                 <element signature="e#10760#11111#0" />
                 <element signature="e#11113#11692#0" />
-                <element signature="e#11694#12399#0" />
-                <element signature="e#12401#12712#0" />
-                <element signature="e#12714#13114#0" />
-                <element signature="e#13116#14216#0" />
-                <element signature="e#14218#15737#0" />
-                <element signature="e#15739#17436#0" />
-                <element signature="e#17438#18702#0" />
-                <element signature="e#21014#21259#0" />
-                <element signature="e#21261#21511#0" />
-                <element signature="e#21513#22068#0" />
+                <element signature="e#18705#19536#0" />
                 <element signature="e#22070#23033#0" />
                 <element signature="e#23035#24032#0" />
                 <element signature="e#23145#23308#0" />
@@ -94,8 +95,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+            <state relative-caret-position="1680">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
+              <folding>
+                <element signature="e#1702#1714#0" expanded="true" />
+                <element signature="e#1694#1949#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shadow_planning.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="142" column="1" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
+              <folding>
+                <element signature="e#83#452#0" />
+                <element signature="e#454#1470#0" />
+                <element signature="e#1472#2879#0" />
+                <element signature="e#2881#4478#0" />
+                <element signature="e#4493#6011#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-87">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#2#0" />
+                <element signature="e#111#687#1" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,14 +144,20 @@
       <list>
         <option value="$PROJECT_DIR$/shadowlibsConfig.cmake.in" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_finger.h" />
-        <option value="$PROJECT_DIR$/src/shadow_finger.cpp" />
-        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" />
         <option value="$PROJECT_DIR$/package.xml" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/shadow_planning.hpp" />
+        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" />
+        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" />
         <option value="$PROJECT_DIR$/src/shadow_utils.cpp" />
+        <option value="$PROJECT_DIR$/src/shadow_planning.cpp" />
+        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" />
+        <option value="$PROJECT_DIR$/src/shadow_finger.cpp" />
+        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" />
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="618" />
     <option name="width" value="1920" />
@@ -164,10 +204,16 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.overridden" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/include/shadowlibs" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -195,20 +241,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556657821097</updated>
-      <workItem from="1556657822406" duration="12699000" />
+      <workItem from="1556657822406" duration="39062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12699000" />
+    <option name="totallyTimeSpent" value="39062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="618" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5499297" visible="true" weight="0.25" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.45007032" side_tool="true" visible="true" weight="0.25" />
+      <window_info content_ui="combo" x="12" y="789" width="469" height="391" id="Project" order="0" sideWeight="0.57383966" visible="true" weight="0.15671642" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.42616034" side_tool="true" visible="true" weight="0.15671642" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
@@ -239,13 +285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -253,31 +292,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-528">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
+        <state relative-caret-position="483">
           <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
+    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="1680">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="e#1702#1714#0" expanded="true" />
+            <element signature="e#1694#1949#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
+    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state relative-caret-position="-87">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#111#687#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shadow_planning.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="142" column="1" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
+          <folding>
+            <element signature="e#83#452#0" />
+            <element signature="e#454#1470#0" />
+            <element signature="e#1472#2879#0" />
+            <element signature="e#2881#4478#0" />
+            <element signature="e#4493#6011#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shadow_utils.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="425" column="19" selection-start-line="425" selection-start-column="19" selection-end-line="425" selection-end-column="19" />
+        <state relative-caret-position="205">
+          <caret line="293" column="20" lean-forward="true" selection-start-line="293" selection-end-line="294" />
           <folding>
             <element signature="e#93#498#0" />
             <element signature="e#500#774#0" />
@@ -297,22 +365,32 @@
             <element signature="e#10449#10758#0" />
             <element signature="e#10760#11111#0" />
             <element signature="e#11113#11692#0" />
-            <element signature="e#11694#12399#0" />
-            <element signature="e#12401#12712#0" />
-            <element signature="e#12714#13114#0" />
-            <element signature="e#13116#14216#0" />
-            <element signature="e#14218#15737#0" />
-            <element signature="e#15739#17436#0" />
-            <element signature="e#17438#18702#0" />
-            <element signature="e#21014#21259#0" />
-            <element signature="e#21261#21511#0" />
-            <element signature="e#21513#22068#0" />
+            <element signature="e#18705#19536#0" />
             <element signature="e#22070#23033#0" />
             <element signature="e#23035#24032#0" />
             <element signature="e#23145#23308#0" />
             <element signature="e#23425#23509#0" />
             <element signature="e#24034#25931#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#82#330#0" />
+            <element signature="e#332#585#0" />
+            <element signature="e#587#1157#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
         </state>
       </provider>
     </entry>

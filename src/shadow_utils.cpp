@@ -4,19 +4,20 @@
 
 #include <shadowlibs/shadow_utils.hpp>
 
-
 std::ostream& operator<<(std::ostream& out, const geometry_msgs::Pose& pose) {
-    out << "Trans(" << pose.position.x << ", " << pose.position.y << ", " << pose.position.z << ")\n"
-        << "Rot(" << pose.orientation.x << ", " << pose.orientation.y << ", " << pose.orientation.z << ", "
-        << pose.orientation.w << ")";
+    out << "Trans(" << pose.position.x << ", " << pose.position.y << ", "
+        << pose.position.z << ")\n"
+        << "Rot(" << pose.orientation.x << ", " << pose.orientation.y << ", "
+        << pose.orientation.z << ", " << pose.orientation.w << ")";
 
-    return out;  // return std::ostream so we can chain calls to operator<<
+    return out; // return std::ostream so we can chain calls to operator<<
 }
 
 Eigen::Quaternionf shadow_utils::ypr2quat(float y, float p, float r) {
     Eigen::Quaternionf q;
     return q = Eigen::AngleAxisf(r, Eigen::Vector3f::UnitX()) *
-               Eigen::AngleAxisf(p, Eigen::Vector3f::UnitY()) * Eigen::AngleAxisf(r, Eigen::Vector3f::UnitZ());
+               Eigen::AngleAxisf(p, Eigen::Vector3f::UnitY()) *
+               Eigen::AngleAxisf(r, Eigen::Vector3f::UnitZ());
 }
 
 void shadow_utils::quat2ypr(tf::Quaternion& q, double& r, double& p, double& y) {
@@ -24,13 +25,10 @@ void shadow_utils::quat2ypr(tf::Quaternion& q, double& r, double& p, double& y) 
     m.getRPY(r, p, y);
 }
 
-double shadow_utils::deg2rad(double deg) { return deg * M_PI / 180.0; }
-
-double shadow_utils::rad2deg(double rad) { return rad * (180 / M_PI); }
-
-void
-shadow_utils::getPoseFromPositionQuaternion(geometry_msgs::Pose& pose, float x, float y, float z, float qx, float qy,
-                                            float qz, float qw) {
+void shadow_utils::getPoseFromPositionQuaternion(geometry_msgs::Pose& pose,
+                                                 float x, float y, float z,
+                                                 float qx, float qy, float qz,
+                                                 float qw) {
     pose.position.x = x;
     pose.position.y = y;
     pose.position.z = z;
@@ -40,8 +38,9 @@ shadow_utils::getPoseFromPositionQuaternion(geometry_msgs::Pose& pose, float x, 
     pose.orientation.z = qz;
 }
 
-void
-shadow_utils::getPoseFromPositionQuaternion(geometry_msgs::Pose& pose, float x, float y, float z, tf::Quaternion& q) {
+void shadow_utils::getPoseFromPositionQuaternion(geometry_msgs::Pose& pose,
+                                                 float x, float y, float z,
+                                                 tf::Quaternion& q) {
     pose.position.x = x;
     pose.position.y = y;
     pose.position.z = z;
@@ -51,8 +50,9 @@ shadow_utils::getPoseFromPositionQuaternion(geometry_msgs::Pose& pose, float x, 
     pose.orientation.z = q.z();
 }
 
-void
-shadow_utils::getPoseFromPositionQuaternion(geometry_msgs::Pose& pose, tf::StampedTransform& tf, tf::Quaternion& q) {
+void shadow_utils::getPoseFromPositionQuaternion(geometry_msgs::Pose& pose,
+                                                 tf::StampedTransform& tf,
+                                                 tf::Quaternion& q) {
     pose.position.x = tf.getOrigin().x();
     pose.position.y = tf.getOrigin().y();
     pose.position.z = tf.getOrigin().z();
@@ -62,8 +62,9 @@ shadow_utils::getPoseFromPositionQuaternion(geometry_msgs::Pose& pose, tf::Stamp
     pose.orientation.z = q.z();
 }
 
-void shadow_utils::getPoseFromPositionYPR(geometry_msgs::Pose& pose, float x, float y, float z, float yaw, float pitch,
-                                          float roll) {
+void shadow_utils::getPoseFromPositionYPR(geometry_msgs::Pose& pose, float x,
+                                          float y, float z, float yaw,
+                                          float pitch, float roll) {
     tf::Quaternion q;
     q.setEuler(yaw, pitch, roll);
     pose.position.x = x;
@@ -75,7 +76,8 @@ void shadow_utils::getPoseFromPositionYPR(geometry_msgs::Pose& pose, float x, fl
     pose.orientation.z = q.z();
 }
 
-void shadow_utils::getPoseFromPositionYPR(geometry_msgs::Pose& pose, float x, float y, float z, tf::Vector3& v) {
+void shadow_utils::getPoseFromPositionYPR(geometry_msgs::Pose& pose, float x,
+                                          float y, float z, tf::Vector3& v) {
     tf::Quaternion q;
     q.setEuler(v.x(), v.y(), v.z());
     pose.position.x = x;
@@ -87,11 +89,11 @@ void shadow_utils::getPoseFromPositionYPR(geometry_msgs::Pose& pose, float x, fl
     pose.orientation.z = q.z();
 }
 
-void
-shadow_utils::createCollisionObjectFromPrimitive(moveit_msgs::CollisionObject& collision_obj, std::string primitive_id,
-                                                 shape_msgs::SolidPrimitive& primitive, geometry_msgs::Pose& obj_pose,
-                                                 shadow_utils::primitive_type primitive_type,
-                                                 const std::vector<double>& primitive_dim) {
+void shadow_utils::createCollisionObjectFromPrimitive(
+        moveit_msgs::CollisionObject& collision_obj, std::string primitive_id,
+        shape_msgs::SolidPrimitive& primitive, geometry_msgs::Pose& obj_pose,
+        shadow_utils::primitive_type primitive_type,
+        const std::vector<double>& primitive_dim) {
     try {
         ROS_INFO("Creating primitive object: %s", primitive_id.c_str());
 
@@ -129,12 +131,11 @@ shadow_utils::createCollisionObjectFromPrimitive(moveit_msgs::CollisionObject& c
     }
 }
 
-void shadow_utils::createAttachedObjectFromPrimitive(moveit_msgs::AttachedCollisionObject& attached_obj,
-                                                     std::string primitive_id,
-                                                     shape_msgs::SolidPrimitive& primitive,
-                                                     geometry_msgs::Pose& obj_pose,
-                                                     shadow_utils::primitive_type primitive_type,
-                                                     const std::vector<double>& primitive_dim) {
+void shadow_utils::createAttachedObjectFromPrimitive(
+        moveit_msgs::AttachedCollisionObject& attached_obj,
+        std::string primitive_id, shape_msgs::SolidPrimitive& primitive,
+        geometry_msgs::Pose& obj_pose, shadow_utils::primitive_type primitive_type,
+        const std::vector<double>& primitive_dim) {
     attached_obj.object.id = primitive_id;
     attached_obj.object.header.frame_id = "/world";
     switch (primitive_type) {
@@ -165,9 +166,10 @@ void shadow_utils::createAttachedObjectFromPrimitive(moveit_msgs::AttachedCollis
     attached_obj.object.primitive_poses.push_back(obj_pose);
 }
 
-void shadow_utils::addCollisionObjectToScene(moveit_msgs::CollisionObject& collision_obj,
-                                             moveit_msgs::PlanningScene& planning_scene_msg,
-                                             ros::Publisher& planning_scene_diff_publisher) {
+void shadow_utils::addCollisionObjectToScene(
+        moveit_msgs::CollisionObject& collision_obj,
+        moveit_msgs::PlanningScene& planning_scene_msg,
+        ros::Publisher& planning_scene_diff_publisher) {
     ROS_INFO("Adding object to scene: %s", collision_obj.id.c_str());
 
     collision_obj.operation = collision_obj.ADD;
@@ -178,9 +180,10 @@ void shadow_utils::addCollisionObjectToScene(moveit_msgs::CollisionObject& colli
     ros::Duration(5.0).sleep();
 }
 
-void shadow_utils::addAttachedObjectToScene(moveit_msgs::AttachedCollisionObject& attached_obj,
-                                            moveit_msgs::PlanningScene& planning_scene_msg,
-                                            ros::Publisher& planning_scene_diff_publisher) {
+void shadow_utils::addAttachedObjectToScene(
+        moveit_msgs::AttachedCollisionObject& attached_obj,
+        moveit_msgs::PlanningScene& planning_scene_msg,
+        ros::Publisher& planning_scene_diff_publisher) {
     ROS_INFO("Adding object to scene: %s", attached_obj.object.id.c_str());
 
     attached_obj.object.operation = attached_obj.object.ADD;
@@ -191,10 +194,10 @@ void shadow_utils::addAttachedObjectToScene(moveit_msgs::AttachedCollisionObject
     ros::Duration(5.0).sleep();
 }
 
-void
-shadow_utils::moveCollisionObjectInScene(moveit_msgs::CollisionObject& collision_obj, geometry_msgs::Pose& obj_pose,
-                                         moveit_msgs::PlanningScene& planning_scene_msg,
-                                         ros::Publisher& planning_scene_diff_publisher) {
+void shadow_utils::moveCollisionObjectInScene(
+        moveit_msgs::CollisionObject& collision_obj, geometry_msgs::Pose& obj_pose,
+        moveit_msgs::PlanningScene& planning_scene_msg,
+        ros::Publisher& planning_scene_diff_publisher) {
     ROS_INFO("Moving object in scene: %s", collision_obj.id.c_str());
 
     collision_obj.operation = collision_obj.MOVE;
@@ -207,9 +210,10 @@ shadow_utils::moveCollisionObjectInScene(moveit_msgs::CollisionObject& collision
     ros::Duration(5.0).sleep();
 }
 
-void shadow_utils::attachObjectToRobot(moveit_msgs::AttachedCollisionObject& attached_obj,
-                                       moveit_msgs::PlanningScene& planning_scene_msg,
-                                       ros::Publisher& planning_scene_diff_publisher) {
+void shadow_utils::attachObjectToRobot(
+        moveit_msgs::AttachedCollisionObject& attached_obj,
+        moveit_msgs::PlanningScene& planning_scene_msg,
+        ros::Publisher& planning_scene_diff_publisher) {
     ROS_INFO("Attaching object to robot: %s", attached_obj.object.id.c_str());
 
     planning_scene_msg.world.collision_objects.clear();
@@ -219,21 +223,24 @@ void shadow_utils::attachObjectToRobot(moveit_msgs::AttachedCollisionObject& att
 
     planning_scene_msg.robot_state.attached_collision_objects.clear();
     attached_obj.object.operation = attached_obj.object.ADD;
-    planning_scene_msg.robot_state.attached_collision_objects.push_back(attached_obj);
+    planning_scene_msg.robot_state.attached_collision_objects.push_back(
+            attached_obj);
     planning_scene_msg.robot_state.is_diff = true;
 
     planning_scene_diff_publisher.publish(planning_scene_msg);
     ros::Duration(5.0).sleep();
 }
 
-void shadow_utils::detachObjectFromRobot(moveit_msgs::AttachedCollisionObject& attached_obj,
-                                         moveit_msgs::PlanningScene& planning_scene_msg,
-                                         ros::Publisher& planning_scene_diff_publisher) {
+void shadow_utils::detachObjectFromRobot(
+        moveit_msgs::AttachedCollisionObject& attached_obj,
+        moveit_msgs::PlanningScene& planning_scene_msg,
+        ros::Publisher& planning_scene_diff_publisher) {
     ROS_INFO("Detaching object from robot: %s", attached_obj.object.id.c_str());
 
     attached_obj.object.operation = attached_obj.object.REMOVE;
     planning_scene_msg.robot_state.attached_collision_objects.clear();
-    planning_scene_msg.robot_state.attached_collision_objects.push_back(attached_obj);
+    planning_scene_msg.robot_state.attached_collision_objects.push_back(
+            attached_obj);
     planning_scene_msg.robot_state.is_diff = true;
 
     attached_obj.object.operation = attached_obj.object.ADD;
@@ -245,26 +252,31 @@ void shadow_utils::detachObjectFromRobot(moveit_msgs::AttachedCollisionObject& a
     ros::Duration(5.0).sleep();
 }
 
-void
-shadow_utils::removeAllObjectsFromScene(moveit::planning_interface::PlanningSceneInterface& planning_scene_interface) {
+void shadow_utils::removeAllObjectsFromScene(moveit::planning_interface::PlanningSceneInterface
+                                             & planning_scene_interface) {
     ROS_INFO("Remove all primitives from scene");
-    planning_scene_interface.removeCollisionObjects(planning_scene_interface.getKnownObjectNames());
+    planning_scene_interface.removeCollisionObjects(
+            planning_scene_interface.getKnownObjectNames());
     ros::Duration(5.0).sleep();
 }
 
-void shadow_utils::removeCollisionObjectFromScene(
-        moveit::planning_interface::PlanningSceneInterface& planning_scene_interface,
-        std::string obj_id) {
+void shadow_utils::removeCollisionObjectFromScene(moveit::planning_interface::PlanningSceneInterface& planning_scene_interface,
+                                                  std::string obj_id) {
     ROS_INFO("Remove object from scene: %s", obj_id.c_str());
-    planning_scene_interface.removeCollisionObjects(std::vector<std::string>({obj_id}));
+    planning_scene_interface.removeCollisionObjects(
+            std::vector<std::string>({obj_id}));
     ros::Duration(5.0).sleep();
 }
 
-void shadow_utils::getTfFromFrames(tf::TransformListener& listener, tf::StampedTransform& tf, std::string parent_frame,
+void shadow_utils::getTfFromFrames(tf::TransformListener& listener,
+                                   tf::StampedTransform& tf,
+                                   std::string parent_frame,
                                    std::string child_frame) {
-    ROS_INFO("Fetching TF between %s and %s", parent_frame.c_str(), child_frame.c_str());
+    ROS_INFO("Fetching TF between %s and %s", parent_frame.c_str(),
+             child_frame.c_str());
     try {
-        listener.waitForTransform(parent_frame, child_frame, ros::Time(0), ros::Duration(3.0));
+        listener.waitForTransform(parent_frame, child_frame, ros::Time(0),
+                                  ros::Duration(3.0));
         listener.lookupTransform(parent_frame, child_frame, ros::Time(0), tf);
     } catch (tf::TransformException& ex) {
         ROS_ERROR("%s", ex.what());
@@ -272,139 +284,18 @@ void shadow_utils::getTfFromFrames(tf::TransformListener& listener, tf::StampedT
     }
 }
 
-shadow_utils::PlanningOptions::PlanningOptions(double set_planning_time, bool allow_replanning, int num_attempts,
-                                               double goal_position_tolerance, double goal_orientation_tolerance,
-                                               double goal_joint_tolerance, std::string end_effector_name) {
-    this->allow_replanning = allow_replanning;
-    this->set_planning_time = set_planning_time;
-    this->num_attempts = num_attempts;
-    this->goal_position_tolerance = goal_position_tolerance;
-    this->goal_orientation_tolerance = goal_orientation_tolerance;
-    this->goal_joint_tolerance = goal_joint_tolerance;
-    this->end_effector_name = end_effector_name;
-}
-
-shadow_utils::PlanningOptions::PlanningOptions() {
-    this->allow_replanning = false;
-    this->set_planning_time = 2.0;
-    this->num_attempts = 1;
-    this->goal_position_tolerance = 0.01;
-    this->goal_orientation_tolerance = 0.01;
-    this->goal_joint_tolerance = 0.01;
-    this->end_effector_name = "";
-}
-
-geometry_msgs::Pose shadow_utils::getRandomPose(moveit::planning_interface::MoveGroupInterface& move_group_interface,
-                                                const std::string frame_name) {
-
-    geometry_msgs::PoseStamped random_pose;
-    move_group_interface.setPoseReferenceFrame(frame_name);
-    random_pose = move_group_interface.getRandomPose("rh_fftip");
-
-    return random_pose.pose;
-}
-
-bool shadow_utils::getPlanToNamedTarget(shadow_utils::PlanningOptions& options,
-                                        moveit::planning_interface::MoveGroupInterface& move_group_interface,
-                                        const std::string target_name,
-                                        moveit::planning_interface::MoveGroupInterface::Plan& plan) {
-
-    move_group_interface.clearPoseTargets();
-    move_group_interface.setStartState(*move_group_interface.getCurrentState());
-    move_group_interface.setPlanningTime(options.set_planning_time);
-    move_group_interface.allowReplanning(options.allow_replanning);
-    move_group_interface.setNumPlanningAttempts(options.num_attempts);
-    move_group_interface.setNamedTarget(target_name);
-    bool plan_success = false;
-
-    plan_success = (move_group_interface.plan(plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
-
-    // Return success or failure
-    if (plan_success) {
-        ROS_INFO("Plan Succeeded");
-    } else {
-        ROS_ERROR("Plan Failed");
-    }
-    ros::Duration(2.0).sleep();
-
-    return plan_success;
-}
-
-bool shadow_utils::getPlanToPoseTarget(shadow_utils::PlanningOptions& options,
-                                       moveit::planning_interface::MoveGroupInterface& move_group_interface,
-                                       geometry_msgs::Pose& target_pose, const std::string reference_frame,
-                                       moveit::planning_interface::MoveGroupInterface::Plan& plan,
-                                       const std::string end_effector_name) {
-    move_group_interface.clearPoseTargets();
-    move_group_interface.setPoseReferenceFrame(reference_frame);
-    move_group_interface.setPlanningTime(options.set_planning_time);
-    move_group_interface.allowReplanning(options.allow_replanning);
-    move_group_interface.setNumPlanningAttempts(options.num_attempts);
-    move_group_interface.setStartState(*move_group_interface.getCurrentState());
-    move_group_interface.setPoseTarget(target_pose);
-    move_group_interface.setEndEffector(end_effector_name + "_ee");
-    move_group_interface.setPlannerId("TRRTkConfigDefault");
-    ROS_INFO("Planning for: %s", move_group_interface.getEndEffector().c_str());
-
-    // Do planning for entire group
-    bool plan_success = false;
-    plan_success = (move_group_interface.plan(plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
-
-    // Return success or failure
-    if (plan_success) {
-        ROS_INFO("Plan Succeeded");
-    } else {
-        ROS_ERROR("Plan Failed");
-    }
-    ros::Duration(2.0).sleep();
-
-    return plan_success;
-}
-
-bool shadow_utils::getPlanToJointTargets(shadow_utils::PlanningOptions& options,
-                                         moveit::planning_interface::MoveGroupInterface& move_group_interface,
-                                         const std::string reference_frame,
-                                         moveit::planning_interface::MoveGroupInterface::Plan& plan,
-                                         std::map<std::string, double>& joint_targets) {
-    move_group_interface.clearPoseTargets();
-    move_group_interface.setPoseReferenceFrame(reference_frame);
-    move_group_interface.setPlanningTime(options.set_planning_time);
-    move_group_interface.allowReplanning(options.allow_replanning);
-    move_group_interface.setNumPlanningAttempts(options.num_attempts);
-    move_group_interface.setGoalPositionTolerance(options.goal_position_tolerance);
-    move_group_interface.setGoalOrientationTolerance(options.goal_orientation_tolerance);
-    move_group_interface.setGoalJointTolerance(options.goal_joint_tolerance);
-    move_group_interface.setStartState(*move_group_interface.getCurrentState());
-    move_group_interface.setPlannerId("TRRTkConfigDefault");
-
-    move_group_interface.setJointValueTarget(joint_targets);
-    ROS_INFO("Planning for: %s", move_group_interface.getEndEffector().c_str());
-
-    // Do planning for entire group
-    bool plan_success = false;
-    plan_success = (move_group_interface.plan(plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
-
-    // Return success or failure
-    if (plan_success) {
-        ROS_INFO("Plan Succeeded");
-    } else {
-        ROS_ERROR("Plan Failed");
-    }
-    ros::Duration(2.0).sleep();
-
-    return plan_success;
-}
-
 std::string shadow_utils::getControllerTopic(std::string& joint_name) {
     std::string formatted_joint_name = joint_name.substr(3, std::string::npos);
     std::transform(formatted_joint_name.begin(), formatted_joint_name.end(),
                    formatted_joint_name.begin(), ::tolower);
     // We need to replace J1 and J2 with J0 for all fingers except thumb
-    // This is due to coupling on the hardware simulator, and needs to be removed for actual hardware
+    // This is due to coupling on the hardware simulator, and needs to be removed
+    // for actual hardware
     std::size_t check_not_thumb = formatted_joint_name.find("th");
     std::size_t check_not_wrist = formatted_joint_name.find("wr");
     std::string out;
-    if (check_not_thumb == std::string::npos && check_not_wrist == std::string::npos) {
+    if (check_not_thumb == std::string::npos &&
+        check_not_wrist == std::string::npos) {
         std::size_t check_j1 = formatted_joint_name.find("j1");
         std::size_t check_j2 = formatted_joint_name.find("j2");
         if (check_j1 != std::string::npos) {
@@ -420,75 +311,23 @@ std::string shadow_utils::getControllerTopic(std::string& joint_name) {
     return out;
 };
 
-std::vector <ros::Publisher>
-shadow_utils::createJointControllerPublishers(std::vector <std::string>& joint_names, ros::NodeHandle& n) {
+std::vector <ros::Publisher> shadow_utils::createJointControllerPublishers(std::vector <std::string>& joint_names, ros::NodeHandle& n) {
     std::vector <ros::Publisher> joint_controller_pubs;
-    std::cout << n.getNamespace() << std::endl;
     for (int i = 0; i < joint_names.size(); i++) {
         // Generate topic for joint controller to publish on
-        std::string controller_name = shadow_utils::getControllerTopic(joint_names[i]);
+        std::string controller_name =
+                shadow_utils::getControllerTopic(joint_names[i]);
         // Create publisher
         ros::Publisher controller_target_pub;
         // Advertise topic
-        controller_target_pub = n.advertise<std_msgs::Float64>(controller_name.c_str(), 1000);
-        ROS_INFO_STREAM("Initializing joint controller publisher: " << controller_name);
+        controller_target_pub =
+                n.advertise<std_msgs::Float64>(controller_name.c_str(), 1000);
+        ROS_INFO_STREAM(
+                "Initializing joint controller publisher: " << controller_name);
         // Push back the publisher
         joint_controller_pubs.emplace_back(controller_target_pub);
     }
     return joint_controller_pubs;
-}
-
-bool shadow_utils::executePlan(std::vector <ros::Publisher>& controller_pubs,
-                               moveit::planning_interface::MoveGroupInterface::Plan& plan) {
-
-    // This is the trajectory generated by MoveIt plan
-    moveit_msgs::RobotTrajectory robotTrajectory = plan.trajectory_;
-    // Convert MoveIt to trajectory_msgs joint trajectory
-    trajectory_msgs::JointTrajectory planTrajectory = robotTrajectory.joint_trajectory;
-    // Gives all the joint names in the planning group used when planning
-    std::vector <std::string> jointNames = planTrajectory.joint_names;
-    // Extract trajectory points for each joint in the planning group
-    std::vector <trajectory_msgs::JointTrajectoryPoint> trajectoryPoints = planTrajectory.points;
-    ROS_INFO("Starting plan execution...");
-    // Prepare for control commands
-    std_msgs::Float64 control_target;
-    ros::Rate loop_rate(250);
-    // trajectoryPoints.size() is the total number of points in the trajectory
-    // Each JointTrajectoryPoint has jointNames.size() values, one for each joint
-    for (int i = 0; i < trajectoryPoints.size(); i++) {
-        for (int j = 0; j < jointNames.size(); j++) {
-            // MoveIt plans give joint order in reverse order
-            control_target.data = trajectoryPoints[i].positions[jointNames.size() - j];
-            controller_pubs[j].publish(control_target);
-            loop_rate.sleep();
-        }
-    }
-    ROS_INFO("Done Executing");
-    return 1;
-}
-
-std::vector<double> shadow_utils::getJointValues(moveit::planning_interface::MoveGroupInterface& move_group_interface) {
-    std::vector<double> joint_vals;
-    joint_vals = move_group_interface.getCurrentJointValues();
-
-    return joint_vals;
-}
-
-std::vector <std::string>
-shadow_utils::getJointNames(moveit::planning_interface::MoveGroupInterface& move_group_interface) {
-    std::vector <std::string> joint_names;
-    joint_names = move_group_interface.getJointNames();
-    return joint_names;
-}
-
-std::vector <std::string> shadow_utils::getJointNames(moveit::planning_interface::MoveGroupInterface::Plan& plan) {
-    // This is the trajectory generated by MoveIt plan
-    moveit_msgs::RobotTrajectory robotTrajectory = plan.trajectory_;
-    // Convert MoveIt to trajectory_msgs joint trajectory
-    trajectory_msgs::JointTrajectory planTrajectory = robotTrajectory.joint_trajectory;
-    // Gives all the joint names in the planning group used when planning
-    std::vector <std::string> jointNames = planTrajectory.joint_names;
-    return jointNames;
 }
 
 geometry_msgs::Pose shadow_utils::getPoseBetweenFrames(const std::string parent_frame, const std::string child_frame) {
@@ -499,7 +338,8 @@ geometry_msgs::Pose shadow_utils::getPoseBetweenFrames(const std::string parent_
     geometry_msgs::Pose poseParentToChild;
 
     try {
-        lr.waitForTransform(child_frame, parent_frame, ros::Time(0), ros::Duration(1.0));
+        lr.waitForTransform(child_frame, parent_frame, ros::Time(0),
+                            ros::Duration(1.0));
         lr.lookupTransform(child_frame, parent_frame, ros::Time(0), tform);
     } catch (tf::TransformException& ex) {
         ROS_ERROR("%s", ex.what());
@@ -528,7 +368,8 @@ void shadow_utils::broadcastTransformForGrasp(std::vector<double> xyzrpy, const 
     Map transforms from GraspIt to ROS
     (X)-->(-Y) (Y)-->(-Z) (Z)-->(X)
     */
-    tform.setOrigin(tf::Vector3(-(xyzrpy[1]) / 1000.0, -(xyzrpy[2]) / 1000.0, xyzrpy[0] / 1000.0));
+    tform.setOrigin(tf::Vector3(-(xyzrpy[1]) / 1000.0, -(xyzrpy[2]) / 1000.0,
+                                xyzrpy[0] / 1000.0));
 
     q = tf::createQuaternionFromRPY(xyzrpy[3], xyzrpy[4], xyzrpy[5]).normalize();
     x_axis = tf::createQuaternionFromRPY(1.5708, 0, 0).normalize();
@@ -536,16 +377,16 @@ void shadow_utils::broadcastTransformForGrasp(std::vector<double> xyzrpy, const 
     z_axis = tf::createQuaternionFromRPY(0, 0, -1.5708).normalize();
     tform.setRotation(q.normalize());
 
-    br.sendTransform(tf::StampedTransform(tform, ros::Time::now(), "/rh_wrist", frame_name));
+    br.sendTransform(
+            tf::StampedTransform(tform, ros::Time::now(), "/rh_wrist", frame_name));
 }
 
-moveit_msgs::RobotState
-shadow_utils::computeJointsFromPose(moveit::planning_interface::MoveGroupInterface& move_group_interface,
-                                    double timeout, int num_attempts,
-                                    geometry_msgs::Pose& target_pose) {
+moveit_msgs::RobotState shadow_utils::computeJointsFromPose(moveit::planning_interface::MoveGroupInterface& move_group_interface,
+                                                            double timeout, int num_attempts, geometry_msgs::Pose& target_pose) {
     // Initialize IK service client
     ros::NodeHandle n;
-    ros::ServiceClient client = n.serviceClient<moveit_msgs::GetPositionIK>("compute_ik");
+    ros::ServiceClient client =
+            n.serviceClient<moveit_msgs::GetPositionIK>("compute_ik");
     moveit_msgs::GetPositionIK ik_srv;
 
     // Get current state
