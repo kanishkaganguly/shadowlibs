@@ -4,7 +4,6 @@
 #pragma once
 
 #include <shadowlibs/shadow_imports.hpp>
-#include <shadowlibs/shadow_planning.hpp>
 
 /* Pretty printing */
 std::ostream &operator<<(std::ostream &out, const geometry_msgs::Pose &pose);

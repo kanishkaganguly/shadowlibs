@@ -5,20 +5,15 @@
 #pragma once
 
 #include <shadowlibs/shadow_imports.hpp>
-#include <shadowlibs/shadow_planning.hpp>
 #include <shadowlibs/shadow_utils.hpp>
+#include <shadowlibs/shadow_planning.hpp>
 
 namespace shadow_finger {
-    // Planning group names
-    const std::string first_finger_name = "rh_first_finger";
-    const std::string middle_finger_name = "rh_middle_finger";
-    const std::string ring_finger_name = "rh_ring_finger";
-    const std::string little_finger_name = "rh_little_finger";
-    const std::string thumb_name = "rh_thumb";
+    /* Get preloaded plans for open or close */
+    std::string getSavedStateName(std::string finger_name, std::string saved_state);
 
-    std::string getMoveGroupName(std::string finger_name){
-        
-    }
+    /* Get planning group names */
+    std::string getMoveGroupName(std::string finger_name);
 
     /* Get joint names and values */
     std::vector<double> getJointValues(moveit::planning_interface::MoveGroupInterface& move_group_interface);
@@ -27,13 +22,12 @@ namespace shadow_finger {
 
     std::vector <std::string> getJointNames(moveit::planning_interface::MoveGroupInterface::Plan& plan);
 
-    // Manage fingers using separate class
+    // Manage fingers using separate classes
     struct Finger {
-    public:
         // Finger name
-        const std::string _finger_name;
+        std::string _finger_name;
         // Set of joints in finger
-        const std::vector <std::string> _joints;
+        std::vector <std::string> _joints;
         // MoveIt planning group
         moveit::planning_interface::MoveGroupInterface _finger_move_group;
         // MoveIt plan for finger
@@ -44,8 +38,12 @@ namespace shadow_finger {
         std::vector <ros::Publisher> _joint_controller_publishers;
 
         // Minimum requirement is the finger name, everything else can be populated from there
-        Finger(const std::string& finger_name);
-
+        Finger(std::string& finger_name) :
+                _finger_name(finger_name),
+                _finger_move_group(finger_name) {
+            _joints = shadow_finger::getJointNames(_finger_move_group);
+            std::cout << "Initialized Finger: " << _finger_name << std::endl;
+        };
     };
 
     struct Thumb {

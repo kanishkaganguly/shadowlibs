@@ -5,6 +5,7 @@
 #pragma once
 
 #include <shadowlibs/shadow_imports.hpp>
+#include <shadowlibs/shadow_utils.hpp>
 
 namespace shadow_planning {
     /* Planning options */
@@ -40,13 +41,15 @@ namespace shadow_planning {
                 goal_joint_tolerance(goal_joint_tolerance) {};
     };
 
+    std::string test();
+
     /* Planning functions */
     geometry_msgs::Pose
     getRandomPose(moveit::planning_interface::MoveGroupInterface& move_group_interface, const std::string frame_name);
 
     bool getPlanToNamedTarget(shadow_planning::PlanningOptions& options,
                               moveit::planning_interface::MoveGroupInterface& move_group_interface,
-                              const std::string target_name,
+                              std::string& target_name,
                               moveit::planning_interface::MoveGroupInterface::Plan& plan);
 
     bool getPlanToPoseTarget(shadow_planning::PlanningOptions& options,

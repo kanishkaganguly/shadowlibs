@@ -4,9 +4,13 @@
 
 #include <shadowlibs/shadow_planning.hpp>
 
-geometry_msgs::Pose shadow_planning::getRandomPose(
-        moveit::planning_interface::MoveGroupInterface& move_group_interface,
-        const std::string frame_name) {
+std::string test() {
+    std::string a = "abc";
+    return a;
+}
+
+geometry_msgs::Pose shadow_planning::getRandomPose(moveit::planning_interface::MoveGroupInterface& move_group_interface,
+                                                   const std::string frame_name) {
 
     geometry_msgs::PoseStamped random_pose;
     move_group_interface.setPoseReferenceFrame(frame_name);
@@ -18,7 +22,7 @@ geometry_msgs::Pose shadow_planning::getRandomPose(
 bool shadow_planning::getPlanToNamedTarget(
         shadow_planning::PlanningOptions& options,
         moveit::planning_interface::MoveGroupInterface& move_group_interface,
-        const std::string target_name,
+        std::string& target_name,
         moveit::planning_interface::MoveGroupInterface::Plan& plan) {
 
     move_group_interface.clearPoseTargets();
