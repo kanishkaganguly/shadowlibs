@@ -4,7 +4,8 @@
 
 #pragma once
 
-#include <shadowlibs/shadow_planning.hpp>
+#include <shadowlibs/shadow_utils.hpp>
+#include <shadowlibs/shadow_planning_options.hpp>
 
 namespace shadow_finger {
     /* Get preloaded plans for open or close */
@@ -22,6 +23,8 @@ namespace shadow_finger {
 
     // Manage fingers using separate classes
     struct Finger {
+        // NodeHandle
+        ros::NodeHandle _node_handle;
         // Finger name
         std::string _finger_name;
         // Set of joints in finger
@@ -36,10 +39,12 @@ namespace shadow_finger {
         std::vector <ros::Publisher> _joint_controller_publishers;
 
         // Minimum requirement is the finger name, everything else can be populated from there
-        Finger(std::string& finger_name) :
+        Finger(std::string& finger_name, ros::NodeHandle& node_handle) :
                 _finger_name(finger_name),
-                _finger_move_group(finger_name) {
+                _finger_move_group(finger_name),
+                _node_handle(node_handle) {
             _joints = shadow_finger::getJointNames(_finger_move_group);
+            _joint_controller_publishers = shadow_utils::createJointControllerPublishers(_joints, _node_handle);
             std::cout << "Initialized Finger: " << _finger_name << std::endl;
         };
     };
