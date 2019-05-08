@@ -12,6 +12,11 @@ find_package(catkin REQUIRED COMPONENTS
         )
 
 find_package(Eigen3 REQUIRED)
+if (Eigen3_FOUND)
+    message(STATUS "Eigen3 found")
+else ()
+    message(FATAL_ERROR "Eigen3 not found")
+endif ()
 
 # ROS MoveIt needs 1.58
 set(BOOST_VERSION_REQUIRED "1.58")
@@ -27,16 +32,6 @@ endif (Boost_NO_SYSTEM_PATHS)
 # Check for default Boost installation
 find_package(Boost ${BOOST_VERSION_REQUIRED} REQUIRED)
 
-catkin_package(
-        INCLUDE_DIRS include
-        CATKIN_DEPENDS
-        geometry_msgs moveit_msgs std_msgs trajectory_msgs visualization_msgs control_msgs sensor_msgs
-        tf roscpp rospy actionlib interactive_markers
-        moveit_ros_planning moveit_ros_planning_interface moveit_core moveit_visual_tools
-        sr_robot_msgs
-        LIBRARIES ${PROJECT_NAME}
-)
-
 include_directories(
         include
         ${catkin_INCLUDE_DIRS}
@@ -44,19 +39,27 @@ include_directories(
         ${EIGEN3_INCLUDE_DIRS}
 )
 
+catkin_package(
+        INCLUDE_DIRS include
+        CATKIN_DEPENDS
+        geometry_msgs moveit_msgs std_msgs trajectory_msgs visualization_msgs control_msgs sensor_msgs
+        tf roscpp rospy actionlib interactive_markers
+        moveit_ros_planning moveit_ros_planning_interface moveit_core moveit_visual_tools
+        sr_robot_msgs
+        DEPENDS Boost
+        LIBRARIES ${PROJECT_NAME}
+)
+
 file(GLOB lib_src ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
 add_library(${PROJECT_NAME} ${lib_src})
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 
-install(
-        TARGETS ${PROJECT_NAME}
-        ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-        LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-        RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
-
-
 install(DIRECTORY include/${PROJECT_NAME}/
         DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
         FILES_MATCHING PATTERN "*.hpp"
+        )
+install(TARGETS ${PROJECT_NAME}
+        ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+        LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+        RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
         )

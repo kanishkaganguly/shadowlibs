@@ -4,8 +4,6 @@
 
 #pragma once
 
-#include <shadowlibs/shadow_imports.hpp>
-#include <shadowlibs/shadow_utils.hpp>
 #include <shadowlibs/shadow_planning.hpp>
 
 namespace shadow_finger {

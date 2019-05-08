@@ -4,7 +4,6 @@
 
 #pragma once
 
-#include <shadowlibs/shadow_imports.hpp>
 #include <shadowlibs/shadow_utils.hpp>
 
 namespace shadow_planning {

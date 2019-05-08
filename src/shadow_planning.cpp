@@ -4,7 +4,7 @@
 
 #include <shadowlibs/shadow_planning.hpp>
 
-std::string test() {
+std::string shadow_planning::test() {
     std::string a = "abc";
     return a;
 }
