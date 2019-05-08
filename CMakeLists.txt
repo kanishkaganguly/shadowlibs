@@ -19,18 +19,31 @@ else ()
 endif ()
 
 # ROS MoveIt needs 1.58
-set(BOOST_VERSION_REQUIRED "1.58")
-# Checks custom Boost folder for installation
-# Used only if there are multiple installs
-set(Boost_NO_SYSTEM_PATHS TRUE)
-# Find Boost in custom folder
-if (Boost_NO_SYSTEM_PATHS)
-    set(BOOST_ROOT "/opt/boost")
-    set(BOOST_INCLUDE_DIRS "${BOOST_ROOT}/include")
-    set(BOOST_LIBRARY_DIRS "${BOOST_ROOT}/lib")
-endif (Boost_NO_SYSTEM_PATHS)
-# Check for default Boost installation
-find_package(Boost ${BOOST_VERSION_REQUIRED} REQUIRED)
+set(BOOST_ROS_VERSION "1.58")
+# boost::PyBind needs 1.67
+set(BOOST_CUSTOM_VERSION "1.67")
+option(BoostROS "Use ROS Boost 1.58" ON)
+if (BoostROS)
+    message(STATUS "Using ROS Boost")
+    # Check for default Boost installation
+    find_package(Boost ${BOOST_ROS_VERSION} REQUIRED)
+else ()
+    # Don't use system paths for searching
+    set(Boost_NO_SYSTEM_PATHS TRUE)
+    if (Boost_NO_SYSTEM_PATHS)
+        set(BOOST_ROOT "/opt/boost")
+        set(BOOST_INCLUDE_DIRS "${BOOST_ROOT}/include")
+        set(BOOST_LIBRARY_DIRS "${BOOST_ROOT}/lib")
+    endif (Boost_NO_SYSTEM_PATHS)
+    # Check for custom Boost installation
+    find_package(Boost ${BOOST_CUSTOM_VERSION} REQUIRED)
+endif ()
+
+if (Boost_FOUND)
+    message(STATUS "Boost found")
+else ()
+    message(FATAL_ERROR "Boost not found")
+endif ()
 
 include_directories(
         include
