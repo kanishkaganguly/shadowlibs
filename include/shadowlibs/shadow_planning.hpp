@@ -8,7 +8,6 @@
 #include <shadowlibs/shadow_utils.hpp>
 
 namespace shadow_planning {
-
     /* Planning functions */
     geometry_msgs::Pose
     getRandomPose(moveit::planning_interface::MoveGroupInterface& move_group_interface, std::string& frame_name);
@@ -37,5 +36,5 @@ namespace shadow_planning {
 
     bool executePlan(shadow_finger::Finger& finger);
 
-
+    void executePlanAsync(shadow_finger::Finger& finger);
 };
