@@ -3,7 +3,7 @@ project(shadowlibs)
 
 set(CMAKE_BUILD_TYPE "Release")
 add_compile_options(-std=c++11)
-
+add_compile_options(-pthread)
 find_package(catkin REQUIRED COMPONENTS
         geometry_msgs moveit_msgs std_msgs control_msgs trajectory_msgs visualization_msgs
         tf roscpp rospy interactive_markers

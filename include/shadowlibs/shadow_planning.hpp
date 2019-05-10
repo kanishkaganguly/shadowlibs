@@ -6,6 +6,7 @@
 
 #include <shadowlibs/shadow_finger.hpp>
 #include <shadowlibs/shadow_utils.hpp>
+#include <future>
 
 namespace shadow_planning {
     /* Planning functions */
