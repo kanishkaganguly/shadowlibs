@@ -15,11 +15,18 @@ namespace shadow_finger {
     std::string getMoveGroupName(std::string finger_name);
 
     /* Get joint names and values */
-    std::vector<double> getJointValues(moveit::planning_interface::MoveGroupInterface& move_group_interface);
+    std::vector<double> getJointValues(moveit::planning_interface::MoveGroupInterface &move_group_interface);
 
-    std::vector <std::string> getJointNames(moveit::planning_interface::MoveGroupInterface& move_group_interface);
+    std::vector <std::string> getJointNames(moveit::planning_interface::MoveGroupInterface &move_group_interface);
 
-    std::vector <std::string> getJointNames(moveit::planning_interface::MoveGroupInterface::Plan& plan);
+    std::vector <std::string> getJointNames(moveit::planning_interface::MoveGroupInterface::Plan &plan);
+
+    /* Finger name to BioTac index */
+    inline int getBiotacIdx(std::string &finger_name) {
+        std::vector<std::string>::iterator it = std::find(shadow_utils::biotac_idx.begin(),
+                                                          shadow_utils::biotac_idx.end(), finger_name);
+        return std::distance(shadow_utils::biotac_idx.begin(), it);
+    }
 
     // Manage fingers using separate classes
     struct Finger {
@@ -39,7 +46,7 @@ namespace shadow_finger {
         std::vector <ros::Publisher> _joint_controller_publishers;
 
         // Minimum requirement is the finger name, everything else can be populated from there
-        Finger(std::string& finger_name, ros::NodeHandle& node_handle) :
+        Finger(std::string &finger_name, ros::NodeHandle &node_handle) :
                 _finger_name(finger_name),
                 _finger_move_group(finger_name),
                 _node_handle(node_handle) {

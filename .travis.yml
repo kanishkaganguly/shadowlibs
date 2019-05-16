@@ -6,9 +6,9 @@ compiler:
   - gcc
 matrix:
   include:
-  - name: "Xenial kinetic"
-    dist: xenial
-    env: ROS_DISTRO=kinetic
+    - name: "Xenial kinetic"
+      dist: xenial
+      env: ROS_DISTRO=kinetic
 env:
   global:
     - ROS_CI_DESKTOP="`lsb_release -cs`"

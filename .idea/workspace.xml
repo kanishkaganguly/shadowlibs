@@ -7,8 +7,8 @@
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="roscpp_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="tf_generate_messages_cpp" />
@@ -19,13 +19,13 @@
       <config projectName="shadowlibs" targetName="actionlib_generate_messages_py" />
       <config projectName="shadowlibs" targetName="moveit_ros_planning_gencfg" />
       <config projectName="shadowlibs" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="roscpp_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="roscpp_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="tests" />
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="tf_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="std_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_cpp" />
@@ -47,13 +47,13 @@
       <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="actionlib_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="tf_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="control_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="control_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_cpp" />
@@ -74,9 +74,9 @@
       <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="actionlib_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="control_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="actionlib_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_cpp" />
@@ -85,8 +85,8 @@
       <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="roscpp_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="gtest" />
       <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_eus" />
@@ -101,8 +101,8 @@
       <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_lisp" />
     </generated>
   </component>
@@ -114,10 +114,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shadow_finger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_finger.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shadow_planning.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_planning.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shadow_utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_utils.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -136,21 +139,19 @@
       <option name="imageId" value="sha256:fde60767954340ece3e4896eb1d16fbb2c99f62252e9d74953dcd2ac7c79d77a" />
     </ExecCommand>
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="42" column="115" selection-start-line="42" selection-start-column="115" selection-end-line="42" selection-end-column="115" />
+            <state relative-caret-position="105">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <element signature="e#0#2#0" />
-                <element signature="e#72#425#0" />
-                <element signature="e#427#852#0" />
-                <element signature="e#854#1100#0" />
-                <element signature="e#1102#1353#0" />
-                <element signature="e#1355#1923#0" />
+                <element signature="e#83#431#0" />
+                <element signature="e#433#854#0" />
+                <element signature="e#856#1102#0" />
+                <element signature="e#1104#1355#0" />
+                <element signature="e#1357#1913#0" />
               </folding>
             </state>
           </provider>
@@ -159,30 +160,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1029">
-              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+            <state relative-caret-position="357">
+              <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
               <folding>
                 <element signature="e#0#2#0" />
-                <element signature="e#56#94#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shadow_planning.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="199" column="22" selection-start-line="199" selection-start-column="22" selection-end-line="199" selection-end-column="22" />
+            <state relative-caret-position="294">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
               <folding>
-                <element signature="e#0#2#0" />
-                <element signature="e#138#544#0" />
-                <element signature="e#546#1560#0" />
-                <element signature="e#1469#2483#0" />
-                <element signature="e#1562#2972#0" />
-                <element signature="e#2974#4574#0" />
-                <element signature="e#4576#6100#0" />
+                <element signature="e#84#451#0" />
+                <element signature="e#453#1464#0" />
+                <element signature="e#1466#2418#0" />
+                <element signature="e#2420#3817#0" />
+                <element signature="e#3819#5411#0" />
+                <element signature="e#5413#6915#0" />
                 <element signature="e#6917#8341#0" />
+                <element signature="e#8343#8601#0" />
               </folding>
             </state>
           </provider>
@@ -191,11 +191,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#55#94#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="231">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -203,46 +200,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shadow_utils.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="323" column="53" selection-start-line="323" selection-start-column="53" selection-end-line="323" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#2#0" />
-                <element signature="e#71#483#0" />
-                <element signature="e#485#774#0" />
-                <element signature="e#776#906#0" />
-                <element signature="e#908#1392#0" />
-                <element signature="e#1394#1820#0" />
-                <element signature="e#1822#2298#0" />
-                <element signature="e#2300#2778#0" />
-                <element signature="e#2780#3199#0" />
-                <element signature="e#3201#4861#0" />
-                <element signature="e#4863#6282#0" />
-                <element signature="e#6284#6880#0" />
-                <element signature="e#6882#7508#0" />
-                <element signature="e#7510#8237#0" />
-                <element signature="e#8239#9151#0" />
-                <element signature="e#9153#10069#0" />
-                <element signature="e#10071#10439#0" />
-                <element signature="e#10441#10838#0" />
-                <element signature="e#10840#11536#0" />
-                <element signature="e#11538#12817#0" />
-                <element signature="e#13692#14683#0" />
-                <element signature="e#14685#15727#0" />
-                <element signature="e#14795#14958#0" />
-                <element signature="e#15075#15159#0" />
-                <element signature="e#15729#17626#0" />
-              </folding>
+            <state relative-caret-position="-357">
+              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1764">
-              <caret line="106" column="2" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
+            <state relative-caret-position="210">
+              <caret line="22" column="97" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
               <folding>
-                <element signature="e#201#456#0" />
+                <element signature="e#198#453#0" />
               </folding>
             </state>
           </provider>
@@ -251,24 +221,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-              <folding>
-                <element signature="e#62#112#0" expanded="true" />
-                <element signature="e#566#609#0" expanded="true" />
-                <element signature="e#794#855#0" expanded="true" />
-                <element signature="e#1180#1223#0" expanded="true" />
-                <element signature="e#1282#1329#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state relative-caret-position="522">
+              <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -296,15 +250,15 @@
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_finger.h" />
         <option value="$PROJECT_DIR$/src/shadow_planning.hpp" />
         <option value="$PROJECT_DIR$/src/shadow_utils.cpp" />
-        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" />
         <option value="$PROJECT_DIR$/package.xml" />
         <option value="$PROJECT_DIR$/src/shadow_finger.cpp" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_planning_options.hpp" />
-        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" />
         <option value="$PROJECT_DIR$/src/shadow_planning.cpp" />
+        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" />
+        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" />
+        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" />
       </list>
     </option>
   </component>
@@ -314,7 +268,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1920" />
-    <option name="y" value="618" />
+    <option name="y" value="-1" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -331,29 +285,21 @@
           <expand>
             <path>
               <item name="shadowlibs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shadowlibs" type="47feb1d3:ProjectViewModuleNode" />
-            </path>
-            <path>
-              <item name="shadowlibs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shadowlibs" type="47feb1d3:ProjectViewModuleNode" />
               <item name="shadowlibs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shadowlibs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shadowlibs" type="47feb1d3:ProjectViewModuleNode" />
               <item name="shadowlibs" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shadowlibs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shadowlibs" type="47feb1d3:ProjectViewModuleNode" />
               <item name="shadowlibs" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
               <item name="shadowlibs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shadowlibs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shadowlibs" type="47feb1d3:ProjectViewModuleNode" />
               <item name="shadowlibs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -390,622 +336,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.actionlib_generate_messages_cpp">
-    <configuration name="actionlib_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="actionlib_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="actionlib_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="actionlib_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="actionlib_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="actionlib_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="actionlib_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="actionlib_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="actionlib_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="actionlib_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="control_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="control_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="control_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="control_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="control_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="control_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="control_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="control_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="control_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="control_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="download_extra_data" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="geometry_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="geometry_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="geometry_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="geometry_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="geometry_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="geometry_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="geometry_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="geometry_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="geometry_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="geometry_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="gmock" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="graph_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="graph_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="graph_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="graph_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="graph_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="graph_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="graph_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="graph_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="graph_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="graph_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="gtest" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="moveit_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="moveit_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="moveit_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="moveit_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="moveit_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="moveit_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="moveit_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="moveit_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="moveit_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="moveit_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="moveit_ros_manipulation_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="moveit_ros_manipulation_gencfg" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="moveit_ros_planning_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="moveit_ros_planning_gencfg" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="object_recognition_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="object_recognition_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="object_recognition_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="object_recognition_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="object_recognition_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="object_recognition_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="object_recognition_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="object_recognition_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="object_recognition_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="object_recognition_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="octomap_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="octomap_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="octomap_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="octomap_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="octomap_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="octomap_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="octomap_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="octomap_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="octomap_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="octomap_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="roscpp_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="roscpp_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="roscpp_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="roscpp_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="roscpp_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="roscpp_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="roscpp_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="roscpp_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="roscpp_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="roscpp_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="rosgraph_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="rosgraph_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="rosgraph_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="rosgraph_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="rosgraph_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="run_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="run_tests" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sensor_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="sensor_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sensor_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="sensor_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sensor_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="sensor_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sensor_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="sensor_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sensor_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="sensor_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="shadowlibs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="shadowlibs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="shape_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="shape_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="shape_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="shape_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="shape_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="shape_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="shape_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="shape_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="shape_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="shape_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sr_robot_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="sr_robot_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sr_robot_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="sr_robot_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sr_robot_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="sr_robot_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sr_robot_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="sr_robot_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sr_robot_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="sr_robot_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="std_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="std_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="std_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="std_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="std_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="std_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="std_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="std_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="std_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="std_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="tests" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tf2_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="tf2_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tf2_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="tf2_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tf2_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="tf2_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tf2_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="tf2_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tf2_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="tf2_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tf_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="tf_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tf_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="tf_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tf_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="tf_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tf_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="tf_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tf_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="tf_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="trajectory_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="trajectory_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="trajectory_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="trajectory_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="trajectory_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="trajectory_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="trajectory_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="trajectory_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="trajectory_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="trajectory_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="visualization_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="visualization_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="visualization_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="visualization_msgs_generate_messages_eus" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="visualization_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="visualization_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="visualization_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="visualization_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="visualization_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shadowlibs" TARGET_NAME="visualization_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.actionlib_generate_messages_cpp" />
-      <item itemvalue="CMake Application.actionlib_generate_messages_eus" />
-      <item itemvalue="CMake Application.actionlib_generate_messages_lisp" />
-      <item itemvalue="CMake Application.actionlib_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.actionlib_generate_messages_py" />
-      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.clean_test_results" />
-      <item itemvalue="CMake Application.control_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.control_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.control_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.control_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.control_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.download_extra_data" />
-      <item itemvalue="CMake Application.doxygen" />
-      <item itemvalue="CMake Application.geometry_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.geometry_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.geometry_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.geometry_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.geometry_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.graph_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.graph_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.graph_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.graph_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.graph_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.moveit_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.moveit_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.moveit_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.moveit_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.moveit_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.moveit_ros_manipulation_gencfg" />
-      <item itemvalue="CMake Application.moveit_ros_planning_gencfg" />
-      <item itemvalue="CMake Application.object_recognition_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.object_recognition_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.object_recognition_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.object_recognition_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.object_recognition_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.octomap_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.octomap_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.octomap_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.octomap_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.octomap_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.roscpp_generate_messages_cpp" />
-      <item itemvalue="CMake Application.roscpp_generate_messages_eus" />
-      <item itemvalue="CMake Application.roscpp_generate_messages_lisp" />
-      <item itemvalue="CMake Application.roscpp_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.roscpp_generate_messages_py" />
-      <item itemvalue="CMake Application.rosgraph_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.rosgraph_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.rosgraph_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.rosgraph_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.rosgraph_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.run_tests" />
-      <item itemvalue="CMake Application.sensor_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.sensor_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.sensor_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.sensor_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.sensor_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.shadowlibs" />
-      <item itemvalue="CMake Application.shape_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.shape_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.shape_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.shape_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.shape_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.sr_robot_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.sr_robot_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.sr_robot_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.sr_robot_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.sr_robot_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.std_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.std_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.std_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.std_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.std_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.tests" />
-      <item itemvalue="CMake Application.tf2_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.tf2_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.tf2_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.tf2_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.tf2_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.tf_generate_messages_cpp" />
-      <item itemvalue="CMake Application.tf_generate_messages_eus" />
-      <item itemvalue="CMake Application.tf_generate_messages_lisp" />
-      <item itemvalue="CMake Application.tf_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.tf_generate_messages_py" />
-      <item itemvalue="CMake Application.trajectory_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.trajectory_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.trajectory_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.trajectory_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.trajectory_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.visualization_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.visualization_msgs_generate_messages_eus" />
-      <item itemvalue="CMake Application.visualization_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.visualization_msgs_generate_messages_nodejs" />
-      <item itemvalue="CMake Application.visualization_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.gmock" />
-      <item itemvalue="CMake Application.gmock_main" />
-      <item itemvalue="CMake Application.gtest" />
-      <item itemvalue="CMake Application.gtest_main" />
-    </list>
-  </component>
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
     <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
@@ -1023,19 +353,20 @@
       <workItem from="1556657822406" duration="64684000" />
       <workItem from="1557256086510" duration="8366000" />
       <workItem from="1557325644707" duration="4476000" />
+      <workItem from="1557977465600" duration="2286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100089000" />
+    <option name="totallyTimeSpent" value="102984000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="618" width="1920" height="1080" extended-state="6" />
+    <frame x="1920" y="-1" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="12" y="789" width="469" height="391" id="Project" order="0" sideWeight="0.5714286" visible="true" weight="0.15831557" />
-      <window_info id="Structure" order="1" sideWeight="0.42857143" side_tool="true" visible="true" weight="0.15831557" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Structure" order="0" sideWeight="0.4317862" side_tool="true" visible="true" weight="0.16168623" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info active="true" content_ui="combo" x="1968" y="162" width="469" height="391" id="Project" order="2" sideWeight="0.56821376" visible="true" weight="0.16168623" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -1048,7 +379,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32910052" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.24656084" />
+      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.24602333" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1092,55 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shadow_utils.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="323" column="53" selection-start-line="323" selection-start-column="53" selection-end-line="323" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#71#483#0" />
-            <element signature="e#485#774#0" />
-            <element signature="e#776#906#0" />
-            <element signature="e#908#1392#0" />
-            <element signature="e#1394#1820#0" />
-            <element signature="e#1822#2298#0" />
-            <element signature="e#2300#2778#0" />
-            <element signature="e#2780#3199#0" />
-            <element signature="e#3201#4861#0" />
-            <element signature="e#4863#6282#0" />
-            <element signature="e#6284#6880#0" />
-            <element signature="e#6882#7508#0" />
-            <element signature="e#7510#8237#0" />
-            <element signature="e#8239#9151#0" />
-            <element signature="e#9153#10069#0" />
-            <element signature="e#10071#10439#0" />
-            <element signature="e#10441#10838#0" />
-            <element signature="e#10840#11536#0" />
-            <element signature="e#11538#12817#0" />
-            <element signature="e#13692#14683#0" />
-            <element signature="e#14685#15727#0" />
-            <element signature="e#14795#14958#0" />
-            <element signature="e#15075#15159#0" />
-            <element signature="e#15729#17626#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="42" column="115" selection-start-line="42" selection-start-column="115" selection-end-line="42" selection-end-column="115" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#72#425#0" />
-            <element signature="e#427#852#0" />
-            <element signature="e#854#1100#0" />
-            <element signature="e#1102#1353#0" />
-            <element signature="e#1355#1923#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1150,62 +432,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="522">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
-            <element signature="e#62#112#0" expanded="true" />
-            <element signature="e#566#609#0" expanded="true" />
-            <element signature="e#794#855#0" expanded="true" />
-            <element signature="e#1180#1223#0" expanded="true" />
-            <element signature="e#1282#1329#0" expanded="true" />
+            <element signature="e#83#431#0" />
+            <element signature="e#433#854#0" />
+            <element signature="e#856#1102#0" />
+            <element signature="e#1104#1355#0" />
+            <element signature="e#1357#1913#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        <state relative-caret-position="357">
+          <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
           <folding>
             <element signature="e#0#2#0" />
-            <element signature="e#56#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1764">
-          <caret line="106" column="2" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
-          <folding>
-            <element signature="e#201#456#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#55#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shadow_planning.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="199" column="22" selection-start-line="199" selection-start-column="22" selection-end-line="199" selection-end-column="22" />
+        <state relative-caret-position="294">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
           <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#138#544#0" />
-            <element signature="e#546#1560#0" />
-            <element signature="e#1469#2483#0" />
-            <element signature="e#1562#2972#0" />
-            <element signature="e#2974#4574#0" />
-            <element signature="e#4576#6100#0" />
+            <element signature="e#84#451#0" />
+            <element signature="e#453#1464#0" />
+            <element signature="e#1466#2418#0" />
+            <element signature="e#2420#3817#0" />
+            <element signature="e#3819#5411#0" />
+            <element signature="e#5413#6915#0" />
             <element signature="e#6917#8341#0" />
+            <element signature="e#8343#8601#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shadow_utils.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="22" column="97" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
+          <folding>
+            <element signature="e#198#453#0" />
           </folding>
         </state>
       </provider>
