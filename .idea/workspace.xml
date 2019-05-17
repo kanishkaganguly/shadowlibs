@@ -114,7 +114,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -154,8 +153,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="489">
+              <caret line="64" column="66" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
               <folding>
                 <element signature="e#0#2#0" />
               </folding>
@@ -347,12 +346,12 @@
       <workItem from="1556657822406" duration="64684000" />
       <workItem from="1557256086510" duration="8366000" />
       <workItem from="1557325644707" duration="4476000" />
-      <workItem from="1557977465600" duration="8190000" />
+      <workItem from="1557977465600" duration="9155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108888000" />
+    <option name="totallyTimeSpent" value="109853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-1" width="1920" height="1080" extended-state="6" />
@@ -488,8 +487,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        <state relative-caret-position="489">
+          <caret line="64" column="66" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
           <folding>
             <element signature="e#0#2#0" />
           </folding>

@@ -28,7 +28,8 @@ namespace shadow_finger {
         int idx = -1;
         for (auto each_idx : biotac_idx) {
             idx += 1;
-            if (each_idx.compare(finger_name) == 0) {
+            std::size_t found = finger_name.find(each_idx);
+            if (found != std::string::npos) {
                 return idx;
             }
         }
@@ -61,6 +62,7 @@ namespace shadow_finger {
                 _node_handle(node_handle) {
             _joints = shadow_finger::getJointNames(_finger_move_group);
             _joint_controller_publishers = shadow_utils::createJointControllerPublishers(_joints, _node_handle);
+            _biotac_id = shadow_finger::getBiotacIdx(finger_name);
             std::cout << "Initialized Finger: " << _finger_name << std::endl;
         };
     };
