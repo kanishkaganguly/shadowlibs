@@ -22,10 +22,17 @@ namespace shadow_finger {
     std::vector <std::string> getJointNames(moveit::planning_interface::MoveGroupInterface::Plan &plan);
 
     /* Finger name to BioTac index */
+    const static std::vector <std::string> biotac_idx = {"first", "middle", "ring", "little", "thumb"};
+
     inline int getBiotacIdx(std::string &finger_name) {
-        std::vector<std::string>::iterator it = std::find(shadow_utils::biotac_idx.begin(),
-                                                          shadow_utils::biotac_idx.end(), finger_name);
-        return std::distance(shadow_utils::biotac_idx.begin(), it);
+        int idx = -1;
+        for (auto each_idx : biotac_idx) {
+            idx += 1;
+            if (each_idx.compare(finger_name) == 0) {
+                return idx;
+            }
+        }
+        return idx;
     }
 
     // Manage fingers using separate classes
@@ -34,6 +41,8 @@ namespace shadow_finger {
         ros::NodeHandle _node_handle;
         // Finger name
         std::string _finger_name;
+        // BioTac ID
+        int _biotac_id;
         // Set of joints in finger
         std::vector <std::string> _joints;
         // MoveIt planning group

@@ -19,9 +19,6 @@ std::ostream &operator<<(std::ostream &out, const std::vector <T> &joint_data) {
 };
 
 namespace shadow_utils {
-    /* Biotac index list */
-    static std::vector <std::string> biotac_idx = {"first", "middle", "ring", "little", "thumb"};
-
 /* Primitive types for object creation */
     enum struct primitive_type {
         BOX, CYLINDER, CONE, SPHERE
