@@ -51,3 +51,23 @@ std::vector <std::string> shadow_finger::getJointNames(moveit::planning_interfac
     std::vector <std::string> jointNames = planTrajectory.joint_names;
     return jointNames;
 }
+
+int16_t shadow_finger::Finger::getBiotacPressure() {
+    sr_robot_msgs::BiotacAllConstPtr biotac_packet = ros::topic::waitForMessage<sr_robot_msgs::BiotacAll>("/rh/tactile", this->_node_handle);
+    sr_robot_msgs::Biotac biotac_data = biotac_packet->tactiles[this->_biotac_id];
+    return biotac_data.pdc;
+}
+
+std::vector<int16_t> shadow_finger::Finger::getBiotacImpedance() {
+    sr_robot_msgs::BiotacAllConstPtr biotac_packet = ros::topic::waitForMessage<sr_robot_msgs::BiotacAll>("/rh/tactile", this->_node_handle);
+    sr_robot_msgs::Biotac biotac_data = biotac_packet->tactiles[this->_biotac_id];
+    return biotac_data.electrodes;
+}
+
+std::vector<int16_t> shadow_finger::Finger::getBiotacImpedancePressure() {
+    sr_robot_msgs::BiotacAllConstPtr biotac_packet = ros::topic::waitForMessage<sr_robot_msgs::BiotacAll>("/rh/tactile", this->_node_handle);
+    sr_robot_msgs::Biotac biotac_data = biotac_packet->tactiles[this->_biotac_id];
+    std::vector<int16_t> combined(biotac_data.electrodes);
+    combined.push_back(biotac_data.pdc);
+    return combined;
+}

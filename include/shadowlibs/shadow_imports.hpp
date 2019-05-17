@@ -46,6 +46,10 @@
 #include <moveit_msgs/GetPositionIK.h>
 #include <moveit_msgs/PositionIKRequest.h>
 
+// BioTac
+#include <sr_robot_msgs/BiotacAll.h>
+#include <sr_robot_msgs/Biotac.h>
+
 // CPP
 #include <Eigen/Dense>
 #include <Eigen/Geometry>

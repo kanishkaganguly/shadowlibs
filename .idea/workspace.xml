@@ -2,108 +2,108 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="shadowlibs" targetName="run_tests" />
-      <config projectName="shadowlibs" targetName="gmock_main" />
-      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="roscpp_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="tf_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="actionlib_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="moveit_ros_planning_gencfg" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="roscpp_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="tests" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="tf_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="roscpp_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="actionlib_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="tf_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="clean_test_results" />
-      <config projectName="shadowlibs" targetName="shadowlibs" />
-      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="gtest_main" />
-      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="actionlib_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="tf_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="actionlib_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="moveit_ros_manipulation_gencfg" />
-      <config projectName="shadowlibs" targetName="doxygen" />
-      <config projectName="shadowlibs" targetName="download_extra_data" />
-      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="roscpp_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="tf_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="actionlib_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="shadowlibs" />
+      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="clean_test_results" />
+      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="gtest" />
+      <config projectName="shadowlibs" targetName="gmock_main" />
+      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="gmock" />
+      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="actionlib_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="moveit_ros_manipulation_gencfg" />
+      <config projectName="shadowlibs" targetName="tf_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="actionlib_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="roscpp_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="doxygen" />
+      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="tf_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="moveit_ros_planning_gencfg" />
+      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="roscpp_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="tf_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="run_tests" />
+      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="tf_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="gtest" />
-      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="tf_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="gmock" />
-      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="actionlib_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="download_extra_data" />
+      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="gtest_main" />
+      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="tests" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -113,7 +113,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shadow_finger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_finger.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -126,6 +129,20 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DockerExecCommand">
     <ExecCommand>
       <option name="command" value="catkin_make" />
@@ -134,29 +151,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="672">
+              <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
               <folding>
-                <element signature="e#83#431#0" />
-                <element signature="e#433#854#0" />
+                <element signature="e#0#2#0" />
+                <element signature="e#72#425#0" />
+                <element signature="e#427#852#0" />
                 <element signature="e#856#1102#0" />
                 <element signature="e#1104#1355#0" />
-                <element signature="e#1357#1913#0" />
+                <element signature="e#1355#1923#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="64" column="66" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
+            <state relative-caret-position="546">
+              <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
               <folding>
-                <element signature="e#0#2#0" />
+                <element signature="e#56#94#0" expanded="true" />
+                <element signature="e#918#1240#0" />
               </folding>
             </state>
           </provider>
@@ -165,17 +184,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shadow_planning.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+            <state relative-caret-position="315">
+              <caret line="45" column="16" selection-start-line="45" selection-end-line="46" />
               <folding>
+                <element signature="e#0#2#0" />
                 <element signature="e#84#451#0" />
                 <element signature="e#453#1464#0" />
-                <element signature="e#1466#2418#0" />
-                <element signature="e#2420#3817#0" />
-                <element signature="e#3819#5411#0" />
-                <element signature="e#5413#6915#0" />
-                <element signature="e#6917#8341#0" />
-                <element signature="e#8343#8601#0" />
+                <element signature="e#1466#2438#0" />
+                <element signature="e#2440#3837#0" />
+                <element signature="e#3839#5431#0" />
+                <element signature="e#5433#6936#0" />
+                <element signature="e#6938#8364#0" />
+                <element signature="e#8366#8636#0" />
               </folding>
             </state>
           </provider>
@@ -184,8 +204,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state>
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#55#94#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,8 +216,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shadow_utils.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="294">
+              <caret line="315" column="104" selection-start-line="315" selection-start-column="86" selection-end-line="315" selection-end-column="104" />
+              <folding>
+                <element signature="e#0#2#0" />
+                <element signature="e#15729#17626#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,11 +229,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="378">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="e#198#453#0" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -214,8 +238,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+            <state relative-caret-position="1008">
+              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+              <folding>
+                <element signature="e#62#112#0" expanded="true" />
+                <element signature="e#566#609#0" expanded="true" />
+                <element signature="e#794#855#0" expanded="true" />
+                <element signature="e#1180#1223#0" expanded="true" />
+                <element signature="e#1282#1329#0" expanded="true" />
+                <element signature="e#1423#1459#0" expanded="true" />
+                <element signature="e#1420#1442#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -228,6 +261,7 @@
       <find>PlanningOptions</find>
       <find>Finger</find>
       <find>-&gt;</find>
+      <find>BioTac</find>
     </findStrings>
     <replaceStrings>
       <replace>.</replace>
@@ -244,14 +278,14 @@
         <option value="$PROJECT_DIR$/src/shadow_planning.hpp" />
         <option value="$PROJECT_DIR$/src/shadow_utils.cpp" />
         <option value="$PROJECT_DIR$/package.xml" />
-        <option value="$PROJECT_DIR$/src/shadow_finger.cpp" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_planning_options.hpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" />
         <option value="$PROJECT_DIR$/src/shadow_planning.cpp" />
-        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" />
+        <option value="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" />
+        <option value="$PROJECT_DIR$/src/shadow_finger.cpp" />
       </list>
     </option>
   </component>
@@ -278,23 +312,12 @@
           <expand>
             <path>
               <item name="shadowlibs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shadowlibs" type="462c0819:PsiDirectoryNode" />
+              <item name="shadowlibs" type="47feb1d3:ProjectViewModuleNode" />
             </path>
             <path>
               <item name="shadowlibs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shadowlibs" type="47feb1d3:ProjectViewModuleNode" />
               <item name="shadowlibs" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shadowlibs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shadowlibs" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="shadowlibs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shadowlibs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shadowlibs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -351,15 +374,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109853000" />
+    <option name="totallyTimeSpent" value="117458000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-1" width="1920" height="1080" extended-state="6" />
+    <frame x="1920" y="618" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Structure" order="0" sideWeight="0.4317862" side_tool="true" visible="true" weight="0.16168623" />
+      <window_info id="Structure" order="0" sideWeight="0.42962962" side_tool="true" visible="true" weight="0.15831557" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" x="1968" y="162" width="469" height="391" id="Project" order="2" sideWeight="0.56821376" visible="true" weight="0.16168623" />
+      <window_info active="true" content_ui="combo" x="1965" y="748" width="297" height="540" id="Project" order="2" sideWeight="0.5703704" visible="true" weight="0.15831557" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -376,7 +399,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,74 +446,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp">
+    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#83#431#0" />
-            <element signature="e#433#854#0" />
-            <element signature="e#856#1102#0" />
-            <element signature="e#1104#1355#0" />
-            <element signature="e#1357#1913#0" />
-          </folding>
+        <state relative-caret-position="378">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shadow_utils.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="294">
+          <caret line="315" column="104" selection-start-line="315" selection-start-column="86" selection-end-line="315" selection-end-column="104" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#15729#17626#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shadow_planning.cpp">
+    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        <state relative-caret-position="1008">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
           <folding>
-            <element signature="e#84#451#0" />
-            <element signature="e#453#1464#0" />
-            <element signature="e#1466#2418#0" />
-            <element signature="e#2420#3817#0" />
-            <element signature="e#3819#5411#0" />
-            <element signature="e#5413#6915#0" />
-            <element signature="e#6917#8341#0" />
-            <element signature="e#8343#8601#0" />
+            <element signature="e#62#112#0" expanded="true" />
+            <element signature="e#566#609#0" expanded="true" />
+            <element signature="e#794#855#0" expanded="true" />
+            <element signature="e#1180#1223#0" expanded="true" />
+            <element signature="e#1282#1329#0" expanded="true" />
+            <element signature="e#1423#1459#0" expanded="true" />
+            <element signature="e#1420#1442#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state>
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#55#94#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp">
+    <entry file="file://$PROJECT_DIR$/src/shadow_planning.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="315">
+          <caret line="45" column="16" selection-start-line="45" selection-end-line="46" />
           <folding>
-            <element signature="e#198#453#0" />
+            <element signature="e#0#2#0" />
+            <element signature="e#84#451#0" />
+            <element signature="e#453#1464#0" />
+            <element signature="e#1466#2438#0" />
+            <element signature="e#2440#3837#0" />
+            <element signature="e#3839#5431#0" />
+            <element signature="e#5433#6936#0" />
+            <element signature="e#6938#8364#0" />
+            <element signature="e#8366#8636#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="64" column="66" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
+        <state relative-caret-position="546">
+          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+          <folding>
+            <element signature="e#56#94#0" expanded="true" />
+            <element signature="e#918#1240#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
           <folding>
             <element signature="e#0#2#0" />
+            <element signature="e#72#425#0" />
+            <element signature="e#427#852#0" />
+            <element signature="e#856#1102#0" />
+            <element signature="e#1104#1355#0" />
+            <element signature="e#1355#1923#0" />
           </folding>
         </state>
       </provider>
