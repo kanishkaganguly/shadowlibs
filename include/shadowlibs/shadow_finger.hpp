@@ -66,12 +66,17 @@ namespace shadow_finger {
             std::cout << "Initialized Finger: " << _finger_name << std::endl;
         };
 
+        struct BioTac {
+            int16_t pressure;
+            std::vector<int16_t> impedance;
+        };
+
         /* BioTac related functions */
-        int16_t getBiotacPressure();
+        shadow_finger::Finger::BioTac getBiotacPressure();
 
-        std::vector<int16_t> getBiotacImpedance();
+        shadow_finger::Finger::BioTac getBiotacImpedance();
 
-        std::vector<int16_t> getBiotacImpedancePressure();
+        shadow_finger::Finger::BioTac getBiotacImpedancePressure();
     };
 
     struct Thumb {

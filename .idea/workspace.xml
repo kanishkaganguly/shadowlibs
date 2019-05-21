@@ -113,9 +113,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shadow_finger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_finger.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -154,10 +152,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+            <state relative-caret-position="357">
+              <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
               <folding>
-                <element signature="e#0#2#0" />
                 <element signature="e#72#425#0" />
                 <element signature="e#427#852#0" />
                 <element signature="e#856#1102#0" />
@@ -171,8 +168,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+            <state relative-caret-position="588">
+              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="37" />
               <folding>
                 <element signature="e#56#94#0" expanded="true" />
                 <element signature="e#918#1240#0" />
@@ -374,7 +371,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117458000" />
+    <option name="totallyTimeSpent" value="121444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="618" width="1920" height="1080" extended-state="6" />
@@ -510,8 +507,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+        <state relative-caret-position="588">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="37" />
           <folding>
             <element signature="e#56#94#0" expanded="true" />
             <element signature="e#918#1240#0" />
@@ -521,10 +518,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+        <state relative-caret-position="357">
+          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
           <folding>
-            <element signature="e#0#2#0" />
             <element signature="e#72#425#0" />
             <element signature="e#427#852#0" />
             <element signature="e#856#1102#0" />
