@@ -5,11 +5,12 @@ set(CMAKE_BUILD_TYPE "Release")
 add_compile_options(-std=c++11)
 add_compile_options(-pthread)
 find_package(catkin REQUIRED COMPONENTS
-        geometry_msgs moveit_msgs std_msgs control_msgs trajectory_msgs visualization_msgs
-        tf roscpp rospy interactive_markers
-        moveit_ros_planning moveit_ros_planning_interface moveit_core moveit_visual_tools
-        sr_robot_msgs
-        )
+             geometry_msgs moveit_msgs std_msgs control_msgs trajectory_msgs visualization_msgs
+             tf roscpp rospy interactive_markers
+             moveit_ros_planning moveit_ros_planning_interface moveit_core moveit_visual_tools
+             kdl_parser
+             sr_robot_msgs
+             )
 
 find_package(Eigen3 REQUIRED)
 if (Eigen3_FOUND)

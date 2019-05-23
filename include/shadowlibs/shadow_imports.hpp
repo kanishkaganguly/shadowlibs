@@ -40,6 +40,7 @@
 // Robot State
 #include <moveit/robot_state/conversions.h>
 #include <moveit_msgs/DisplayRobotState.h>
+#include <urdf/model.h>
 
 // Kinematics
 #include <moveit/kinematic_constraints/utils.h>

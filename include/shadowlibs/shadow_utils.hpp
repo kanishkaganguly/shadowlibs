@@ -103,4 +103,5 @@ namespace shadow_utils {
     moveit_msgs::RobotState computeJointsFromPose(moveit::planning_interface::MoveGroupInterface &move_group_interface,
                                                   double timeout, int num_attempts,
                                                   geometry_msgs::Pose &target_pose);
+
 };
