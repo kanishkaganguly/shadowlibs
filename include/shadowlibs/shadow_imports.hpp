@@ -58,6 +58,7 @@
 #include <boost/scoped_ptr.hpp>
 #include <cmath>
 #include <iostream>
+#include <tuple>
 #include <map>
 #include <string>
 #include <functional>
