@@ -50,6 +50,12 @@ namespace shadow_finger {
         return jointNames;
     };
 
+    inline std::vector<double> getJointValues(moveit::planning_interface::MoveGroupInterface& move_group_interface) {
+        std::vector<double> joint_vals;
+        joint_vals = move_group_interface.getCurrentJointValues();
+        return joint_vals;
+    }
+
     /* Get joint limits */
     inline std::vector <std::tuple<float, float>> getFingerJointLimits(std::vector <std::string> &joint_names) {
         urdf::Model model;
@@ -113,6 +119,18 @@ namespace shadow_finger {
             ROS_INFO_STREAM("Initialized Finger: " << _finger_name);
         };
 
+        // Joint limits from joint name
+        inline std::tuple<float, float> jointLimitsFromName(std::string& joint_name) {
+            std::vector<std::string>::iterator it = std::find(_joint_names.begin(), _joint_names.end(), joint_name);
+            if (it != _joint_names.end()) {
+                int idx = std::distance(_joint_names.begin(), it);
+                return _joint_limits[idx];
+            } else {
+                ROS_ERROR_STREAM("Joint " << joint_name << " not found in " << _finger_name << ".");
+                return std::make_tuple(0.0, 0.0);
+            }
+        }
+
         struct BioTac {
             int16_t pressure;
             std::vector <int16_t> impedance;
@@ -127,12 +145,6 @@ namespace shadow_finger {
     };
 
     /* Get joint names and values */
-    inline std::vector<double> getJointValues(moveit::planning_interface::MoveGroupInterface &move_group_interface) {
-        std::vector<double> joint_vals;
-        joint_vals = move_group_interface.getCurrentJointValues();
-        return joint_vals;
-    }
-
     inline std::vector<double> getJointValues(shadow_finger::Finger &finger) {
         std::vector<double> joint_vals;
         joint_vals = finger._finger_move_group.getCurrentJointValues();

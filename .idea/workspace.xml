@@ -74,9 +74,9 @@
       <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="actionlib_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="control_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="actionlib_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_cpp" />
@@ -85,13 +85,13 @@
       <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="roscpp_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="gtest" />
       <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="tf_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="gmock" />
+      <config projectName="shadowlibs" targetName="tf_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_eus" />
@@ -101,8 +101,8 @@
       <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_lisp" />
     </generated>
   </component>
@@ -113,6 +113,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -151,32 +153,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="-126">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <element signature="e#83#643#0" />
-                <element signature="e#645#1214#0" />
-                <element signature="e#1216#1840#0" />
+                <element signature="e#0#2#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="109" column="67" selection-start-line="109" selection-start-column="67" selection-end-line="109" selection-end-column="67" />
-              <folding>
-                <element signature="e#176#672#0" />
-                <element signature="e#679#1086#0" />
-                <element signature="e#1093#1376#0" />
-                <element signature="e#1383#1961#0" />
-                <element signature="e#2111#2434#0" />
-                <element signature="e#4166#4456#0" />
-                <element signature="e#4462#4681#0" />
-                <element signature="e#4688#4911#0" />
-              </folding>
+            <state relative-caret-position="-1660">
+              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -184,9 +174,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shadow_planning.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="171" column="65" selection-start-line="171" selection-start-column="65" selection-end-line="171" selection-end-column="65" />
+            <state relative-caret-position="588">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
               <folding>
+                <element signature="e#0#2#0" />
                 <element signature="e#84#451#0" />
                 <element signature="e#453#1464#0" />
                 <element signature="e#1466#2438#0" />
@@ -203,7 +194,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="-169">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#55#94#0" expanded="true" />
@@ -215,7 +206,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shadow_utils.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6615">
+            <state relative-caret-position="294">
               <caret line="315" column="104" selection-start-line="315" selection-start-column="86" selection-end-line="315" selection-end-column="104" />
               <folding>
                 <element signature="e#0#2#0" />
@@ -228,8 +219,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2205">
-              <caret line="105" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="756">
+              <caret line="106" selection-start-line="106" selection-end-line="106" />
             </state>
           </provider>
         </entry>
@@ -237,8 +228,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+            <state relative-caret-position="882">
+              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+              <folding>
+                <element signature="e#62#112#0" expanded="true" />
+                <element signature="e#566#609#0" expanded="true" />
+                <element signature="e#794#855#0" expanded="true" />
+                <element signature="e#1180#1223#0" expanded="true" />
+                <element signature="e#1282#1329#0" expanded="true" />
+                <element signature="e#1423#1459#0" expanded="true" />
+                <element signature="e#1420#1442#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="210">
+                <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -277,6 +289,7 @@
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -298,8 +311,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="shadowlibs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shadowlibs" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="shadowlibs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shadowlibs" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="shadowlibs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shadowlibs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,15 +383,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137345000" />
+    <option name="totallyTimeSpent" value="140313000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-1" width="1920" height="1080" extended-state="6" />
+    <frame x="1920" y="618" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Structure" order="0" sideWeight="0.4317862" side_tool="true" visible="true" weight="0.16008538" />
+      <window_info id="Structure" order="0" sideWeight="0.43057504" side_tool="true" visible="true" weight="0.15831557" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" x="1965" y="748" width="297" height="540" id="Project" order="2" sideWeight="0.56821376" visible="true" weight="0.16008538" />
+      <window_info active="true" content_ui="combo" x="1965" y="748" width="297" height="540" id="Project" order="2" sideWeight="0.569425" visible="true" weight="0.15831557" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -372,7 +404,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32910052" />
-      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.24602333" />
+      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.24550265" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -423,49 +455,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/ros/kinetic/include/urdf/urdfdom_compatibility.h" />
-    <entry file="file:///usr/include/urdf_model/types.h" />
-    <entry file="file:///usr/include/urdf_model/joint.h" />
-    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp">
+    <entry file="file:///opt/ros/kinetic/include/urdf/urdfdom_compatibility.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="224">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
           <folding>
-            <element signature="e#55#94#0" expanded="true" />
+            <element signature="e#3409#3876#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shadow_utils.cpp">
+    <entry file="file:///usr/include/urdf_model/types.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6615">
-          <caret line="315" column="104" selection-start-line="315" selection-start-column="86" selection-end-line="315" selection-end-column="104" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#15729#17626#0" />
-          </folding>
+        <state relative-caret-position="302">
+          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/urdf_model/joint.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+        <state relative-caret-position="756">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shadow_planning.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="171" column="65" selection-start-line="171" selection-start-column="65" selection-end-line="171" selection-end-column="65" />
+        <state relative-caret-position="588">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
           <folding>
+            <element signature="e#0#2#0" />
             <element signature="e#84#451#0" />
             <element signature="e#453#1464#0" />
             <element signature="e#1466#2438#0" />
@@ -478,32 +504,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <folding>
+            <element signature="e#62#112#0" expanded="true" />
+            <element signature="e#566#609#0" expanded="true" />
+            <element signature="e#794#855#0" expanded="true" />
+            <element signature="e#1180#1223#0" expanded="true" />
+            <element signature="e#1282#1329#0" expanded="true" />
+            <element signature="e#1423#1459#0" expanded="true" />
+            <element signature="e#1420#1442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="-126">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
-            <element signature="e#83#643#0" />
-            <element signature="e#645#1214#0" />
-            <element signature="e#1216#1840#0" />
+            <element signature="e#0#2#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="109" column="67" selection-start-line="109" selection-start-column="67" selection-end-line="109" selection-end-column="67" />
+        <state relative-caret-position="-1660">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
-            <element signature="e#176#672#0" />
-            <element signature="e#679#1086#0" />
-            <element signature="e#1093#1376#0" />
-            <element signature="e#1383#1961#0" />
-            <element signature="e#2111#2434#0" />
-            <element signature="e#4166#4456#0" />
-            <element signature="e#4462#4681#0" />
-            <element signature="e#4688#4911#0" />
+            <element signature="e#55#94#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shadow_utils.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="315" column="104" selection-start-line="315" selection-start-column="86" selection-end-line="315" selection-end-column="104" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#15729#17626#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
