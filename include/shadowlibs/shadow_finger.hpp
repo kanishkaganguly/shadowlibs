@@ -55,7 +55,6 @@ namespace shadow_finger {
         urdf::Model model;
         if (!model.initParam("/robot_description")) {
             ROS_ERROR("Failed to parse urdf file");
-            return -1;
         }
         ROS_INFO("Successfully parsed urdf file");
         std::vector <std::tuple<float, float>> joint_limits;
@@ -108,8 +107,8 @@ namespace shadow_finger {
                 _finger_move_group(finger_name),
                 _node_handle(node_handle) {
             _joint_names = shadow_finger::getJointNames(_finger_move_group);
-            _joint_controller_publishers = shadow_utils::createJointControllerPublishers(_joints, _node_handle);
-            _biotac_id = shadow_finger::getBiotacIdx(finger_name);
+            _joint_controller_publishers = shadow_utils::createJointControllerPublishers(_joint_names, _node_handle);
+            _biotac_id = shadow_finger::getBiotacIdx(_finger_name);
             _joint_limits = shadow_finger::getFingerJointLimits(_joint_names);
             ROS_INFO_STREAM("Initialized Finger: " << _finger_name);
         };
