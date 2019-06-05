@@ -5,6 +5,7 @@
 #pragma once
 
 #include <shadowlibs/shadow_finger.hpp>
+#include <shadowlibs/shadow_hand.hpp>
 #include <shadowlibs/shadow_utils.hpp>
 #include <future>
 
@@ -38,4 +39,6 @@ namespace shadow_planning {
     bool executePlan(shadow_finger::Finger &finger);
 
     void executePlanAsync(shadow_finger::Finger &finger);
+
+    void executePlanAsync(shadow_hand::Hand &hand);
 };
