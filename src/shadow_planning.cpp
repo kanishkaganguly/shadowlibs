@@ -208,6 +208,6 @@ void shadow_planning::executePlanAsync(shadow_hand::Hand &hand) {
     std::vector <shadow_finger::Finger> fingers = hand.getFingers();
     for (int i=0; i < hand.numFingers(); i++)
     {
-        shadow_planning::executePlanAsync(fingers[i])
+        shadow_planning::executePlanAsync(fingers[i]);
     }
 }

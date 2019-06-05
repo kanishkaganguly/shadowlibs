@@ -113,11 +113,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shadow_planning.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_planning.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -191,8 +186,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shadow_planning.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="206" selection-start-line="206" selection-end-line="206" selection-end-column="64" />
+            <state relative-caret-position="523">
+              <caret line="212" column="1" lean-forward="true" selection-start-line="212" selection-start-column="1" selection-end-line="212" selection-end-column="1" />
               <folding>
                 <element signature="e#84#451#0" />
                 <element signature="e#453#1464#0" />
@@ -298,8 +293,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" />
-        <option value="$PROJECT_DIR$/src/shadow_planning.cpp" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hpp" />
+        <option value="$PROJECT_DIR$/src/shadow_planning.cpp" />
       </list>
     </option>
   </component>
@@ -399,12 +394,12 @@
       <workItem from="1557977465600" duration="9155000" />
       <workItem from="1558666963513" duration="2998000" />
       <workItem from="1559758051928" duration="50000" />
-      <workItem from="1559758139129" duration="5885000" />
+      <workItem from="1559758139129" duration="7257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146248000" />
+    <option name="totallyTimeSpent" value="147620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1080" y="0" width="1920" height="1050" extended-state="6" />
@@ -566,8 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shadow_planning.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="206" selection-start-line="206" selection-end-line="206" selection-end-column="64" />
+        <state relative-caret-position="523">
+          <caret line="212" column="1" lean-forward="true" selection-start-line="212" selection-start-column="1" selection-end-line="212" selection-end-column="1" />
           <folding>
             <element signature="e#84#451#0" />
             <element signature="e#453#1464#0" />
