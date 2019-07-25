@@ -113,9 +113,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -151,15 +149,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shadow_finger.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -181,14 +170,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shadow_planning.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="910">
               <caret line="212" column="3" lean-forward="true" selection-start-line="206" selection-start-column="2" selection-end-line="212" selection-end-column="3" />
-              <folding>
-                <element signature="e#8638#8887#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -247,6 +233,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -284,6 +279,7 @@
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hpp" />
         <option value="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" />
         <option value="$PROJECT_DIR$/src/shadow_planning.cpp" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -294,7 +290,7 @@
   <component name="OCResolveContextSettings">
     <option name="configuration" value="0-shadowlibs" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1080" />
     <option name="width" value="1928" />
     <option name="height" value="1054" />
@@ -384,12 +380,12 @@
       <workItem from="1558666963513" duration="2998000" />
       <workItem from="1559758051928" duration="50000" />
       <workItem from="1559758139129" duration="7257000" />
-      <workItem from="1564076094326" duration="877000" />
+      <workItem from="1564076094326" duration="1153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148497000" />
+    <option name="totallyTimeSpent" value="148773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1600" extended-state="6" />
@@ -506,13 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="66" column="56" lean-forward="true" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/shadowlibs/shadow_hand.hxx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -531,9 +520,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="910">
           <caret line="212" column="3" lean-forward="true" selection-start-line="206" selection-start-column="2" selection-end-line="212" selection-end-column="3" />
-          <folding>
-            <element signature="e#8638#8887#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="66" column="56" lean-forward="true" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
         </state>
       </provider>
     </entry>
