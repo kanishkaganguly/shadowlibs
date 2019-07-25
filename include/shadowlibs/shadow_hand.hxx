@@ -2,8 +2,6 @@
 // Created by behzad on 6/5/19.
 //
 
-#ifndef SHADOWLIBS_SHADOW_HAND_HPP
-#define SHADOWLIBS_SHADOW_HAND_HPP
 #include <shadowlibs/shadow_utils.hpp>
 #include <shadowlibs/shadow_planning_options.hpp>
 #include <shadowlibs/shadow_finger.hpp>
@@ -31,4 +29,3 @@ namespace shadow_hand {
         std::vector <shadow_finger::Finger> getFingers() { return _fingerVec;}
     };
 }
-#endif //SHADOWLIBS_SHADOW_HAND_HPP
