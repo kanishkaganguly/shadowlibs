@@ -112,14 +112,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shadow_planning.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_planning.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -254,7 +247,7 @@
   <component name="OCResolveContextSettings">
     <option name="configuration" value="0-shadowlibs" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1080" />
     <option name="width" value="1928" />
     <option name="height" value="1054" />
@@ -344,15 +337,15 @@
       <workItem from="1558666963513" duration="2998000" />
       <workItem from="1559758051928" duration="50000" />
       <workItem from="1559758139129" duration="7257000" />
-      <workItem from="1564076094326" duration="5492000" />
+      <workItem from="1564076094326" duration="6092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153112000" />
+    <option name="totallyTimeSpent" value="153712000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1600" extended-state="6" />
+    <frame x="0" y="0" width="2560" height="1600" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.43516633" side_tool="true" visible="true" weight="0.16388226" />
