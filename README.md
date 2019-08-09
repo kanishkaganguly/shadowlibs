@@ -9,3 +9,4 @@
     - `shadow_imports`: Bunch of imports for everything
  - Most of the code is designed to directly use a `Finger` object, although they are overloaded to use lower level MoveIt inputs as well.
  - Examples for using this library is given in the [ShadowHand](https://github.com/kanishkaganguly/shadowhand) repository.
+- Make sure to compile this first, before ShadowHand package, since this will generate a `libshadowlibs.so` file that can be used by other ROS packages. Check your `devel` folder to see if this file has been created after compilation.
