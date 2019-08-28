@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(shadowlibs)
-
 set(CMAKE_BUILD_TYPE "Release")
 add_compile_options(-std=c++11)
 add_compile_options(-pthread)
+
+# ========================== Find all packages ================================================== #
 find_package(catkin REQUIRED COMPONENTS
              geometry_msgs moveit_msgs std_msgs control_msgs trajectory_msgs visualization_msgs
              tf roscpp rospy interactive_markers
@@ -12,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
              sr_robot_msgs
              )
 
+# ========================== Find Eigen ========================================================= #
 find_package(Eigen3 REQUIRED)
 if (Eigen3_FOUND)
     message(STATUS "Eigen3 found")
@@ -19,6 +21,7 @@ else ()
     message(FATAL_ERROR "Eigen3 not found")
 endif ()
 
+# ========================== Find Boost ========================================================= #
 # ROS MoveIt needs 1.58
 set(BOOST_ROS_VERSION "1.58")
 # boost::PyBind needs 1.67
@@ -46,6 +49,27 @@ else ()
     message(FATAL_ERROR "Boost not found")
 endif ()
 
+# ========================== Doxygen setup ====================================================== #
+option(BUILD_DOCS "Build documentation" OFF)
+if (BUILD_DOCS)
+    if (DOXYGEN_FOUND)
+        # set input and output files
+        set(DOXYGEN_IN ${PROJECT_SOURCE_DIR}/docs/Doxyfile.in)
+        set(DOXYGEN_OUT ${PROJECT_SOURCE_DIR}/docs/Doxyfile)
+        # request to configure the file
+        configure_file(${DOXYGEN_IN} ${DOXYGEN_OUT} @ONLY)
+        message(STATUS "Doxygen build started")
+        add_custom_target(doc_doxygen ALL
+                COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT}
+                WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/docs
+                COMMENT "Generating API documentation with Doxygen"
+                VERBATIM)
+    else (DOXYGEN_FOUND)
+        message("Doxygen need to be installed to generate the doxygen documentation")
+    endif (DOXYGEN_FOUND)
+endif ()
+
+# ========================== Include headers ==================================================== #
 include_directories(
         include
         ${catkin_INCLUDE_DIRS}
@@ -53,6 +77,7 @@ include_directories(
         ${EIGEN3_INCLUDE_DIRS}
 )
 
+# ========================== Setup catkin packages and libraries ================================ #
 catkin_package(
         INCLUDE_DIRS include
         CATKIN_DEPENDS
@@ -64,10 +89,12 @@ catkin_package(
         LIBRARIES ${PROJECT_NAME}
 )
 
+# ========================== Setup catkin packages and libraries ================================ #
 file(GLOB lib_src ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
 add_library(${PROJECT_NAME} ${lib_src})
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 
+# ========================== Setup installation locations ======================================= #
 install(DIRECTORY include/${PROJECT_NAME}/
         DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
         FILES_MATCHING PATTERN "*.hpp"

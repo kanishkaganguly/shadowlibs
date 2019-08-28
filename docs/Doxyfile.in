@@ -1,0 +1,12 @@
+PROJECT_NAME            = ShadowHand Utility Library
+GENERATE_LATEX          = NO
+ENABLE_PREPROCESSING    = YES
+HAVE_DOT                = YES
+PREDEFINED              = BUILD_DOCS
+EXTRACT_PRIVATE         = YES
+EXTRACT_STATIC          = YES
+EXTRACT_ALL             = NO
+BRIEF_MEMBER_DESC       = YES
+OUTPUT_DIRECTORY        = @PROJECT_SOURCE_DIR@/docs/doxygen_generated
+INPUT                   = @PROJECT_SOURCE_DIR@/src/ @PROJECT_SOURCE_DIR@/include/ @PROJECT_SOURCE_DIR@/CMakeLists.txt
+FILE_PATTERNS = *.cpp *.hpp *.py
