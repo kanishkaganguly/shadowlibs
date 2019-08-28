@@ -1,6 +1,7 @@
 # ShadowHand Library [![Build Status](https://travis-ci.com/kanishkaganguly/shadowlibs.svg?token=Q6CpHKtysiKmxPk3Lgqs&branch=master)](https://travis-ci.com/kanishkaganguly/shadowlibs)
 ### Utility library for Shadow Dexterous Hand
 
+- [Documentation](https://kanishkaganguly.github.io/shadowlibs/doxygen_generated/html/index.html) in progress.
 - Abstraction library for using the ShadowHand and BioTac sensors
 - Divided into 3 main parts:
     - `shadow_finger`: Contains abstractions for each finger, and corresponding BioTac sensor

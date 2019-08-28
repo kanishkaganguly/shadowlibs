@@ -8,7 +8,8 @@
 #include <shadowlibs/shadow_planning_options.hpp>
 
 namespace shadow_finger {
-/* Get preloaded plans for open or close */
+
+/** @brief Get preloaded plans for open or close,  */
 inline std::string getSavedStateName(std::string finger_name, std::string saved_state) {
   std::string saved_state_name;
   // "open" or "pack"
