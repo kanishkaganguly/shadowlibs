@@ -66,4 +66,4 @@ script:
   - cd ~/catkin_ws
   - catkin build
   - source devel/setup.bash
-  - catkin build
+  - catkin build --cmake-args -DBUILD_DOCS=ON
