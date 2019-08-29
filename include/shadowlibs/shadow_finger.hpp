@@ -7,9 +7,19 @@
 #include <shadowlibs/shadow_utils.hpp>
 #include <shadowlibs/shadow_planning_options.hpp>
 
+/** @namespace shadow_finger shadow_finger.hpp "include/shadowlibs/shadow_finger.hpp"
+ *  @brief Utility functions for managing each finger of Shadow Hand.
+ *  Contains struct to hold necessary data about each finger, and each instance can
+ *  be passed around to planning utilities. Also contains some functionality for operating on
+ *  BioTac sensor attached to the respective finger.
+ */
 namespace shadow_finger {
 
-/** @brief Get preloaded plans for open or close,  */
+/** @brief Get preloaded plans for open or close
+ *	@param finger_name Name of the finger, or thumb
+ *	@param saved_state Either "open" or "close"
+ *  @return Formatted string that is accepted by MoveIt planner
+ */
 inline std::string getSavedStateName(std::string finger_name, std::string saved_state) {
   std::string saved_state_name;
   // "open" or "pack"
@@ -21,7 +31,10 @@ inline std::string getSavedStateName(std::string finger_name, std::string saved_
   return saved_state_name;
 };
 
-/* Get planning group names */
+/** @brief Get planning group names given common name for finger
+ *  @param
+ *
+ */
 inline std::string getMoveGroupName(std::string finger_name) {
   std::string move_group_name;
   std::size_t thumb_check = finger_name.find("thumb");
@@ -33,7 +46,7 @@ inline std::string getMoveGroupName(std::string finger_name) {
   return move_group_name;
 };
 
-/* Get joint names */
+/** @brief Get names of joints */
 inline std::vector <std::string>
 getJointNames(moveit::planning_interface::MoveGroupInterface &move_group_interface) {
   std::vector <std::string> joint_names;

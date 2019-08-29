@@ -1,12 +1,11 @@
-PROJECT_NAME            = ShadowHand Utility Library
+PROJECT_NAME            = shadowlibs
 GENERATE_LATEX          = NO
 ENABLE_PREPROCESSING    = YES
 HAVE_DOT                = YES
-PREDEFINED              = BUILD_DOCS
 EXTRACT_PRIVATE         = YES
 EXTRACT_STATIC          = YES
-EXTRACT_ALL             = NO
+EXTRACT_ALL             = YES
 BRIEF_MEMBER_DESC       = YES
 OUTPUT_DIRECTORY        = /home/user/workspace/src/shadowlibs/docs/doxygen_generated
-INPUT                   = /home/user/workspace/src/shadowlibs/src/ /home/user/workspace/src/shadowlibs/include/ /home/user/workspace/src/shadowlibs/CMakeLists.txt
+INPUT                   = /home/user/workspace/src/shadowlibs/src/ /home/user/workspace/src/shadowlibs/include/shadowlibs/ /home/user/workspace/src/shadowlibs/CMakeLists.txt
 FILE_PATTERNS = *.cpp *.hpp *.py
