@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['box',['BOX',['../namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9bae657cce1913c857166b0475f18668ef5',1,'shadow_utils']]]
+  ['box',['BOX',['../namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcafae657cce1913c857166b0475f18668ef5',1,'shadow_utils']]]
 ];

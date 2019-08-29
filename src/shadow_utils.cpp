@@ -92,7 +92,7 @@ void shadow_utils::getPoseFromPositionYPR(geometry_msgs::Pose &pose, float x,
 void shadow_utils::createCollisionObjectFromPrimitive(
         moveit_msgs::CollisionObject &collision_obj, std::string primitive_id,
         shape_msgs::SolidPrimitive &primitive, geometry_msgs::Pose &obj_pose,
-        shadow_utils::primitive_type primitive_type,
+        shadow_utils::SHAPE_PRIMITIVES primitive_type,
         const std::vector<double> &primitive_dim) {
     try {
         ROS_INFO("Creating primitive object: %s", primitive_id.c_str());
@@ -101,19 +101,19 @@ void shadow_utils::createCollisionObjectFromPrimitive(
         collision_obj.header.frame_id = "/world";
 
         switch (primitive_type) {
-            case shadow_utils::primitive_type::BOX:
+            case shadow_utils::SHAPE_PRIMITIVES::BOX:
                 primitive.type = primitive.BOX;
                 primitive.dimensions.resize(3);
                 break;
-            case shadow_utils::primitive_type::SPHERE:
+            case shadow_utils::SHAPE_PRIMITIVES::SPHERE:
                 primitive.type = primitive.SPHERE;
                 primitive.dimensions.resize(1);
                 break;
-            case shadow_utils::primitive_type::CYLINDER:
+            case shadow_utils::SHAPE_PRIMITIVES::CYLINDER:
                 primitive.type = primitive.CYLINDER;
                 primitive.dimensions.resize(2);
                 break;
-            case shadow_utils::primitive_type::CONE:
+            case shadow_utils::SHAPE_PRIMITIVES::CONE:
                 primitive.type = primitive.CONE;
                 primitive.dimensions.resize(2);
                 break;
@@ -134,24 +134,24 @@ void shadow_utils::createCollisionObjectFromPrimitive(
 void shadow_utils::createAttachedObjectFromPrimitive(
         moveit_msgs::AttachedCollisionObject &attached_obj,
         std::string primitive_id, shape_msgs::SolidPrimitive &primitive,
-        geometry_msgs::Pose &obj_pose, shadow_utils::primitive_type primitive_type,
+        geometry_msgs::Pose &obj_pose, shadow_utils::SHAPE_PRIMITIVES primitive_type,
         const std::vector<double> &primitive_dim) {
     attached_obj.object.id = primitive_id;
     attached_obj.object.header.frame_id = "/world";
     switch (primitive_type) {
-        case shadow_utils::primitive_type::BOX:
+        case shadow_utils::SHAPE_PRIMITIVES::BOX:
             primitive.type = primitive.BOX;
             primitive.dimensions.resize(3);
             break;
-        case shadow_utils::primitive_type::SPHERE:
+        case shadow_utils::SHAPE_PRIMITIVES::SPHERE:
             primitive.type = primitive.SPHERE;
             primitive.dimensions.resize(1);
             break;
-        case shadow_utils::primitive_type::CYLINDER:
+        case shadow_utils::SHAPE_PRIMITIVES::CYLINDER:
             primitive.type = primitive.CYLINDER;
             primitive.dimensions.resize(2);
             break;
-        case shadow_utils::primitive_type::CONE:
+        case shadow_utils::SHAPE_PRIMITIVES::CONE:
             primitive.type = primitive.CONE;
             primitive.dimensions.resize(2);
             break;

@@ -88,34 +88,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">shadow_planning Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Utility functions for planning and execution routines to control the ShadowHand.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshadow__planning_1_1PlanningOptions.html">PlanningOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct to set planning parameters for MoveIt planning.  <a href="structshadow__planning_1_1PlanningOptions.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a18372883e635782952b64dc2e9a04126"><td class="memItemLeft" align="right" valign="top">geometry_msgs::Pose&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__planning.html#a18372883e635782952b64dc2e9a04126">getRandomPose</a> (moveit::planning_interface::MoveGroupInterface &amp;move_group_interface, std::string &amp;frame_name)</td></tr>
+<tr class="memdesc:a18372883e635782952b64dc2e9a04126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct random target pose for a given planning group.  <a href="#a18372883e635782952b64dc2e9a04126">More...</a><br /></td></tr>
 <tr class="separator:a18372883e635782952b64dc2e9a04126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a138630091bd9eeced6c37b17983e9a0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__planning.html#a138630091bd9eeced6c37b17983e9a0a">planToNamedTarget</a> (<a class="el" href="structshadow__planning_1_1PlanningOptions.html">shadow_planning::PlanningOptions</a> &amp;options, moveit::planning_interface::MoveGroupInterface &amp;move_group_interface, std::string &amp;target_name, moveit::planning_interface::MoveGroupInterface::Plan &amp;plan)</td></tr>
+<tr class="memdesc:a138630091bd9eeced6c37b17983e9a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct plan to a given "named" target, these are obtained from predefined RViz names.  <a href="#a138630091bd9eeced6c37b17983e9a0a">More...</a><br /></td></tr>
 <tr class="separator:a138630091bd9eeced6c37b17983e9a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3045f9bf72d1de50ca9532f0c2ef30b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__planning.html#ae3045f9bf72d1de50ca9532f0c2ef30b">planToNamedTarget</a> (<a class="el" href="structshadow__finger_1_1Finger.html">shadow_finger::Finger</a> &amp;finger, std::string &amp;target_name)</td></tr>
 <tr class="separator:ae3045f9bf72d1de50ca9532f0c2ef30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcc447ce9cd2a1bfc439aeb65d92fcd0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__planning.html#abcc447ce9cd2a1bfc439aeb65d92fcd0">planToPoseTarget</a> (<a class="el" href="structshadow__planning_1_1PlanningOptions.html">shadow_planning::PlanningOptions</a> &amp;options, moveit::planning_interface::MoveGroupInterface &amp;move_group_interface, geometry_msgs::Pose &amp;target_pose, std::string &amp;reference_frame, moveit::planning_interface::MoveGroupInterface::Plan &amp;plan, std::string &amp;end_effector_name)</td></tr>
+<tr class="memdesc:abcc447ce9cd2a1bfc439aeb65d92fcd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct plan to a given Pose target.  <a href="#abcc447ce9cd2a1bfc439aeb65d92fcd0">More...</a><br /></td></tr>
 <tr class="separator:abcc447ce9cd2a1bfc439aeb65d92fcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace7b066b7314ed37a7b135e2797123aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__planning.html#ace7b066b7314ed37a7b135e2797123aa">planToJointTargets</a> (<a class="el" href="structshadow__planning_1_1PlanningOptions.html">shadow_planning::PlanningOptions</a> &amp;options, moveit::planning_interface::MoveGroupInterface &amp;move_group_interface, std::string &amp;reference_frame, moveit::planning_interface::MoveGroupInterface::Plan &amp;plan, std::map&lt; std::string, double &gt; &amp;joint_targets)</td></tr>
+<tr class="memdesc:ace7b066b7314ed37a7b135e2797123aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct plan to given Joint target.  <a href="#ace7b066b7314ed37a7b135e2797123aa">More...</a><br /></td></tr>
 <tr class="separator:ace7b066b7314ed37a7b135e2797123aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cc2d12962650873967a49af654f95f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__planning.html#a0cc2d12962650873967a49af654f95f1">executePlan</a> (std::vector&lt; ros::Publisher &gt; &amp;controller_pubs, moveit::planning_interface::MoveGroupInterface::Plan &amp;plan)</td></tr>
+<tr class="memdesc:a0cc2d12962650873967a49af654f95f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute plan for a given plan given its list of controllers.  <a href="#a0cc2d12962650873967a49af654f95f1">More...</a><br /></td></tr>
 <tr class="separator:a0cc2d12962650873967a49af654f95f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99f401f84152daa8305651fa1b6c9462"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__planning.html#a99f401f84152daa8305651fa1b6c9462">executePlan</a> (<a class="el" href="structshadow__finger_1_1Finger.html">shadow_finger::Finger</a> &amp;finger)</td></tr>
 <tr class="separator:a99f401f84152daa8305651fa1b6c9462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8af584df6e86f8c099b3408322fdfe54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__planning.html#a8af584df6e86f8c099b3408322fdfe54">executePlanAsync</a> (<a class="el" href="structshadow__finger_1_1Finger.html">shadow_finger::Finger</a> &amp;finger)</td></tr>
+<tr class="memdesc:a8af584df6e86f8c099b3408322fdfe54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute plan for a given Finger asynchronously, where multiple Fingers can be executed simultaneously.  <a href="#a8af584df6e86f8c099b3408322fdfe54">More...</a><br /></td></tr>
 <tr class="separator:a8af584df6e86f8c099b3408322fdfe54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63e77313cbb53d78575584cfb4d27542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__planning.html#a63e77313cbb53d78575584cfb4d27542">executePlanAsync</a> (<a class="el" href="classshadow__hand_1_1Hand.html">shadow_hand::Hand</a> &amp;hand)</td></tr>
 <tr class="separator:a63e77313cbb53d78575584cfb4d27542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Utility functions for planning and execution routines to control the ShadowHand. </p>
+<p>Contains <a class="el" href="structshadow__planning_1_1PlanningOptions.html" title="Struct to set planning parameters for MoveIt planning. ">PlanningOptions</a> to set necessary parameters for planning.</p>
+<p><a class="el" href="shadow__planning_8hpp.html">shadow_planning.hpp</a> "include/shadowlibs/shadow_planning.hpp"</p>
+<p><a class="el" href="shadow__planning__options_8hpp.html">shadow_planning_options.hpp</a> "include/shadowlibs/shadow_planning_options.hpp" </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a0cc2d12962650873967a49af654f95f1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -140,6 +155,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Execute plan for a given plan given its list of controllers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller_pubs</td><td>The list of controller publishers for execution </td></tr>
+    <tr><td class="paramname">plan</td><td>The plan to be executed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Execution success or failure </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a99f401f84152daa8305651fa1b6c9462"></a>
@@ -155,6 +180,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
 </div>
 </div>
@@ -172,6 +198,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Execute plan for a given Finger asynchronously, where multiple Fingers can be executed simultaneously. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">finger</td><td>The Finger whose plan is to be executed </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a63e77313cbb53d78575584cfb4d27542"></a>
@@ -187,6 +221,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
 </div>
 </div>
@@ -213,6 +248,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Construct random target pose for a given planning group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">move_group_interface</td><td>The MoveGroup to generate pose for </td></tr>
+    <tr><td class="paramname">frame_name</td><td>The name of the reference frame </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The generated random pose </dd></dl>
 
 </div>
 </div>
@@ -258,6 +303,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct plan to given Joint target. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">options</td><td>The <a class="el" href="structshadow__planning_1_1PlanningOptions.html" title="Struct to set planning parameters for MoveIt planning. ">shadow_planning::PlanningOptions</a> object for computing the plan </td></tr>
+    <tr><td class="paramname">move_group_interface</td><td>The MoveGroup for which to plan </td></tr>
+    <tr><td class="paramname">reference_frame</td><td>The frame of reference for planning </td></tr>
+    <tr><td class="paramname">plan</td><td>The reference to the plan, which will be populated </td></tr>
+    <tr><td class="paramname">joint_targets</td><td>Map from joint name to the target value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Planning success or failure boolean </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a138630091bd9eeced6c37b17983e9a0a"></a>
@@ -296,6 +354,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct plan to a given "named" target, these are obtained from predefined RViz names. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">options</td><td>The <a class="el" href="structshadow__planning_1_1PlanningOptions.html" title="Struct to set planning parameters for MoveIt planning. ">shadow_planning::PlanningOptions</a> object for computing the plan </td></tr>
+    <tr><td class="paramname">move_group_interface</td><td>The MoveGroup for which to plan </td></tr>
+    <tr><td class="paramname">target_name</td><td>The named target </td></tr>
+    <tr><td class="paramname">plan</td><td>The reference to the plan, which will be populated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Planning success or failure boolean </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ae3045f9bf72d1de50ca9532f0c2ef30b"></a>
@@ -321,6 +391,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
 </div>
 </div>
@@ -371,6 +442,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Construct plan to a given Pose target. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">options</td><td>The <a class="el" href="structshadow__planning_1_1PlanningOptions.html" title="Struct to set planning parameters for MoveIt planning. ">shadow_planning::PlanningOptions</a> object for computing the plan </td></tr>
+    <tr><td class="paramname">move_group_interface</td><td>The MoveGroup for which to plan </td></tr>
+    <tr><td class="paramname">target_pose</td><td>The target pose </td></tr>
+    <tr><td class="paramname">reference_frame</td><td>The frame of reference for planning </td></tr>
+    <tr><td class="paramname">plan</td><td>The reference to the plan, which will be populated </td></tr>
+    <tr><td class="paramname">end_effector_name</td><td>The name of the end-effector for which plan is computed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Planning success or failure boolean </dd></dl>
 
 </div>
 </div>

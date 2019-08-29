@@ -88,47 +88,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">shadow_utils Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains various utility functions for RViz visualization, conversions, transformations and robot controllers.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ae850e8ec6d7a83f8ef3b3c2c34c6ca9b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9b">primitive_type</a> { <a class="el" href="namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9bae657cce1913c857166b0475f18668ef5">primitive_type::BOX</a>, 
-<a class="el" href="namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9baddec32fe897072b48368b1abe03de2aa">primitive_type::CYLINDER</a>, 
-<a class="el" href="namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9bac55b85dc15b00950104cb1ac870876a5">primitive_type::CONE</a>, 
-<a class="el" href="namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9ba6f7cea7381e843e2ee0338b4a92b0d43">primitive_type::SPHERE</a>
- }</td></tr>
-<tr class="separator:ae850e8ec6d7a83f8ef3b3c2c34c6ca9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb0714da02c4df274c506170666fcaf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcaf">SHAPE_PRIMITIVES</a> { <a class="el" href="namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcafae657cce1913c857166b0475f18668ef5">SHAPE_PRIMITIVES::BOX</a>, 
+<a class="el" href="namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcafaddec32fe897072b48368b1abe03de2aa">SHAPE_PRIMITIVES::CYLINDER</a>, 
+<a class="el" href="namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcafac55b85dc15b00950104cb1ac870876a5">SHAPE_PRIMITIVES::CONE</a>, 
+<a class="el" href="namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcafa6f7cea7381e843e2ee0338b4a92b0d43">SHAPE_PRIMITIVES::SPHERE</a>
+ }<tr class="memdesc:a9eb0714da02c4df274c506170666fcaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Primitive shapes used for RViz objects.  <a href="namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcaf">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a9eb0714da02c4df274c506170666fcaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a289bac7dbccf0658450030e7b3c861d9"><td class="memItemLeft" align="right" valign="top">Eigen::Quaternionf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a289bac7dbccf0658450030e7b3c861d9">ypr2quat</a> (float y, float p, float r)</td></tr>
+<tr class="memdesc:a289bac7dbccf0658450030e7b3c861d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion from YPR to Quaternion.  <a href="#a289bac7dbccf0658450030e7b3c861d9">More...</a><br /></td></tr>
 <tr class="separator:a289bac7dbccf0658450030e7b3c861d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa5a641eecb4c6c899d058619a2d0f7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#aaa5a641eecb4c6c899d058619a2d0f7a">quat2ypr</a> (tf::Quaternion &amp;q, double &amp;r, double &amp;p, double &amp;y)</td></tr>
+<tr class="memdesc:aaa5a641eecb4c6c899d058619a2d0f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion from Quaternion to YPR.  <a href="#aaa5a641eecb4c6c899d058619a2d0f7a">More...</a><br /></td></tr>
 <tr class="separator:aaa5a641eecb4c6c899d058619a2d0f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabe9d4fc60efb5abfd9553e52892b950"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#aabe9d4fc60efb5abfd9553e52892b950">deg2rad</a> (double deg)</td></tr>
+<tr class="memdesc:aabe9d4fc60efb5abfd9553e52892b950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion from degree to radians.  <a href="#aabe9d4fc60efb5abfd9553e52892b950">More...</a><br /></td></tr>
 <tr class="separator:aabe9d4fc60efb5abfd9553e52892b950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a413f32e074ddc1b92feaf9f0e3d9aea9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a413f32e074ddc1b92feaf9f0e3d9aea9">rad2deg</a> (double rad)</td></tr>
+<tr class="memdesc:a413f32e074ddc1b92feaf9f0e3d9aea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion from radians to degrees.  <a href="#a413f32e074ddc1b92feaf9f0e3d9aea9">More...</a><br /></td></tr>
 <tr class="separator:a413f32e074ddc1b92feaf9f0e3d9aea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53152d4e095d0b99d05087d0d1c7ea87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a53152d4e095d0b99d05087d0d1c7ea87">createCollisionObjectFromPrimitive</a> (moveit_msgs::CollisionObject &amp;collision_obj, std::string primitive_id, shape_msgs::SolidPrimitive &amp;primitive, geometry_msgs::Pose &amp;obj_pose, <a class="el" href="namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9b">shadow_utils::primitive_type</a> <a class="el" href="namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9b">primitive_type</a>, const std::vector&lt; double &gt; &amp;primitive_dims)</td></tr>
-<tr class="separator:a53152d4e095d0b99d05087d0d1c7ea87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedfbc68a6e32ed806446359df3930168"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#aedfbc68a6e32ed806446359df3930168">createAttachedObjectFromPrimitive</a> (moveit_msgs::AttachedCollisionObject &amp;attached_obj, std::string primitive_id, shape_msgs::SolidPrimitive &amp;primitive, geometry_msgs::Pose &amp;obj_pose, <a class="el" href="namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9b">shadow_utils::primitive_type</a> <a class="el" href="namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9b">primitive_type</a>, const std::vector&lt; double &gt; &amp;primitive_dims)</td></tr>
-<tr class="separator:aedfbc68a6e32ed806446359df3930168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da03bcd77ed4dd26ee88c43744a9399"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a4da03bcd77ed4dd26ee88c43744a9399">createCollisionObjectFromPrimitive</a> (moveit_msgs::CollisionObject &amp;collision_obj, std::string primitive_id, shape_msgs::SolidPrimitive &amp;primitive, geometry_msgs::Pose &amp;obj_pose, <a class="el" href="namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcaf">shadow_utils::SHAPE_PRIMITIVES</a> primitive_type, const std::vector&lt; double &gt; &amp;primitive_dims)</td></tr>
+<tr class="memdesc:a4da03bcd77ed4dd26ee88c43744a9399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create collision object for the planning scene, used by MoveIt planning.  <a href="#a4da03bcd77ed4dd26ee88c43744a9399">More...</a><br /></td></tr>
+<tr class="separator:a4da03bcd77ed4dd26ee88c43744a9399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6160576e4aa2eef3b6752b05f18314c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ae6160576e4aa2eef3b6752b05f18314c">createAttachedObjectFromPrimitive</a> (moveit_msgs::AttachedCollisionObject &amp;attached_obj, std::string primitive_id, shape_msgs::SolidPrimitive &amp;primitive, geometry_msgs::Pose &amp;obj_pose, <a class="el" href="namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcaf">shadow_utils::SHAPE_PRIMITIVES</a> primitive_type, const std::vector&lt; double &gt; &amp;primitive_dims)</td></tr>
+<tr class="memdesc:ae6160576e4aa2eef3b6752b05f18314c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create attached object for the planning scene, used by MoveIt planning when attaching object to robot This helps plan when an object is "attached" to the end of a robot, after grasping.  <a href="#ae6160576e4aa2eef3b6752b05f18314c">More...</a><br /></td></tr>
+<tr class="separator:ae6160576e4aa2eef3b6752b05f18314c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcdc44c2c94b0fa1a1c114fb6cce7ca0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#adcdc44c2c94b0fa1a1c114fb6cce7ca0">addCollisionObjectToScene</a> (moveit_msgs::CollisionObject &amp;collision_obj, moveit_msgs::PlanningScene &amp;planning_scene_msg, ros::Publisher &amp;planning_scene_diff_publisher)</td></tr>
+<tr class="memdesc:adcdc44c2c94b0fa1a1c114fb6cce7ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a collision object to the planning scene.  <a href="#adcdc44c2c94b0fa1a1c114fb6cce7ca0">More...</a><br /></td></tr>
 <tr class="separator:adcdc44c2c94b0fa1a1c114fb6cce7ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7d31424e761b5ae15ee90b9189efce6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#aa7d31424e761b5ae15ee90b9189efce6">addAttachedObjectToScene</a> (moveit_msgs::AttachedCollisionObject &amp;attached_obj, moveit_msgs::PlanningScene &amp;planning_scene_msg, ros::Publisher &amp;planning_scene_diff_publisher)</td></tr>
+<tr class="memdesc:aa7d31424e761b5ae15ee90b9189efce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a collision object to the planning scene.  <a href="#aa7d31424e761b5ae15ee90b9189efce6">More...</a><br /></td></tr>
 <tr class="separator:aa7d31424e761b5ae15ee90b9189efce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a776f1f5d30b62333441b64072f4c1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a4a776f1f5d30b62333441b64072f4c1a">moveCollisionObjectInScene</a> (moveit_msgs::CollisionObject &amp;collision_obj, geometry_msgs::Pose &amp;obj_pose, moveit_msgs::PlanningScene &amp;planning_scene_msg, ros::Publisher &amp;planning_scene_diff_publisher)</td></tr>
+<tr class="memdesc:a4a776f1f5d30b62333441b64072f4c1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move an existing collision object in the planning scene.  <a href="#a4a776f1f5d30b62333441b64072f4c1a">More...</a><br /></td></tr>
 <tr class="separator:a4a776f1f5d30b62333441b64072f4c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ae6bad64e32a8b6815e98abf5a3cc40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a5ae6bad64e32a8b6815e98abf5a3cc40">attachObjectToRobot</a> (moveit_msgs::AttachedCollisionObject &amp;attached_obj, moveit_msgs::PlanningScene &amp;planning_scene_msg, ros::Publisher &amp;planning_scene_diff_publisher)</td></tr>
+<tr class="memdesc:a5ae6bad64e32a8b6815e98abf5a3cc40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a collision object to the robot.  <a href="#a5ae6bad64e32a8b6815e98abf5a3cc40">More...</a><br /></td></tr>
 <tr class="separator:a5ae6bad64e32a8b6815e98abf5a3cc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8d42ec98ae19c297c41edeec1dc1cd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ab8d42ec98ae19c297c41edeec1dc1cd6">detachObjectFromRobot</a> (moveit_msgs::AttachedCollisionObject &amp;attached_obj, moveit_msgs::PlanningScene &amp;planning_scene_msg, ros::Publisher &amp;planning_scene_diff_publisher)</td></tr>
+<tr class="memdesc:ab8d42ec98ae19c297c41edeec1dc1cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach an attached collision object from the robot.  <a href="#ab8d42ec98ae19c297c41edeec1dc1cd6">More...</a><br /></td></tr>
 <tr class="separator:ab8d42ec98ae19c297c41edeec1dc1cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec72af270adfb702dc56f4769d7cbad4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#aec72af270adfb702dc56f4769d7cbad4">removeAllObjectsFromScene</a> (moveit::planning_interface::PlanningSceneInterface &amp;planning_scene_interface)</td></tr>
+<tr class="memdesc:aec72af270adfb702dc56f4769d7cbad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all objects from the scene.  <a href="#aec72af270adfb702dc56f4769d7cbad4">More...</a><br /></td></tr>
 <tr class="separator:aec72af270adfb702dc56f4769d7cbad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9efbf3a0ef8b90627e3e1bbc902278a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ab9efbf3a0ef8b90627e3e1bbc902278a">removeCollisionObjectFromScene</a> (moveit::planning_interface::PlanningSceneInterface &amp;planning_scene_interface, std::string obj_id)</td></tr>
+<tr class="memdesc:ab9efbf3a0ef8b90627e3e1bbc902278a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove some object from the scene.  <a href="#ab9efbf3a0ef8b90627e3e1bbc902278a">More...</a><br /></td></tr>
 <tr class="separator:ab9efbf3a0ef8b90627e3e1bbc902278a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c1c3713b2fc733ae5604309778d7395"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a9c1c3713b2fc733ae5604309778d7395">getPoseFromPositionYPR</a> (geometry_msgs::Pose &amp;pose, float x, float y, float z, float yaw, float pitch, float roll)</td></tr>
+<tr class="memdesc:a9c1c3713b2fc733ae5604309778d7395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate ROS Pose from position and YPR.  <a href="#a9c1c3713b2fc733ae5604309778d7395">More...</a><br /></td></tr>
 <tr class="separator:a9c1c3713b2fc733ae5604309778d7395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98ae047d2c7b31eaff582e30a4f3244a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a98ae047d2c7b31eaff582e30a4f3244a">getPoseFromPositionQuaternion</a> (geometry_msgs::Pose &amp;pose, float x, float y, float z, float qx, float qy, float qz, float qw)</td></tr>
+<tr class="memdesc:a98ae047d2c7b31eaff582e30a4f3244a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate ROS Pose from position and quaternion.  <a href="#a98ae047d2c7b31eaff582e30a4f3244a">More...</a><br /></td></tr>
 <tr class="separator:a98ae047d2c7b31eaff582e30a4f3244a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb5242292a6910049bb59229abf4b411"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#adb5242292a6910049bb59229abf4b411">getPoseFromPositionYPR</a> (geometry_msgs::Pose &amp;pose, float x, float y, float z, tf::Vector3 &amp;v)</td></tr>
 <tr class="separator:adb5242292a6910049bb59229abf4b411"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,20 +156,29 @@ Functions</h2></td></tr>
 <tr class="memitem:ae5e3550be985bffa034847ee13fce3a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ae5e3550be985bffa034847ee13fce3a5">getPoseFromPositionQuaternion</a> (geometry_msgs::Pose &amp;pose, tf::StampedTransform &amp;tf, tf::Quaternion &amp;q)</td></tr>
 <tr class="separator:ae5e3550be985bffa034847ee13fce3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe7fcd642fb87763b4fbe0f604f2ee73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#abe7fcd642fb87763b4fbe0f604f2ee73">getTfFromFrames</a> (tf::TransformListener &amp;listener, tf::StampedTransform &amp;tf, std::string parent_frame, std::string child_frame)</td></tr>
+<tr class="memdesc:abe7fcd642fb87763b4fbe0f604f2ee73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get TF from parent and child frames.  <a href="#abe7fcd642fb87763b4fbe0f604f2ee73">More...</a><br /></td></tr>
 <tr class="separator:abe7fcd642fb87763b4fbe0f604f2ee73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ef1120dc56ac2896fc5441d32a3b26"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ad9ef1120dc56ac2896fc5441d32a3b26">getControllerTopic</a> (std::string &amp;joint_name)</td></tr>
+<tr class="memdesc:ad9ef1120dc56ac2896fc5441d32a3b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the controller responsible for controlling the given joint name.  <a href="#ad9ef1120dc56ac2896fc5441d32a3b26">More...</a><br /></td></tr>
 <tr class="separator:ad9ef1120dc56ac2896fc5441d32a3b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af583891b8ee05eea4ee93262afc6a5e5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; ros::Publisher &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#af583891b8ee05eea4ee93262afc6a5e5">createJointControllerPublishers</a> (std::vector&lt; std::string &gt; &amp;joint_names, ros::NodeHandle &amp;n)</td></tr>
+<tr class="memdesc:af583891b8ee05eea4ee93262afc6a5e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a vector of publishers for each given joint name, using the ROS node handle.  <a href="#af583891b8ee05eea4ee93262afc6a5e5">More...</a><br /></td></tr>
 <tr class="separator:af583891b8ee05eea4ee93262afc6a5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c3eeb5fd7a0702867a17aba4026cad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a88c3eeb5fd7a0702867a17aba4026cad">broadcastTransformForGrasp</a> (std::vector&lt; double &gt; xyzrpy, const std::string frame_name)</td></tr>
+<tr class="memdesc:a88c3eeb5fd7a0702867a17aba4026cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts a transform from the wrist to given frame, which can be used for planning targets for finger.  <a href="#a88c3eeb5fd7a0702867a17aba4026cad">More...</a><br /></td></tr>
 <tr class="separator:a88c3eeb5fd7a0702867a17aba4026cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80be5056fbdefc9e55e66d69a1d66690"><td class="memItemLeft" align="right" valign="top">geometry_msgs::Pose&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a80be5056fbdefc9e55e66d69a1d66690">getPoseBetweenFrames</a> (const std::string parent_frame, const std::string child_frame)</td></tr>
+<tr class="memdesc:a80be5056fbdefc9e55e66d69a1d66690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pose between two frames.  <a href="#a80be5056fbdefc9e55e66d69a1d66690">More...</a><br /></td></tr>
 <tr class="separator:a80be5056fbdefc9e55e66d69a1d66690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7e09f06d6917452280925de26ee3a63"><td class="memItemLeft" align="right" valign="top">moveit_msgs::RobotState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ac7e09f06d6917452280925de26ee3a63">computeJointsFromPose</a> (moveit::planning_interface::MoveGroupInterface &amp;move_group_interface, double timeout, int num_attempts, geometry_msgs::Pose &amp;target_pose)</td></tr>
+<tr class="memdesc:ac7e09f06d6917452280925de26ee3a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a RobotState using the inverse kinematics solver, given a target pose. Uses a service call to the "compute_ik" service to obtain the joint angles needed for the given MoveGroup to reach the specified target pose.  <a href="#ac7e09f06d6917452280925de26ee3a63">More...</a><br /></td></tr>
 <tr class="separator:ac7e09f06d6917452280925de26ee3a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ae850e8ec6d7a83f8ef3b3c2c34c6ca9b"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains various utility functions for RViz visualization, conversions, transformations and robot controllers. </p>
+<p><a class="el" href="shadow__utils_8hpp.html">shadow_utils.hpp</a> "include/shadowlibs/shadow_utils.hpp" </p>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a9eb0714da02c4df274c506170666fcaf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -158,7 +186,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9b">shadow_utils::primitive_type</a></td>
+          <td class="memname">enum <a class="el" href="namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcaf">shadow_utils::SHAPE_PRIMITIVES</a></td>
         </tr>
       </table>
   </td>
@@ -167,14 +195,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Primitive shapes used for RViz objects. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ae850e8ec6d7a83f8ef3b3c2c34c6ca9bae657cce1913c857166b0475f18668ef5"></a>BOX&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9eb0714da02c4df274c506170666fcafae657cce1913c857166b0475f18668ef5"></a>BOX&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ae850e8ec6d7a83f8ef3b3c2c34c6ca9baddec32fe897072b48368b1abe03de2aa"></a>CYLINDER&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9eb0714da02c4df274c506170666fcafaddec32fe897072b48368b1abe03de2aa"></a>CYLINDER&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ae850e8ec6d7a83f8ef3b3c2c34c6ca9bac55b85dc15b00950104cb1ac870876a5"></a>CONE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9eb0714da02c4df274c506170666fcafac55b85dc15b00950104cb1ac870876a5"></a>CONE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ae850e8ec6d7a83f8ef3b3c2c34c6ca9ba6f7cea7381e843e2ee0338b4a92b0d43"></a>SPHERE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9eb0714da02c4df274c506170666fcafa6f7cea7381e843e2ee0338b4a92b0d43"></a>SPHERE&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -211,6 +241,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Add a collision object to the planning scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attached_obj</td><td>The attached object to add to scene </td></tr>
+    <tr><td class="paramname">planning_scene_msg</td><td>The PlanningScene to add object to </td></tr>
+    <tr><td class="paramname">planning_scene_diff_publisher</td><td>The publisher for updating the scene </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="adcdc44c2c94b0fa1a1c114fb6cce7ca0"></a>
@@ -242,6 +282,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Add a collision object to the planning scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collision_obj</td><td>The object to add to scene </td></tr>
+    <tr><td class="paramname">planning_scene_msg</td><td>The PlanningScene to add object to </td></tr>
+    <tr><td class="paramname">planning_scene_diff_publisher</td><td>The publisher for updating the scene </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -275,6 +325,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Attach a collision object to the robot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attached_obj</td><td>The collision object to attach </td></tr>
+    <tr><td class="paramname">planning_scene_msg</td><td>The PlanningScene to add object to </td></tr>
+    <tr><td class="paramname">planning_scene_diff_publisher</td><td>The publisher for updating the scene </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a88c3eeb5fd7a0702867a17aba4026cad"></a>
@@ -300,6 +360,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Broadcasts a transform from the wrist to given frame, which can be used for planning targets for finger. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xyzrpy</td><td>The pose of the transform </td></tr>
+    <tr><td class="paramname">frame_name</td><td>The frame name of the transform </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -339,9 +408,24 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Creates a RobotState using the inverse kinematics solver, given a target pose. Uses a service call to the "compute_ik" service to obtain the joint angles needed for the given MoveGroup to reach the specified target pose. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="http://docs.ros.org/kinetic/api/moveit_msgs/html/msg/RobotState.html">http://docs.ros.org/kinetic/api/moveit_msgs/html/msg/RobotState.html</a> </dd>
+<dd>
+<a href="http://docs.ros.org/kinetic/api/moveit_msgs/html/srv/GetPositionIK.html">http://docs.ros.org/kinetic/api/moveit_msgs/html/srv/GetPositionIK.html</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">move_group_interface</td><td>The MoveGroup to compute RobotState for </td></tr>
+    <tr><td class="paramname">timeout</td><td>The timeout for computation </td></tr>
+    <tr><td class="paramname">num_attempts</td><td>The number of tries for computing IK </td></tr>
+    <tr><td class="paramname">target_pose</td><td>The target pose to compute joint angles for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The RobotState computed by the IK service </dd></dl>
+
 </div>
 </div>
-<a class="anchor" id="aedfbc68a6e32ed806446359df3930168"></a>
+<a class="anchor" id="ae6160576e4aa2eef3b6752b05f18314c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -372,7 +456,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9b">shadow_utils::primitive_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcaf">shadow_utils::SHAPE_PRIMITIVES</a>&#160;</td>
           <td class="paramname"><em>primitive_type</em>, </td>
         </tr>
         <tr>
@@ -389,9 +473,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Create attached object for the planning scene, used by MoveIt planning when attaching object to robot This helps plan when an object is "attached" to the end of a robot, after grasping. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attached_obj</td><td>The MoveIt attached collision object </td></tr>
+    <tr><td class="paramname">primitive_id</td><td>The ID of the attached object </td></tr>
+    <tr><td class="paramname">primitive</td><td>The primitive used by the attached object </td></tr>
+    <tr><td class="paramname">obj_pose</td><td>The pose of the attached object </td></tr>
+    <tr><td class="paramname">primitive_type</td><td>The shape of the attached object </td></tr>
+    <tr><td class="paramname">primitive_dims</td><td>The dimension of the attached object </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="a53152d4e095d0b99d05087d0d1c7ea87"></a>
+<a class="anchor" id="a4da03bcd77ed4dd26ee88c43744a9399"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -422,7 +519,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9b">shadow_utils::primitive_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcaf">shadow_utils::SHAPE_PRIMITIVES</a>&#160;</td>
           <td class="paramname"><em>primitive_type</em>, </td>
         </tr>
         <tr>
@@ -438,6 +535,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Create collision object for the planning scene, used by MoveIt planning. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collision_obj</td><td>The MoveIt collision object </td></tr>
+    <tr><td class="paramname">primitive_id</td><td>The ID of the collision object </td></tr>
+    <tr><td class="paramname">primitive</td><td>The primitive used by the collision object </td></tr>
+    <tr><td class="paramname">obj_pose</td><td>The pose of the collision object </td></tr>
+    <tr><td class="paramname">primitive_type</td><td>The shape of the collision object </td></tr>
+    <tr><td class="paramname">primitive_dims</td><td>The dimension of the collision object </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -465,6 +575,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Create a vector of publishers for each given joint name, using the ROS node handle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joint_names</td><td>Names of joints to create controllers for </td></tr>
+    <tr><td class="paramname">n</td><td>The ROS node handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector of publishers for each joint given as input </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aabe9d4fc60efb5abfd9553e52892b950"></a>
@@ -488,6 +608,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Conversion from degree to radians. </p>
 
 </div>
 </div>
@@ -521,6 +643,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Detach an attached collision object from the robot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attached_obj</td><td>The collision object to detach </td></tr>
+    <tr><td class="paramname">planning_scene_msg</td><td>The PlanningScene to add object to </td></tr>
+    <tr><td class="paramname">planning_scene_diff_publisher</td><td>The publisher for updating the scene </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ad9ef1120dc56ac2896fc5441d32a3b26"></a>
@@ -536,6 +668,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the name of the controller responsible for controlling the given joint name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joint_name</td><td>Name of joint to fetch controller for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Name of the controller publisher </dd></dl>
 
 </div>
 </div>
@@ -562,6 +703,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the pose between two frames. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent_frame</td><td>The parent frame </td></tr>
+    <tr><td class="paramname">child_frame</td><td>The child frame </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The pose between parent and child frames </dd></dl>
 
 </div>
 </div>
@@ -625,6 +776,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Generate ROS Pose from position and quaternion. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pose</td><td>The pose to be constructed </td></tr>
+    <tr><td class="paramname">x</td><td>X position </td></tr>
+    <tr><td class="paramname">y</td><td>Y position </td></tr>
+    <tr><td class="paramname">z</td><td>Z position </td></tr>
+    <tr><td class="paramname">qx</td><td>x quaternion </td></tr>
+    <tr><td class="paramname">qy</td><td>y quaternion </td></tr>
+    <tr><td class="paramname">qz</td><td>z quaternion </td></tr>
+    <tr><td class="paramname">qw</td><td>w quaternion </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ad1ead844171a5230e004dc351c4dddf8"></a>
@@ -668,6 +834,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
 </div>
 </div>
@@ -700,6 +867,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
 </div>
 </div>
@@ -757,6 +925,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Generate ROS Pose from position and YPR. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pose</td><td>The pose to be constructed </td></tr>
+    <tr><td class="paramname">x</td><td>X position </td></tr>
+    <tr><td class="paramname">y</td><td>Y position </td></tr>
+    <tr><td class="paramname">z</td><td>Z position </td></tr>
+    <tr><td class="paramname">yaw</td><td>Yaw orientation </td></tr>
+    <tr><td class="paramname">pitch</td><td>Pitch orientation </td></tr>
+    <tr><td class="paramname">roll</td><td>Roll orientation </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="adb5242292a6910049bb59229abf4b411"></a>
@@ -800,6 +982,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
 </div>
 </div>
@@ -839,6 +1022,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get TF from parent and child frames. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>The TF listener </td></tr>
+    <tr><td class="paramname">tf</td><td>The transform data obtained </td></tr>
+    <tr><td class="paramname">parent_frame</td><td>The name of the parent frame </td></tr>
+    <tr><td class="paramname">child_frame</td><td>The name of the child frame </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a4a776f1f5d30b62333441b64072f4c1a"></a>
@@ -876,6 +1070,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Move an existing collision object in the planning scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collision_obj</td><td>The collision object to move in the scene </td></tr>
+    <tr><td class="paramname">obj_pose</td><td>The pose of the collision object in the scene </td></tr>
+    <tr><td class="paramname">planning_scene_msg</td><td>The PlanningScene to add object to </td></tr>
+    <tr><td class="paramname">planning_scene_diff_publisher</td><td>The publisher for updating the scene </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -915,6 +1120,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Conversion from Quaternion to YPR. </p>
+
 </div>
 </div>
 <a class="anchor" id="a413f32e074ddc1b92feaf9f0e3d9aea9"></a>
@@ -939,6 +1146,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Conversion from radians to degrees. </p>
+
 </div>
 </div>
 <a class="anchor" id="aec72af270adfb702dc56f4769d7cbad4"></a>
@@ -954,6 +1163,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Remove all objects from the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">planning_scene_interface</td><td>The PlanningScene to remove objects from </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -980,6 +1197,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Remove some object from the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">planning_scene_interface</td><td>The PlanningScene to remove objects from </td></tr>
+    <tr><td class="paramname">obj_id</td><td>The ID of the object to be removed </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1012,6 +1238,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Conversion from YPR to Quaternion. </p>
 
 </div>
 </div>

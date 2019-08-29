@@ -95,26 +95,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="shadow__hand_8hpp_source.html">shadow_hand.hpp</a>&gt;</code></p>
+<p>Utility functions for managing groups of fingers of Shadow <a class="el" href="classshadow__hand_1_1Hand.html" title="Utility functions for managing groups of fingers of Shadow Hand. Constructs &quot;Hand&quot; class of shared po...">Hand</a>. Constructs "Hand" class of shared pointers to multiple fingers, once multiple finger instances have been created.  
+ <a href="classshadow__hand_1_1Hand.html#details">More...</a></p>
+
+<p><code>#include &quot;<a class="el" href="shadow__hand_8hpp_source.html">include/shadowlibs/shadow_hand.hpp</a>&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a020c2b142419f8aec57b76a164f35748"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classshadow__hand_1_1Hand.html#a020c2b142419f8aec57b76a164f35748">Hand</a> (std::initializer_list&lt; std::shared_ptr&lt; <a class="el" href="structshadow__finger_1_1Finger.html">shadow_finger::Finger</a> &gt;&gt; &amp;fingers_list)</td></tr>
+<tr class="memdesc:a020c2b142419f8aec57b76a164f35748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classshadow__hand_1_1Hand.html" title="Utility functions for managing groups of fingers of Shadow Hand. Constructs &quot;Hand&quot; class of shared po...">Hand</a> class.  <a href="#a020c2b142419f8aec57b76a164f35748">More...</a><br /></td></tr>
 <tr class="separator:a020c2b142419f8aec57b76a164f35748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48f2a06af1c7fde5946060939360bfc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classshadow__hand_1_1Hand.html#a48f2a06af1c7fde5946060939360bfc0">addFinger</a> (const std::shared_ptr&lt; <a class="el" href="structshadow__finger_1_1Finger.html">shadow_finger::Finger</a> &gt; &amp;finger)</td></tr>
+<tr class="memdesc:a48f2a06af1c7fde5946060939360bfc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add Finger to <a class="el" href="classshadow__hand_1_1Hand.html" title="Utility functions for managing groups of fingers of Shadow Hand. Constructs &quot;Hand&quot; class of shared po...">Hand</a>.  <a href="#a48f2a06af1c7fde5946060939360bfc0">More...</a><br /></td></tr>
 <tr class="separator:a48f2a06af1c7fde5946060939360bfc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a1f4b9291bbcb0ba4414a3f75c7c32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classshadow__hand_1_1Hand.html#aa9a1f4b9291bbcb0ba4414a3f75c7c32">numFingers</a> ()</td></tr>
+<tr class="memdesc:aa9a1f4b9291bbcb0ba4414a3f75c7c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of Fingers in hand.  <a href="#aa9a1f4b9291bbcb0ba4414a3f75c7c32">More...</a><br /></td></tr>
 <tr class="separator:aa9a1f4b9291bbcb0ba4414a3f75c7c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e2827b6b9304fc97551a0f5c35970b6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="structshadow__finger_1_1Finger.html">shadow_finger::Finger</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classshadow__hand_1_1Hand.html#a3e2827b6b9304fc97551a0f5c35970b6">getFingers</a> ()</td></tr>
+<tr class="memdesc:a3e2827b6b9304fc97551a0f5c35970b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all instances of Fingers in <a class="el" href="classshadow__hand_1_1Hand.html" title="Utility functions for managing groups of fingers of Shadow Hand. Constructs &quot;Hand&quot; class of shared po...">Hand</a> as vector.  <a href="#a3e2827b6b9304fc97551a0f5c35970b6">More...</a><br /></td></tr>
 <tr class="separator:a3e2827b6b9304fc97551a0f5c35970b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7d81b5eb146e5c391efc6de31776f148"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="structshadow__finger_1_1Finger.html">shadow_finger::Finger</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classshadow__hand_1_1Hand.html#a7d81b5eb146e5c391efc6de31776f148">_fingerVec</a></td></tr>
-<tr class="memdesc:a7d81b5eb146e5c391efc6de31776f148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of the shared pointers to the fingers that we want to control Shared pointers because you cannot make a <a class="el" href="classshadow__hand_1_1Hand.html">Hand</a> without having created Fingers.  <a href="#a7d81b5eb146e5c391efc6de31776f148">More...</a><br /></td></tr>
+<tr class="memdesc:a7d81b5eb146e5c391efc6de31776f148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of the shared pointers to the fingers that we want to control Shared pointers because you cannot make a <a class="el" href="classshadow__hand_1_1Hand.html" title="Utility functions for managing groups of fingers of Shadow Hand. Constructs &quot;Hand&quot; class of shared po...">Hand</a> without having created Fingers.  <a href="#a7d81b5eb146e5c391efc6de31776f148">More...</a><br /></td></tr>
 <tr class="separator:a7d81b5eb146e5c391efc6de31776f148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Utility functions for managing groups of fingers of Shadow <a class="el" href="classshadow__hand_1_1Hand.html" title="Utility functions for managing groups of fingers of Shadow Hand. Constructs &quot;Hand&quot; class of shared po...">Hand</a>. Constructs "Hand" class of shared pointers to multiple fingers, once multiple finger instances have been created. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a020c2b142419f8aec57b76a164f35748"></a>
 <div class="memitem">
 <div class="memproto">
@@ -136,8 +145,14 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Minimum 2 fingers are required in <a class="el" href="classshadow__hand_1_1Hand.html">Hand</a></p>
-<p>Populate <a class="el" href="classshadow__hand_1_1Hand.html">Hand</a> with Fingers </p>
+
+<p>Constructor for <a class="el" href="classshadow__hand_1_1Hand.html" title="Utility functions for managing groups of fingers of Shadow Hand. Constructs &quot;Hand&quot; class of shared po...">Hand</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fingers_list</td><td>List of shared pointers to Fingers </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -164,6 +179,14 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Add Finger to <a class="el" href="classshadow__hand_1_1Hand.html" title="Utility functions for managing groups of fingers of Shadow Hand. Constructs &quot;Hand&quot; class of shared po...">Hand</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">finger</td><td>Shared pointer to <a class="el" href="structshadow__finger_1_1Finger.html" title="Utility struct for managing each finger of Shadow Hand. Contains all the information about the Finger...">shadow_finger::Finger</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a3e2827b6b9304fc97551a0f5c35970b6"></a>
@@ -186,6 +209,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Return all instances of Fingers in <a class="el" href="classshadow__hand_1_1Hand.html" title="Utility functions for managing groups of fingers of Shadow Hand. Constructs &quot;Hand&quot; class of shared po...">Hand</a> as vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>Vector of shared pointers to fingers </dd></dl>
 
 </div>
 </div>
@@ -210,6 +236,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get number of Fingers in hand. </p>
+<dl class="section return"><dt>Returns</dt><dd>Integer size of _fingerVec </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -223,7 +252,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Vector of the shared pointers to the fingers that we want to control Shared pointers because you cannot make a <a class="el" href="classshadow__hand_1_1Hand.html">Hand</a> without having created Fingers. </p>
+<p>Vector of the shared pointers to the fingers that we want to control Shared pointers because you cannot make a <a class="el" href="classshadow__hand_1_1Hand.html" title="Utility functions for managing groups of fingers of Shadow Hand. Constructs &quot;Hand&quot; class of shared po...">Hand</a> without having created Fingers. </p>
 
 </div>
 </div>

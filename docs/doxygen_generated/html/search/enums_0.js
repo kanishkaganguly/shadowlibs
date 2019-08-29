@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['primitive_5ftype',['primitive_type',['../namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9b',1,'shadow_utils']]]
+  ['shape_5fprimitives',['SHAPE_PRIMITIVES',['../namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcaf',1,'shadow_utils']]]
 ];

@@ -113,25 +113,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/kanishka.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/classshadow__hand_1_1Hand.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/classshadow__hand_1_1Hand.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/functions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/functions_vars.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_vars.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__finger.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__finger.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_enum.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_enum.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaces.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaces.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__hand.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__hand.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__planning.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__planning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__utils.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__utils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_11.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_11.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__finger_8hpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__finger_8hpp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_e.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enums_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enums_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enumvalues_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enumvalues_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enumvalues_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enumvalues_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enumvalues_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enumvalues_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_8.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__finger_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__finger_8hpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__hand_8hpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__hand_8hpp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__hand_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__hand_8hpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning__options_8hpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning__options_8hpp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning__options_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning__options_8hpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__utils_8cpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__utils_8cpp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__utils_8hpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__utils_8hpp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__utils_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__utils_8hpp_source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger_1_1BioTac.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger_1_1BioTac.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger__coll__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger__coll__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__planning_1_1PlanningOptions-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__planning_1_1PlanningOptions-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__planning_1_1PlanningOptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__planning_1_1PlanningOptions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_planning_options.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_planning_options.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shadow_utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_utils.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,20 +193,6 @@
       <option name="command" value="catkin_make" />
       <option name="imageId" value="sha256:fde60767954340ece3e4896eb1d16fbb2c99f62252e9d74953dcd2ac7c79d77a" />
     </ExecCommand>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Options</find>
-      <find>PlanningOptions</find>
-      <find>Finger</find>
-      <find>-&gt;</find>
-      <find>BioTac</find>
-      <find>ROS_INFO_STREAM</find>
-      <find>_fingerVec</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>.</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -217,6 +235,16 @@
           <option name="name" value="StatusDashboardGroupingRule" />
         </RuleState>
       </list>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="StructureViewFactory">

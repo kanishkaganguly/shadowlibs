@@ -5,6 +5,5 @@ var searchData=
   ['plantojointtargets',['planToJointTargets',['../namespaceshadow__planning.html#ace7b066b7314ed37a7b135e2797123aa',1,'shadow_planning']]],
   ['plantonamedtarget',['planToNamedTarget',['../namespaceshadow__planning.html#a138630091bd9eeced6c37b17983e9a0a',1,'shadow_planning::planToNamedTarget(shadow_planning::PlanningOptions &amp;options, moveit::planning_interface::MoveGroupInterface &amp;move_group_interface, std::string &amp;target_name, moveit::planning_interface::MoveGroupInterface::Plan &amp;plan)'],['../namespaceshadow__planning.html#ae3045f9bf72d1de50ca9532f0c2ef30b',1,'shadow_planning::planToNamedTarget(shadow_finger::Finger &amp;finger, std::string &amp;target_name)']]],
   ['plantoposetarget',['planToPoseTarget',['../namespaceshadow__planning.html#abcc447ce9cd2a1bfc439aeb65d92fcd0',1,'shadow_planning']]],
-  ['pressure',['pressure',['../structshadow__finger_1_1Finger_1_1BioTac.html#a28563cb80f8eb5eafe8e0614e7abe396',1,'shadow_finger::Finger::BioTac']]],
-  ['primitive_5ftype',['primitive_type',['../namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9b',1,'shadow_utils']]]
+  ['pressure',['pressure',['../structshadow__finger_1_1Finger_1_1BioTac.html#a28563cb80f8eb5eafe8e0614e7abe396',1,'shadow_finger::Finger::BioTac']]]
 ];

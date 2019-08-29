@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['set_5fplanning_5ftime',['set_planning_time',['../structshadow__planning_1_1PlanningOptions.html#a526a26207b57efaea018f72470465d51',1,'shadow_planning::PlanningOptions']]],
+  ['set_5fplanning_5ftime',['set_planning_time',['../structshadow__planning_1_1PlanningOptions.html#a619a642fa3a9cbe9b2ec2f3e270d7fe1',1,'shadow_planning::PlanningOptions']]],
   ['shadow_5ffinger',['shadow_finger',['../namespaceshadow__finger.html',1,'']]],
   ['shadow_5ffinger_2ecpp',['shadow_finger.cpp',['../shadow__finger_8cpp.html',1,'']]],
   ['shadow_5ffinger_2ehpp',['shadow_finger.hpp',['../shadow__finger_8hpp.html',1,'']]],
@@ -14,5 +14,6 @@ var searchData=
   ['shadow_5futils',['shadow_utils',['../namespaceshadow__utils.html',1,'']]],
   ['shadow_5futils_2ecpp',['shadow_utils.cpp',['../shadow__utils_8cpp.html',1,'']]],
   ['shadow_5futils_2ehpp',['shadow_utils.hpp',['../shadow__utils_8hpp.html',1,'']]],
-  ['sphere',['SPHERE',['../namespaceshadow__utils.html#ae850e8ec6d7a83f8ef3b3c2c34c6ca9ba6f7cea7381e843e2ee0338b4a92b0d43',1,'shadow_utils']]]
+  ['shape_5fprimitives',['SHAPE_PRIMITIVES',['../namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcaf',1,'shadow_utils']]],
+  ['sphere',['SPHERE',['../namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcafa6f7cea7381e843e2ee0338b4a92b0d43',1,'shadow_utils']]]
 ];
