@@ -24,17 +24,17 @@ public:
   std::vector <std::shared_ptr<shadow_finger::Finger>> _fingerVec;
 
   /**
-   * @brief Constructor for Hand class
+   * @brief Constructor for Hand class, takes in arbitrary number of shared pointers to Fingers
    * @param fingers_list List of shared pointers to Fingers
    */
-  Hand(std::initializer_list <std::shared_ptr<shadow_finger::Finger>> &fingers_list) {
-    // Minimum 2 fingers are required in Hand
-    assert(fingers_list.size() >= 2);
-    // Populate Hand with Fingers
-    for (auto finger:fingers_list) {
-      _fingerVec.push_back(finger);
-    }
-    ROS_INFO_STREAM("Initialized Hand with: " << _fingerVec.size() << " fingers.");
+  Hand(std::initializer_list <std::shared_ptr<shadow_finger::Finger>> fingers_list) {
+	  // Minimum 2 fingers are required in Hand
+	  assert(fingers_list.size() >= 2);
+	  // Populate Hand with Fingers
+	  for (auto finger:fingers_list) {
+		  _fingerVec.push_back(finger);
+	  }
+	  ROS_INFO_STREAM("Initialized Hand with: " << _fingerVec.size() << " fingers.");
   }
 
   /**

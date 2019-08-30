@@ -2,108 +2,108 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="shadowlibs" targetName="run_tests" />
-      <config projectName="shadowlibs" targetName="gmock_main" />
-      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="roscpp_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="tf_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="actionlib_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="moveit_ros_planning_gencfg" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="roscpp_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="tests" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="tf_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="roscpp_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="actionlib_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="tf_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="clean_test_results" />
-      <config projectName="shadowlibs" targetName="shadowlibs" />
-      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="gtest_main" />
-      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="actionlib_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="tf_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="actionlib_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="moveit_ros_manipulation_gencfg" />
-      <config projectName="shadowlibs" targetName="doxygen" />
-      <config projectName="shadowlibs" targetName="download_extra_data" />
-      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="actionlib_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="roscpp_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="tf_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="actionlib_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="shadowlibs" />
+      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="clean_test_results" />
+      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="gtest" />
+      <config projectName="shadowlibs" targetName="gmock_main" />
+      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="gmock" />
+      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="actionlib_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="moveit_ros_manipulation_gencfg" />
+      <config projectName="shadowlibs" targetName="tf_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="actionlib_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="roscpp_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="doxygen" />
+      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="tf_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="moveit_ros_planning_gencfg" />
+      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="roscpp_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="tf_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="run_tests" />
+      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="tf_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="gtest" />
-      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="gmock" />
-      <config projectName="shadowlibs" targetName="tf_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="actionlib_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_py" />
-      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="download_extra_data" />
+      <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="gtest_main" />
+      <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="tests" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -113,57 +113,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/include/shadowlibs/prettyprint.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Doxyfile" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Doxyfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/classshadow__hand_1_1Hand.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/classshadow__hand_1_1Hand.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/functions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/functions_vars.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_enum.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_enum.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaces.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaces.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__hand.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__hand.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__planning.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__planning.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__utils.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__utils.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_11.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_11.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_e.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enums_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enums_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enumvalues_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enumvalues_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enumvalues_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enumvalues_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enumvalues_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/enumvalues_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/dir_68267d1309a1af8e8297ef4c3efbcdba.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/dir_68267d1309a1af8e8297ef4c3efbcdba.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/graph_legend.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/graph_legend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/searchdata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/variables_8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__finger_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__finger_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__hand_8hpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__hand_8hpp.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__hand_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__hand_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning__options_8hpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning__options_8hpp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning__options_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning__options_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__utils_8cpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__utils_8cpp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__utils_8hpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__utils_8hpp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__utils_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__utils_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger__coll__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger__coll__graph.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__finger_1_1Finger__coll__graph.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__planning_1_1PlanningOptions-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__planning_1_1PlanningOptions-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__planning_1_1PlanningOptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/structshadow__planning_1_1PlanningOptions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_planning_options.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_planning_options.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shadow_utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_utils.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,6 +165,7 @@
   <component name="OCResolveContextSettings">
     <option name="configuration" value="0-shadowlibs" />
   </component>
+  <component name="ProjectId" id="1Q9WAJSjwpXKoLy2uVD875B1FJ7" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -212,17 +174,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.overridden" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/include/shadowlibs" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/docs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/include/shadowlibs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/include/shadowlibs" />
+      <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -269,11 +232,23 @@
       <workItem from="1559758051928" duration="50000" />
       <workItem from="1559758139129" duration="7257000" />
       <workItem from="1564076094326" duration="6092000" />
+      <workItem from="1567183149724" duration="3926000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
