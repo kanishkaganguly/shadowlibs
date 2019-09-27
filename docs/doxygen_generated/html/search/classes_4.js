@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['shadow_5ffinger',['shadow_finger',['../classshadow__finger.html',1,'']]]
+  ['finger',['Finger',['../structshadow__finger_1_1Finger.html',1,'shadow_finger']]]
 ];
