@@ -243,4 +243,17 @@ moveit_msgs::RobotState computeJointsFromPose(moveit::planning_interface::MoveGr
 											  double timeout, int num_attempts,
 											  geometry_msgs::Pose &target_pose);
 
+/**
+ * @brief Starts trajectory controller for arm or hand, using ControllerManager service call
+ * @param n - ROS node handle
+ * @param controller_name - Name of controller, arm or hand (rh_trajectory_controller OR ra_trajectory_controller)
+ */
+void startTrajectoryController(ros::NodeHandle n, std::string controller_name);
+
+/**
+ * @brief Stops trajectory controller for arm or hand, using ControllerManager service call
+ * @param n - ROS node handle
+ * @param controller_name - Name of controller, arm or hand (rh_trajectory_controller OR ra_trajectory_controller)
+ */
+void stopTrajectoryController(ros::NodeHandle n, std::string controller_name);
 };

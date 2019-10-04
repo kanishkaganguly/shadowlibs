@@ -173,6 +173,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ac7e09f06d6917452280925de26ee3a63"><td class="memItemLeft" align="right" valign="top">moveit_msgs::RobotState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ac7e09f06d6917452280925de26ee3a63">computeJointsFromPose</a> (moveit::planning_interface::MoveGroupInterface &amp;move_group_interface, double timeout, int num_attempts, geometry_msgs::Pose &amp;target_pose)</td></tr>
 <tr class="memdesc:ac7e09f06d6917452280925de26ee3a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a RobotState using the inverse kinematics solver, given a target pose. Uses a service call to the "compute_ik" service to obtain the joint angles needed for the given MoveGroup to reach the specified target pose.  <a href="#ac7e09f06d6917452280925de26ee3a63">More...</a><br /></td></tr>
 <tr class="separator:ac7e09f06d6917452280925de26ee3a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab178f83fe6945fcc87353dab64063e64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ab178f83fe6945fcc87353dab64063e64">startTrajectoryController</a> (ros::NodeHandle n, std::string controller_name)</td></tr>
+<tr class="memdesc:ab178f83fe6945fcc87353dab64063e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts trajectory controller for arm or hand, using ControllerManager service call.  <a href="#ab178f83fe6945fcc87353dab64063e64">More...</a><br /></td></tr>
+<tr class="separator:ab178f83fe6945fcc87353dab64063e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ab7682452988de6ecd01d11af3211a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ad7ab7682452988de6ecd01d11af3211a">stopTrajectoryController</a> (ros::NodeHandle n, std::string controller_name)</td></tr>
+<tr class="memdesc:ad7ab7682452988de6ecd01d11af3211a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops trajectory controller for arm or hand, using ControllerManager service call.  <a href="#ad7ab7682452988de6ecd01d11af3211a">More...</a><br /></td></tr>
+<tr class="separator:ad7ab7682452988de6ecd01d11af3211a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains various utility functions for RViz visualization, conversions, transformations and robot controllers. </p>
@@ -1203,6 +1209,76 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">planning_scene_interface</td><td>The PlanningScene to remove objects from </td></tr>
     <tr><td class="paramname">obj_id</td><td>The ID of the object to be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab178f83fe6945fcc87353dab64063e64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shadow_utils::startTrajectoryController </td>
+          <td>(</td>
+          <td class="paramtype">ros::NodeHandle&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>controller_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts trajectory controller for arm or hand, using ControllerManager service call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>- ROS node handle </td></tr>
+    <tr><td class="paramname">controller_name</td><td>- Name of controller, arm or hand (rh_trajectory_controller OR ra_trajectory_controller) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad7ab7682452988de6ecd01d11af3211a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shadow_utils::stopTrajectoryController </td>
+          <td>(</td>
+          <td class="paramtype">ros::NodeHandle&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>controller_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stops trajectory controller for arm or hand, using ControllerManager service call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>- ROS node handle </td></tr>
+    <tr><td class="paramname">controller_name</td><td>- Name of controller, arm or hand (rh_trajectory_controller OR ra_trajectory_controller) </td></tr>
   </table>
   </dd>
 </dl>

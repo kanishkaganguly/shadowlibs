@@ -19,6 +19,7 @@
 #include <tf/transform_listener.h>
 #include <trajectory_msgs/JointTrajectory.h>
 #include <trajectory_msgs/JointTrajectoryPoint.h>
+#include <controller_manager_msgs/SwitchController.h>
 
 // MoveIt
 #include <moveit/robot_model/robot_model.h>

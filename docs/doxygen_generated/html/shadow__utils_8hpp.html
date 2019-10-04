@@ -99,7 +99,7 @@ Include dependency graph for shadow_utils.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="shadow__utils_8hpp__incl.png" border="0" usemap="#_2home_2user_2workspace_2src_2shadowlibs_2include_2shadowlibs_2shadow__utils_8hpp" alt=""/></div>
 <map name="_2home_2user_2workspace_2src_2shadowlibs_2include_2shadowlibs_2shadow__utils_8hpp" id="_2home_2user_2workspace_2src_2shadowlibs_2include_2shadowlibs_2shadow__utils_8hpp">
-<area shape="rect" id="node2" href="shadow__imports_8hpp.html" title="shadowlibs/shadow_imports.hpp" alt="" coords="3927,109,4137,136"/>
+<area shape="rect" id="node2" href="shadow__imports_8hpp.html" title="shadowlibs/shadow_imports.hpp" alt="" coords="4016,109,4227,136"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -212,6 +212,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ac7e09f06d6917452280925de26ee3a63"><td class="memItemLeft" align="right" valign="top">moveit_msgs::RobotState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ac7e09f06d6917452280925de26ee3a63">shadow_utils::computeJointsFromPose</a> (moveit::planning_interface::MoveGroupInterface &amp;move_group_interface, double timeout, int num_attempts, geometry_msgs::Pose &amp;target_pose)</td></tr>
 <tr class="memdesc:ac7e09f06d6917452280925de26ee3a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a RobotState using the inverse kinematics solver, given a target pose. Uses a service call to the "compute_ik" service to obtain the joint angles needed for the given MoveGroup to reach the specified target pose.  <a href="namespaceshadow__utils.html#ac7e09f06d6917452280925de26ee3a63">More...</a><br /></td></tr>
 <tr class="separator:ac7e09f06d6917452280925de26ee3a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab178f83fe6945fcc87353dab64063e64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ab178f83fe6945fcc87353dab64063e64">shadow_utils::startTrajectoryController</a> (ros::NodeHandle n, std::string controller_name)</td></tr>
+<tr class="memdesc:ab178f83fe6945fcc87353dab64063e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts trajectory controller for arm or hand, using ControllerManager service call.  <a href="namespaceshadow__utils.html#ab178f83fe6945fcc87353dab64063e64">More...</a><br /></td></tr>
+<tr class="separator:ab178f83fe6945fcc87353dab64063e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ab7682452988de6ecd01d11af3211a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ad7ab7682452988de6ecd01d11af3211a">shadow_utils::stopTrajectoryController</a> (ros::NodeHandle n, std::string controller_name)</td></tr>
+<tr class="memdesc:ad7ab7682452988de6ecd01d11af3211a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops trajectory controller for arm or hand, using ControllerManager service call.  <a href="namespaceshadow__utils.html#ad7ab7682452988de6ecd01d11af3211a">More...</a><br /></td></tr>
+<tr class="separator:ad7ab7682452988de6ecd01d11af3211a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a9536b7c19cb1fd06413d185edbcde2d6"></a>

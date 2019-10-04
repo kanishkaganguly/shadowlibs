@@ -15,5 +15,7 @@ var searchData=
   ['shadow_5futils_2ecpp',['shadow_utils.cpp',['../shadow__utils_8cpp.html',1,'']]],
   ['shadow_5futils_2ehpp',['shadow_utils.hpp',['../shadow__utils_8hpp.html',1,'']]],
   ['shape_5fprimitives',['SHAPE_PRIMITIVES',['../namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcaf',1,'shadow_utils']]],
-  ['sphere',['SPHERE',['../namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcafa6f7cea7381e843e2ee0338b4a92b0d43',1,'shadow_utils']]]
+  ['sphere',['SPHERE',['../namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcafa6f7cea7381e843e2ee0338b4a92b0d43',1,'shadow_utils']]],
+  ['starttrajectorycontroller',['startTrajectoryController',['../namespaceshadow__utils.html#ab178f83fe6945fcc87353dab64063e64',1,'shadow_utils']]],
+  ['stoptrajectorycontroller',['stopTrajectoryController',['../namespaceshadow__utils.html#ad7ab7682452988de6ecd01d11af3211a',1,'shadow_utils']]]
 ];
