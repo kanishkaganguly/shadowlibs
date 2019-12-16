@@ -62,7 +62,7 @@ bool planToPoseTarget(
 
 /**
  * @brief Construct plan to given Joint target
- * @param options The shadow_planning::PlanningOptions object for computing the
+ * @param options shadow_planning::PlanningOptions object for computing the
  * plan
  * @param move_group_interface The MoveGroup for which to plan
  * @param reference_frame The frame of reference for planning
@@ -80,7 +80,7 @@ bool planToJointTargets(
 /**
  * @brief Move all joints in fingers by given angle (in degrees).
  * Directly use joint publishers to set target commands
- * @param The Finger object whose joints are to be controlled
+ * @param finger The Finger object whose joints are to be controlled
  * @param targetJointAngles The target joints angles for each joint in finger
  */
 void moveFingerJoints(shadow_finger::Finger &finger,

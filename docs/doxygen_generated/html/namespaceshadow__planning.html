@@ -114,6 +114,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ace7b066b7314ed37a7b135e2797123aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__planning.html#ace7b066b7314ed37a7b135e2797123aa">planToJointTargets</a> (<a class="el" href="structshadow__planning_1_1PlanningOptions.html">shadow_planning::PlanningOptions</a> &amp;options, moveit::planning_interface::MoveGroupInterface &amp;move_group_interface, std::string &amp;reference_frame, moveit::planning_interface::MoveGroupInterface::Plan &amp;plan, std::map&lt; std::string, double &gt; &amp;joint_targets)</td></tr>
 <tr class="memdesc:ace7b066b7314ed37a7b135e2797123aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct plan to given Joint target.  <a href="#ace7b066b7314ed37a7b135e2797123aa">More...</a><br /></td></tr>
 <tr class="separator:ace7b066b7314ed37a7b135e2797123aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590b420aa96bed99315b3d2d79d4751c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__planning.html#a590b420aa96bed99315b3d2d79d4751c">moveFingerJoints</a> (<a class="el" href="structshadow__finger_1_1Finger.html">shadow_finger::Finger</a> &amp;finger, std::vector&lt; double &gt; &amp;targetJointAngles)</td></tr>
+<tr class="memdesc:a590b420aa96bed99315b3d2d79d4751c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move all joints in fingers by given angle (in degrees). Directly use joint publishers to set target commands.  <a href="#a590b420aa96bed99315b3d2d79d4751c">More...</a><br /></td></tr>
+<tr class="separator:a590b420aa96bed99315b3d2d79d4751c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cc2d12962650873967a49af654f95f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__planning.html#a0cc2d12962650873967a49af654f95f1">executePlan</a> (std::vector&lt; ros::Publisher &gt; &amp;controller_pubs, moveit::planning_interface::MoveGroupInterface::Plan &amp;plan)</td></tr>
 <tr class="memdesc:a0cc2d12962650873967a49af654f95f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute plan for a given plan given its list of controllers.  <a href="#a0cc2d12962650873967a49af654f95f1">More...</a><br /></td></tr>
 <tr class="separator:a0cc2d12962650873967a49af654f95f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,6 +264,41 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a590b420aa96bed99315b3d2d79d4751c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shadow_planning::moveFingerJoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshadow__finger_1_1Finger.html">shadow_finger::Finger</a> &amp;&#160;</td>
+          <td class="paramname"><em>finger</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>targetJointAngles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move all joints in fingers by given angle (in degrees). Directly use joint publishers to set target commands. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">finger</td><td>The Finger object whose joints are to be controlled </td></tr>
+    <tr><td class="paramname">targetJointAngles</td><td>The target joints angles for each joint in finger </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ace7b066b7314ed37a7b135e2797123aa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -306,7 +344,7 @@ Functions</h2></td></tr>
 <p>Construct plan to given Joint target. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">options</td><td>The <a class="el" href="structshadow__planning_1_1PlanningOptions.html" title="Struct to set planning parameters for MoveIt planning. ">shadow_planning::PlanningOptions</a> object for computing the plan </td></tr>
+    <tr><td class="paramname">options</td><td><a class="el" href="structshadow__planning_1_1PlanningOptions.html" title="Struct to set planning parameters for MoveIt planning. ">shadow_planning::PlanningOptions</a> object for computing the plan </td></tr>
     <tr><td class="paramname">move_group_interface</td><td>The MoveGroup for which to plan </td></tr>
     <tr><td class="paramname">reference_frame</td><td>The frame of reference for planning </td></tr>
     <tr><td class="paramname">plan</td><td>The reference to the plan, which will be populated </td></tr>

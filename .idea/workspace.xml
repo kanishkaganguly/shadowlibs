@@ -114,16 +114,19 @@
   <component name="ChangeListManager">
     <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__planning.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__planning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/functions_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/functions_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp_source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shadow_planning.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_planning.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ClangdSettings">
-    <option name="formatViaClangd" value="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
