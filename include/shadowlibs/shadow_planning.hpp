@@ -6,8 +6,10 @@
 
 #include <shadowlibs/shadow_hand.hpp>
 
-/** @namespace shadow_planning shadow_planning.hpp "include/shadowlibs/shadow_planning.hpp"
- *  @brief Utility functions for planning and execution routines to control the ShadowHand
+/** @namespace shadow_planning shadow_planning.hpp
+ * "include/shadowlibs/shadow_planning.hpp"
+ *  @brief Utility functions for planning and execution routines to control the
+ * ShadowHand
  */
 namespace shadow_planning {
 /**
@@ -16,55 +18,73 @@ namespace shadow_planning {
  * @param frame_name The name of the reference frame
  * @return The generated random pose
  */
-geometry_msgs::Pose
-getRandomPose(moveit::planning_interface::MoveGroupInterface &move_group_interface, std::string &frame_name);
+geometry_msgs::Pose getRandomPose(
+    moveit::planning_interface::MoveGroupInterface &move_group_interface,
+    std::string &frame_name);
 
 /**
- * @brief Construct plan to a given "named" target, these are obtained from predefined RViz names
- * @param options The shadow_planning::PlanningOptions object for computing the plan
+ * @brief Construct plan to a given "named" target, these are obtained from
+ * predefined RViz names
+ * @param options The shadow_planning::PlanningOptions object for computing the
+ * plan
  * @param move_group_interface The MoveGroup for which to plan
  * @param target_name The named target
  * @param plan The reference to the plan, which will be populated
  * @return Planning success or failure boolean
  */
-bool planToNamedTarget(shadow_planning::PlanningOptions &options,
-					   moveit::planning_interface::MoveGroupInterface &move_group_interface,
-					   std::string &target_name,
-					   moveit::planning_interface::MoveGroupInterface::Plan &plan);
+bool planToNamedTarget(
+    shadow_planning::PlanningOptions &options,
+    moveit::planning_interface::MoveGroupInterface &move_group_interface,
+    std::string &target_name,
+    moveit::planning_interface::MoveGroupInterface::Plan &plan);
 
 /** @overload */
 bool planToNamedTarget(shadow_finger::Finger &finger, std::string &target_name);
 
 /**
  * @brief Construct plan to a given Pose target
- * @param options The shadow_planning::PlanningOptions object for computing the plan
+ * @param options The shadow_planning::PlanningOptions object for computing the
+ * plan
  * @param move_group_interface The MoveGroup for which to plan
  * @param target_pose The target pose
  * @param reference_frame The frame of reference for planning
  * @param plan The reference to the plan, which will be populated
- * @param end_effector_name The name of the end-effector for which plan is computed
+ * @param end_effector_name The name of the end-effector for which plan is
+ * computed
  * @return Planning success or failure boolean
  */
-bool planToPoseTarget(shadow_planning::PlanningOptions &options,
-					  moveit::planning_interface::MoveGroupInterface &move_group_interface,
-					  geometry_msgs::Pose &target_pose, std::string &reference_frame,
-					  moveit::planning_interface::MoveGroupInterface::Plan &plan,
-					  std::string &end_effector_name);
+bool planToPoseTarget(
+    shadow_planning::PlanningOptions &options,
+    moveit::planning_interface::MoveGroupInterface &move_group_interface,
+    geometry_msgs::Pose &target_pose, std::string &reference_frame,
+    moveit::planning_interface::MoveGroupInterface::Plan &plan,
+    std::string &end_effector_name);
 
 /**
  * @brief Construct plan to given Joint target
- * @param options The shadow_planning::PlanningOptions object for computing the plan
+ * @param options The shadow_planning::PlanningOptions object for computing the
+ * plan
  * @param move_group_interface The MoveGroup for which to plan
  * @param reference_frame The frame of reference for planning
  * @param plan The reference to the plan, which will be populated
  * @param joint_targets Map from joint name to the target value
  * @return Planning success or failure boolean
  */
-bool planToJointTargets(shadow_planning::PlanningOptions &options,
-						moveit::planning_interface::MoveGroupInterface &move_group_interface,
-						std::string &reference_frame,
-						moveit::planning_interface::MoveGroupInterface::Plan &plan,
-						std::map<std::string, double> &joint_targets);
+bool planToJointTargets(
+    shadow_planning::PlanningOptions &options,
+    moveit::planning_interface::MoveGroupInterface &move_group_interface,
+    std::string &reference_frame,
+    moveit::planning_interface::MoveGroupInterface::Plan &plan,
+    std::map<std::string, double> &joint_targets);
+
+/**
+ * @brief Move all joints in fingers by given angle (in degrees).
+ * Directly use joint publishers to set target commands
+ * @param The Finger object whose joints are to be controlled
+ * @param targetJointAngles The target joints angles for each joint in finger
+ */
+void moveFingerJoints(shadow_finger::Finger &finger,
+                      std::vector<double> &targetJointAngles);
 
 /**
  * @brief Execute plan for a given plan given its list of controllers
@@ -72,8 +92,8 @@ bool planToJointTargets(shadow_planning::PlanningOptions &options,
  * @param plan The plan to be executed
  * @return Execution success or failure
  */
-bool executePlan(std::vector <ros::Publisher> &controller_pubs,
-				 moveit::planning_interface::MoveGroupInterface::Plan &plan);
+bool executePlan(std::vector<ros::Publisher> &controller_pubs,
+                 moveit::planning_interface::MoveGroupInterface::Plan &plan);
 
 /** @overload */
 bool executePlan(shadow_finger::Finger &finger);
@@ -87,4 +107,4 @@ void executePlanAsync(shadow_finger::Finger &finger);
 
 /** @overload */
 void executePlanAsync(shadow_hand::Hand &hand);
-};
+}; // namespace shadow_planning
