@@ -70,14 +70,6 @@ if (BUILD_DOCS)
 	endif (DOXYGEN_FOUND)
 endif ()
 
-# ========================== Include headers ==================================================== #
-include_directories(
-		include
-		${catkin_INCLUDE_DIRS}
-		${Boost_INCLUDE_DIR}
-		${EIGEN3_INCLUDE_DIRS}
-)
-
 # ========================== Setup catkin packages and libraries ================================ #
 catkin_package(
 		INCLUDE_DIRS include
@@ -88,6 +80,14 @@ catkin_package(
 		sr_robot_msgs
 		DEPENDS Boost
 		LIBRARIES ${PROJECT_NAME}
+)
+
+# ========================== Include headers ==================================================== #
+include_directories(
+		include
+		${catkin_INCLUDE_DIRS}
+		${Boost_INCLUDE_DIR}
+		${EIGEN3_INCLUDE_DIRS}
 )
 
 # ========================== Setup catkin packages and libraries ================================ #

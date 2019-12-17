@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="roscpp_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_py" />
@@ -12,7 +12,6 @@
       <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="roscpp_generate_messages_py" />
       <config projectName="shadowlibs" targetName="tf_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="actionlib_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="shadowlibs" />
       <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_py" />
@@ -24,82 +23,83 @@
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="control_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="gtest" />
-      <config projectName="shadowlibs" targetName="gmock_main" />
-      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_nodejs" />
+      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="gmock" />
-      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="actionlib_generate_messages_py" />
       <config projectName="shadowlibs" targetName="moveit_ros_manipulation_gencfg" />
       <config projectName="shadowlibs" targetName="tf_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="roscpp_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="actionlib_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="actionlib_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="std_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="roscpp_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="control_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="doxygen" />
       <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_cpp" />
-      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="tf_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="graph_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="moveit_ros_planning_gencfg" />
       <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="sr_robot_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="roscpp_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="control_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="gmock" />
       <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="tf_generate_messages_py" />
       <config projectName="shadowlibs" targetName="geometry_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="trajectory_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="visualization_msgs_generate_messages_lisp" />
-      <config projectName="shadowlibs" targetName="run_tests" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="shape_msgs_generate_messages_nodejs" />
       <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="tf_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="shadowlibs" targetName="std_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="octomap_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="rosgraph_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="actionlib_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="object_recognition_msgs_generate_messages_eus" />
-      <config projectName="shadowlibs" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="shadowlibs" targetName="run_tests" />
       <config projectName="shadowlibs" targetName="download_extra_data" />
       <config projectName="shadowlibs" targetName="tf2_msgs_generate_messages_cpp" />
       <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_lisp" />
       <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_py" />
       <config projectName="shadowlibs" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="shadowlibs" targetName="gmock_main" />
       <config projectName="shadowlibs" targetName="gtest_main" />
       <config projectName="shadowlibs" targetName="moveit_msgs_generate_messages_eus" />
       <config projectName="shadowlibs" targetName="control_msgs_generate_messages_py" />
@@ -113,15 +113,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a42b771-36ef-4dd0-b5b7-069229b845ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/saveactions_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespacemembers_func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__planning.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/namespaceshadow__planning.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/all_b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/search/functions_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/search/functions_9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doxygen_generated/html/shadow__planning_8hpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_finger.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_hand.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_imports.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_planning.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/shadowlibs/shadow_utils.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shadow_utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadow_utils.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,6 +165,11 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -173,7 +178,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../amazon-projects" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -221,6 +226,8 @@
       <workItem from="1567183149724" duration="3926000" />
       <workItem from="1568738107966" duration="15376000" />
       <workItem from="1570136742546" duration="7502000" />
+      <workItem from="1576541565643" duration="16000" />
+      <workItem from="1576541590465" duration="7750000" />
     </task>
     <servers />
   </component>
@@ -242,6 +249,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2563" y="268" width="624" height="539" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576541571564">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2563" y="268" width="624" height="539" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1576541571564" />
+    <state x="2384" y="174" key="SettingsEditor" timestamp="1576554443237">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2384" y="174" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1576554443237" />
   </component>
   <component name="masterDetails">
     <states>

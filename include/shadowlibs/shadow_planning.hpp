@@ -11,6 +11,7 @@
  *  @brief Utility functions for planning and execution routines to control the
  * ShadowHand
  */
+
 namespace shadow_planning {
 /**
  * @brief Construct random target pose for a given planning group

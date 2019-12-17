@@ -20,29 +20,28 @@ std::ostream &operator<<(std::ostream &out, const geometry_msgs::Pose &pose);
  * @param joint_data The data vector to print
  * @return Output stream, so that we can chain further calls to operator<<
  */
-template<typename T>
-std::ostream &operator<<(std::ostream &out, const std::vector <T> &joint_data) {
-	for (T i:joint_data) {
-		out << i << " ";
-	}
-	out << "\n";
+template <typename T>
+std::ostream &operator<<(std::ostream &out, const std::vector<T> &joint_data) {
+  for (T i : joint_data) {
+    out << i << " ";
+  }
+  out << "\n";
 
-	return out;  // return std::ostream so we can chain calls to operator<<
+  return out; // return std::ostream so we can chain calls to operator<<
 };
 
 /**
- * @namespace shadow_utils shadow_utils.hpp "include/shadowlibs/shadow_utils.hpp"
- * @brief Contains various utility functions for RViz visualization, conversions,
- * transformations and robot controllers.
+ * @namespace shadow_utils shadow_utils.hpp
+ * "include/shadowlibs/shadow_utils.hpp"
+ * @brief Contains various utility functions for RViz visualization,
+ * conversions, transformations and robot controllers.
  */
 namespace shadow_utils {
 /**
  * @enum shadow_utils::SHAPE_PRIMITIVES
  * @brief Primitive shapes used for RViz objects
  */
-enum struct SHAPE_PRIMITIVES {
-  BOX, CYLINDER, CONE, SPHERE
-};
+enum struct SHAPE_PRIMITIVES { BOX, CYLINDER, CONE, SPHERE };
 
 /** @brief Conversion from YPR to Quaternion */
 Eigen::Quaternionf ypr2quat(float y, float p, float r);
@@ -56,7 +55,8 @@ inline double deg2rad(double deg) { return deg * M_PI / 180.0; };
 inline double rad2deg(double rad) { return rad * (180 / M_PI); };
 
 /**
- * @brief Create collision object for the planning scene, used by MoveIt planning
+ * @brief Create collision object for the planning scene, used by MoveIt
+ * planning
  * @param collision_obj The MoveIt collision object
  * @param primitive_id The ID of the collision object
  * @param primitive The primitive used by the collision object
@@ -64,14 +64,16 @@ inline double rad2deg(double rad) { return rad * (180 / M_PI); };
  * @param primitive_type The shape of the collision object
  * @param primitive_dims The dimension of the collision object
  */
-void createCollisionObjectFromPrimitive(moveit_msgs::CollisionObject &collision_obj, std::string primitive_id,
-										shape_msgs::SolidPrimitive &primitive, geometry_msgs::Pose &obj_pose,
-										shadow_utils::SHAPE_PRIMITIVES primitive_type,
-										const std::vector<double> &primitive_dims);
+void createCollisionObjectFromPrimitive(
+    moveit_msgs::CollisionObject &collision_obj, std::string primitive_id,
+    shape_msgs::SolidPrimitive &primitive, geometry_msgs::Pose &obj_pose,
+    shadow_utils::SHAPE_PRIMITIVES primitive_type,
+    const std::vector<double> &primitive_dims);
 
 /**
- * @brief Create attached object for the planning scene, used by MoveIt planning when attaching object to robot
- * This helps plan when an object is "attached" to the end of a robot, after grasping.
+ * @brief Create attached object for the planning scene, used by MoveIt planning
+ * when attaching object to robot This helps plan when an object is "attached"
+ * to the end of a robot, after grasping.
  * @param attached_obj The MoveIt attached collision object
  * @param primitive_id The ID of the attached object
  * @param primitive The primitive used by the attached object
@@ -79,10 +81,12 @@ void createCollisionObjectFromPrimitive(moveit_msgs::CollisionObject &collision_
  * @param primitive_type The shape of the attached object
  * @param primitive_dims The dimension of the attached object
  */
-void createAttachedObjectFromPrimitive(moveit_msgs::AttachedCollisionObject &attached_obj, std::string primitive_id,
-									   shape_msgs::SolidPrimitive &primitive, geometry_msgs::Pose &obj_pose,
-									   shadow_utils::SHAPE_PRIMITIVES primitive_type,
-									   const std::vector<double> &primitive_dims);
+void createAttachedObjectFromPrimitive(
+    moveit_msgs::AttachedCollisionObject &attached_obj,
+    std::string primitive_id, shape_msgs::SolidPrimitive &primitive,
+    geometry_msgs::Pose &obj_pose,
+    shadow_utils::SHAPE_PRIMITIVES primitive_type,
+    const std::vector<double> &primitive_dims);
 
 /**
  * @brief Add a collision object to the planning scene
@@ -91,8 +95,8 @@ void createAttachedObjectFromPrimitive(moveit_msgs::AttachedCollisionObject &att
  * @param planning_scene_diff_publisher The publisher for updating the scene
  */
 void addCollisionObjectToScene(moveit_msgs::CollisionObject &collision_obj,
-							   moveit_msgs::PlanningScene &planning_scene_msg,
-							   ros::Publisher &planning_scene_diff_publisher);
+                               moveit_msgs::PlanningScene &planning_scene_msg,
+                               ros::Publisher &planning_scene_diff_publisher);
 
 /**
  * @brief Add a collision object to the planning scene
@@ -100,9 +104,10 @@ void addCollisionObjectToScene(moveit_msgs::CollisionObject &collision_obj,
  * @param planning_scene_msg The PlanningScene to add object to
  * @param planning_scene_diff_publisher The publisher for updating the scene
  */
-void addAttachedObjectToScene(moveit_msgs::AttachedCollisionObject &attached_obj,
-							  moveit_msgs::PlanningScene &planning_scene_msg,
-							  ros::Publisher &planning_scene_diff_publisher);
+void addAttachedObjectToScene(
+    moveit_msgs::AttachedCollisionObject &attached_obj,
+    moveit_msgs::PlanningScene &planning_scene_msg,
+    ros::Publisher &planning_scene_diff_publisher);
 
 /**
  * @brief Move an existing collision object in the planning scene
@@ -111,9 +116,10 @@ void addAttachedObjectToScene(moveit_msgs::AttachedCollisionObject &attached_obj
  * @param planning_scene_msg The PlanningScene to add object to
  * @param planning_scene_diff_publisher The publisher for updating the scene
  */
-void moveCollisionObjectInScene(moveit_msgs::CollisionObject &collision_obj, geometry_msgs::Pose &obj_pose,
-								moveit_msgs::PlanningScene &planning_scene_msg,
-								ros::Publisher &planning_scene_diff_publisher);
+void moveCollisionObjectInScene(moveit_msgs::CollisionObject &collision_obj,
+                                geometry_msgs::Pose &obj_pose,
+                                moveit_msgs::PlanningScene &planning_scene_msg,
+                                ros::Publisher &planning_scene_diff_publisher);
 
 /**
  * @brief Attach a collision object to the robot
@@ -122,8 +128,8 @@ void moveCollisionObjectInScene(moveit_msgs::CollisionObject &collision_obj, geo
  * @param planning_scene_diff_publisher The publisher for updating the scene
  */
 void attachObjectToRobot(moveit_msgs::AttachedCollisionObject &attached_obj,
-						 moveit_msgs::PlanningScene &planning_scene_msg,
-						 ros::Publisher &planning_scene_diff_publisher);
+                         moveit_msgs::PlanningScene &planning_scene_msg,
+                         ros::Publisher &planning_scene_diff_publisher);
 
 /**
  * @brief Detach an attached collision object from the robot
@@ -132,22 +138,26 @@ void attachObjectToRobot(moveit_msgs::AttachedCollisionObject &attached_obj,
  * @param planning_scene_diff_publisher The publisher for updating the scene
  */
 void detachObjectFromRobot(moveit_msgs::AttachedCollisionObject &attached_obj,
-						   moveit_msgs::PlanningScene &planning_scene_msg,
-						   ros::Publisher &planning_scene_diff_publisher);
+                           moveit_msgs::PlanningScene &planning_scene_msg,
+                           ros::Publisher &planning_scene_diff_publisher);
 
 /**
  * @brief Remove all objects from the scene
  * @param planning_scene_interface The PlanningScene to remove objects from
  */
-void removeAllObjectsFromScene(moveit::planning_interface::PlanningSceneInterface &planning_scene_interface);
+void removeAllObjectsFromScene(
+    moveit::planning_interface::PlanningSceneInterface
+        &planning_scene_interface);
 
 /**
  * @brief Remove some object from the scene
  * @param planning_scene_interface The PlanningScene to remove objects from
  * @param obj_id The ID of the object to be removed
  */
-void removeCollisionObjectFromScene(moveit::planning_interface::PlanningSceneInterface &planning_scene_interface,
-									std::string obj_id);
+void removeCollisionObjectFromScene(
+    moveit::planning_interface::PlanningSceneInterface
+        &planning_scene_interface,
+    std::string obj_id);
 
 /**
  * @brief Generate ROS Pose from position and YPR
@@ -159,8 +169,8 @@ void removeCollisionObjectFromScene(moveit::planning_interface::PlanningSceneInt
  * @param pitch Pitch orientation
  * @param roll Roll orientation
  */
-void
-getPoseFromPositionYPR(geometry_msgs::Pose &pose, float x, float y, float z, float yaw, float pitch, float roll);
+void getPoseFromPositionYPR(geometry_msgs::Pose &pose, float x, float y,
+                            float z, float yaw, float pitch, float roll);
 
 /**
  * @brief Generate ROS Pose from position and quaternion
@@ -173,18 +183,21 @@ getPoseFromPositionYPR(geometry_msgs::Pose &pose, float x, float y, float z, flo
  * @param qz z quaternion
  * @param qw w quaternion
  */
-void
-getPoseFromPositionQuaternion(geometry_msgs::Pose &pose, float x, float y, float z, float qx, float qy, float qz,
-							  float qw);
+void getPoseFromPositionQuaternion(geometry_msgs::Pose &pose, float x, float y,
+                                   float z, float qx, float qy, float qz,
+                                   float qw);
 
 /** @overload */
-void getPoseFromPositionYPR(geometry_msgs::Pose &pose, float x, float y, float z, tf::Vector3 &v);
+void getPoseFromPositionYPR(geometry_msgs::Pose &pose, float x, float y,
+                            float z, tf::Vector3 &v);
 
 /** @overload */
-void getPoseFromPositionQuaternion(geometry_msgs::Pose &pose, float x, float y, float z, tf::Quaternion &q);
+void getPoseFromPositionQuaternion(geometry_msgs::Pose &pose, float x, float y,
+                                   float z, tf::Quaternion &q);
 
 /** @overload */
-void getPoseFromPositionQuaternion(geometry_msgs::Pose &pose, tf::StampedTransform &tf, tf::Quaternion &q);
+void getPoseFromPositionQuaternion(geometry_msgs::Pose &pose,
+                                   tf::StampedTransform &tf, tf::Quaternion &q);
 
 /**
  * @brief Get TF from parent and child frames
@@ -193,31 +206,36 @@ void getPoseFromPositionQuaternion(geometry_msgs::Pose &pose, tf::StampedTransfo
  * @param parent_frame The name of the parent frame
  * @param child_frame The name of the child frame
  */
-void getTfFromFrames(tf::TransformListener &listener, tf::StampedTransform &tf, std::string parent_frame,
-					 std::string child_frame);
+void getTfFromFrames(tf::TransformListener &listener, tf::StampedTransform &tf,
+                     std::string parent_frame, std::string child_frame);
 
 /**
- * @brief Get the name of the controller responsible for controlling the given joint name
+ * @brief Get the name of the controller responsible for controlling the given
+ * joint name
  * @param joint_name Name of joint to fetch controller for
  * @return Name of the controller publisher
  */
 std::string getControllerTopic(std::string &joint_name);
 
 /**
- * @brief Create a vector of publishers for each given joint name, using the ROS node handle
+ * @brief Create a vector of publishers for each given joint name, using the ROS
+ * node handle
  * @param joint_names Names of joints to create controllers for
  * @param n The ROS node handle
  * @return Vector of publishers for each joint given as input
  */
-std::vector <ros::Publisher>
-createJointControllerPublishers(std::vector <std::string> &joint_names, ros::NodeHandle &n);
+std::vector<ros::Publisher>
+createJointControllerPublishers(std::vector<std::string> &joint_names,
+                                ros::NodeHandle &n);
 
 /**
- * @brief Broadcasts a transform from the wrist to given frame, which can be used for planning targets for finger
+ * @brief Broadcasts a transform from the wrist to given frame, which can be
+ * used for planning targets for finger
  * @param xyzrpy The pose of the transform
  * @param frame_name The frame name of the transform
  */
-void broadcastTransformForGrasp(std::vector<double> xyzrpy, const std::string frame_name);
+void broadcastTransformForGrasp(std::vector<double> xyzrpy,
+                                const std::string frame_name);
 
 /**
  * @brief Get the pose between two frames
@@ -225,12 +243,14 @@ void broadcastTransformForGrasp(std::vector<double> xyzrpy, const std::string fr
  * @param child_frame The child frame
  * @return The pose between parent and child frames
  */
-geometry_msgs::Pose getPoseBetweenFrames(const std::string parent_frame, const std::string child_frame);
+geometry_msgs::Pose getPoseBetweenFrames(const std::string parent_frame,
+                                         const std::string child_frame);
 
 /**
- * @brief Creates a RobotState using the inverse kinematics solver, given a target pose.
- * Uses a service call to the "compute_ik" service to obtain the joint angles needed for the given
- * MoveGroup to reach the specified target pose.
+ * @brief Creates a RobotState using the inverse kinematics solver, given a
+ * target pose. Uses a service call to the "compute_ik" service to obtain the
+ * joint angles needed for the given MoveGroup to reach the specified target
+ * pose.
  * @see http://docs.ros.org/kinetic/api/moveit_msgs/html/msg/RobotState.html
  * @see http://docs.ros.org/kinetic/api/moveit_msgs/html/srv/GetPositionIK.html
  * @param move_group_interface The MoveGroup to compute RobotState for
@@ -239,21 +259,25 @@ geometry_msgs::Pose getPoseBetweenFrames(const std::string parent_frame, const s
  * @param target_pose The target pose to compute joint angles for
  * @return The RobotState computed by the IK service
  */
-moveit_msgs::RobotState computeJointsFromPose(moveit::planning_interface::MoveGroupInterface &move_group_interface,
-											  double timeout, int num_attempts,
-											  geometry_msgs::Pose &target_pose);
+moveit_msgs::RobotState computeJointsFromPose(
+    moveit::planning_interface::MoveGroupInterface &move_group_interface,
+    double timeout, int num_attempts, geometry_msgs::Pose &target_pose);
 
 /**
- * @brief Starts trajectory controller for arm or hand, using ControllerManager service call
+ * @brief Starts trajectory controller for arm or hand, using ControllerManager
+ * service call
  * @param n - ROS node handle
- * @param controller_name - Name of controller, arm or hand (rh_trajectory_controller OR ra_trajectory_controller)
+ * @param controller_name - Name of controller, arm or hand
+ * (rh_trajectory_controller OR ra_trajectory_controller)
  */
 void startTrajectoryController(ros::NodeHandle n, std::string controller_name);
 
 /**
- * @brief Stops trajectory controller for arm or hand, using ControllerManager service call
+ * @brief Stops trajectory controller for arm or hand, using ControllerManager
+ * service call
  * @param n - ROS node handle
- * @param controller_name - Name of controller, arm or hand (rh_trajectory_controller OR ra_trajectory_controller)
+ * @param controller_name - Name of controller, arm or hand
+ * (rh_trajectory_controller OR ra_trajectory_controller)
  */
 void stopTrajectoryController(ros::NodeHandle n, std::string controller_name);
-};
+}; // namespace shadow_utils

@@ -6,6 +6,7 @@
 
 // ROS
 #include <actionlib/client/simple_action_client.h>
+#include <controller_manager_msgs/SwitchController.h>
 #include <geometry_msgs/Pose.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <pluginlib/class_loader.h>
@@ -19,7 +20,6 @@
 #include <tf/transform_listener.h>
 #include <trajectory_msgs/JointTrajectory.h>
 #include <trajectory_msgs/JointTrajectoryPoint.h>
-#include <controller_manager_msgs/SwitchController.h>
 
 // MoveIt
 #include <moveit/robot_model/robot_model.h>
@@ -49,19 +49,20 @@
 #include <moveit_msgs/PositionIKRequest.h>
 
 // BioTac
-#include <sr_robot_msgs/BiotacAll.h>
 #include <sr_robot_msgs/Biotac.h>
+#include <sr_robot_msgs/BiotacAll.h>
 
 // CPP
+#include "../shadowlibs/prettyprint.hpp"
+#include "../shadowlibs/shadow_planning_options.hpp"
 #include <Eigen/Dense>
 #include <Eigen/Geometry>
 #include <algorithm>
 #include <boost/scoped_ptr.hpp>
 #include <cmath>
-#include <iostream>
-#include <tuple>
-#include <map>
-#include <string>
 #include <functional>
 #include <future>
-#include "../shadowlibs/prettyprint.hpp"
+#include <iostream>
+#include <map>
+#include <string>
+#include <tuple>
