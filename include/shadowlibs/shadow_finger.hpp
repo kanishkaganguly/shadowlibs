@@ -233,19 +233,19 @@ struct Finger {
    * @brief Get populated struct containing BioTac pressure data
    * @return shadow_finger::Finger::BioTac struct
    */
-  shadow_finger::Finger::BioTac getBiotacPressure();
+  shadow_finger::Finger::BioTac getBioTacPressure();
 
   /**
    * @brief Get populated struct containing BioTac impedance data
    * @return shadow_finger::Finger::BioTac struct
    */
-  shadow_finger::Finger::BioTac getBiotacImpedance();
+  shadow_finger::Finger::BioTac getBioTacImpedance();
 
   /**
    * @brief Get populated struct containing BioTac pressure and impedance data
    * @return shadow_finger::Finger::BioTac struct
    */
-  shadow_finger::Finger::BioTac getBiotacImpedancePressure();
+  shadow_finger::Finger::BioTac getBioTacImpedancePressure();
 };
 
 /** @overload */
