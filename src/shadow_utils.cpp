@@ -296,6 +296,7 @@ std::string shadow_utils::getControllerTopic(std::string &joint_name) {
   // We need to replace J1 and J2 with J0 for all fingers except thumb
   // This is due to coupling on the hardware simulator, and needs to be removed
   // for actual hardware
+  // Set rosparam is_sim = true/false to toggle simulation-based coupling
   std::size_t check_not_thumb = formatted_joint_name.find("th");
   std::size_t check_not_wrist = formatted_joint_name.find("wr");
   std::string out;
@@ -304,6 +305,7 @@ std::string shadow_utils::getControllerTopic(std::string &joint_name) {
   if (check_not_thumb == std::string::npos &&
       check_not_wrist == std::string::npos) {
     if (is_sim) {
+      ROS_WARN("In simulation mode, simulating joint coupling.");
       std::size_t check_j1 = formatted_joint_name.find("j1");
       std::size_t check_j2 = formatted_joint_name.find("j2");
       if (check_j1 != std::string::npos) {
@@ -332,8 +334,7 @@ std::vector<ros::Publisher> shadow_utils::createJointControllerPublishers(
     // Advertise topic
     controller_target_pub =
         n.advertise<std_msgs::Float64>(controller_name.c_str(), 1000);
-    ROS_INFO_STREAM(
-        "Initializing joint controller publisher: " << controller_name);
+    ROS_INFO("Initializing joint controller publisher: %s", controller_target_pub.getTopic().c_str());
     // Push back the publisher
     joint_controller_pubs.emplace_back(controller_target_pub);
   }
