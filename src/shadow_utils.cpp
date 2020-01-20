@@ -300,12 +300,8 @@ std::string shadow_utils::getControllerTopic(std::string &joint_name) {
   std::size_t check_not_thumb = formatted_joint_name.find("th");
   std::size_t check_not_wrist = formatted_joint_name.find("wr");
   std::string out;
-  bool is_sim;
-  ros::param::param<bool>("is_sim", is_sim, true);
   if (check_not_thumb == std::string::npos &&
       check_not_wrist == std::string::npos) {
-    if (is_sim) {
-      ROS_WARN("In simulation mode, simulating joint coupling.");
       std::size_t check_j1 = formatted_joint_name.find("j1");
       std::size_t check_j2 = formatted_joint_name.find("j2");
       if (check_j1 != std::string::npos) {
@@ -313,7 +309,6 @@ std::string shadow_utils::getControllerTopic(std::string &joint_name) {
       } else if (check_j2 != std::string::npos) {
         formatted_joint_name.replace(check_j2, 2, "j0");
       }
-    }
     out = "/sh_rh_" + formatted_joint_name + "_position_controller/command";
   } else {
     out = "/sh_rh_" + formatted_joint_name + "_position_controller/command";

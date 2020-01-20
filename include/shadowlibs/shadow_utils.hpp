@@ -49,10 +49,12 @@ Eigen::Quaternionf ypr2quat(float y, float p, float r);
 void quat2ypr(tf::Quaternion &q, double &r, double &p, double &y);
 
 /** @brief Conversion from degree to radians */
-inline double deg2rad(double deg) { return deg * M_PI / 180.0; };
+template<typename F>
+inline F deg2rad(F deg) { return deg * M_PI / 180.0; };
 
 /** @brief Conversion from radians to degrees */
-inline double rad2deg(double rad) { return rad * (180 / M_PI); };
+template<typename F>
+inline F rad2deg(F rad) { return rad * (180.0 / M_PI); };
 
 /**
  * @brief Create collision object for the planning scene, used by MoveIt
