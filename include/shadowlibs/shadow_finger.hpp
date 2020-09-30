@@ -181,6 +181,11 @@ struct Finger {
    * finger
    */
   std::vector<ros::Publisher> _joint_controller_publishers;
+  /**
+   * @var _fsr_topic
+   * @brief Subscriber topic for getting FSR data for finger
+   */
+  std::string _fsr_topic;
 
   /**
    * @brief Constructor for each finger. Requires name of finger and a ROS node
@@ -198,6 +203,14 @@ struct Finger {
                                                       _node_handle);
     _biotac_id = shadow_finger::getBiotacIdx(_finger_name);
     _joint_limits = shadow_finger::getFingerJointLimits(_joint_names);
+
+    // Set FSR topic
+    if (_finger_name != "thumb") {
+      this->_fsr_topic = std::string(1, this->_finger_name.front()) + "f_fsr";
+    } else {
+      this->_fsr_topic = "th_fsr";
+    }
+
     ROS_INFO_STREAM("Initialized Finger: " << _finger_name);
   };
 
@@ -246,6 +259,11 @@ struct Finger {
    * @return shadow_finger::Finger::BioTac struct
    */
   shadow_finger::Finger::BioTac getBioTacImpedancePressure();
+
+  /**
+   * @brief Get FSR value
+   */
+  float getFSRValue();
 };
 
 /** @overload */

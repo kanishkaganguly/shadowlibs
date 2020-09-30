@@ -15,6 +15,7 @@
 #include <ros/ros.h>
 #include <ros/topic_manager.h>
 #include <sensor_msgs/JointState.h>
+#include <std_msgs/Float32.h>
 #include <std_msgs/Float64.h>
 #include <tf/transform_broadcaster.h>
 #include <tf/transform_listener.h>
