@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;actionlib/client/simple_action_client.h&gt;</code><br />
+<code>#include &lt;controller_manager_msgs/SwitchController.h&gt;</code><br />
 <code>#include &lt;geometry_msgs/Pose.h&gt;</code><br />
 <code>#include &lt;geometry_msgs/PoseStamped.h&gt;</code><br />
 <code>#include &lt;pluginlib/class_loader.h&gt;</code><br />
@@ -98,12 +99,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;ros/ros.h&gt;</code><br />
 <code>#include &lt;ros/topic_manager.h&gt;</code><br />
 <code>#include &lt;sensor_msgs/JointState.h&gt;</code><br />
+<code>#include &lt;std_msgs/Float32.h&gt;</code><br />
 <code>#include &lt;std_msgs/Float64.h&gt;</code><br />
 <code>#include &lt;tf/transform_broadcaster.h&gt;</code><br />
 <code>#include &lt;tf/transform_listener.h&gt;</code><br />
 <code>#include &lt;trajectory_msgs/JointTrajectory.h&gt;</code><br />
 <code>#include &lt;trajectory_msgs/JointTrajectoryPoint.h&gt;</code><br />
-<code>#include &lt;controller_manager_msgs/SwitchController.h&gt;</code><br />
 <code>#include &lt;moveit/robot_model/robot_model.h&gt;</code><br />
 <code>#include &lt;moveit/robot_model_loader/robot_model_loader.h&gt;</code><br />
 <code>#include &lt;moveit/robot_state/robot_state.h&gt;</code><br />
@@ -121,24 +122,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;moveit/kinematic_constraints/utils.h&gt;</code><br />
 <code>#include &lt;moveit_msgs/GetPositionIK.h&gt;</code><br />
 <code>#include &lt;moveit_msgs/PositionIKRequest.h&gt;</code><br />
-<code>#include &lt;sr_robot_msgs/BiotacAll.h&gt;</code><br />
 <code>#include &lt;sr_robot_msgs/Biotac.h&gt;</code><br />
+<code>#include &lt;sr_robot_msgs/BiotacAll.h&gt;</code><br />
+<code>#include &quot;../shadowlibs/prettyprint.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="shadow__planning__options_8hpp_source.html">../shadowlibs/shadow_planning_options.hpp</a>&quot;</code><br />
 <code>#include &lt;Eigen/Dense&gt;</code><br />
 <code>#include &lt;Eigen/Geometry&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;boost/scoped_ptr.hpp&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;tuple&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;future&gt;</code><br />
-<code>#include &quot;../shadowlibs/prettyprint.hpp&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for shadow_imports.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="shadow__imports_8hpp__incl.png" border="0" usemap="#_2home_2user_2workspace_2src_2shadowlibs_2include_2shadowlibs_2shadow__imports_8hpp" alt=""/></div>
+<map name="_2home_2user_2workspace_2src_2shadowlibs_2include_2shadowlibs_2shadow__imports_8hpp" id="_2home_2user_2workspace_2src_2shadowlibs_2include_2shadowlibs_2shadow__imports_8hpp">
+<area shape="rect" id="node38" href="shadow__planning__options_8hpp.html" title="../shadowlibs/shadow\l_planning_options.hpp" alt="" coords="6754,117,6905,158"/>
+</map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>

@@ -4,6 +4,7 @@ var searchData=
   ['_5ffinger_5fmove_5fgroup',['_finger_move_group',['../structshadow__finger_1_1Finger.html#ab0e2fe9e3043dc84624a03114c6399e1',1,'shadow_finger::Finger']]],
   ['_5ffinger_5fname',['_finger_name',['../structshadow__finger_1_1Finger.html#a7018ccd01ddac21a13ceebc3d23127ef',1,'shadow_finger::Finger']]],
   ['_5ffingervec',['_fingerVec',['../classshadow__hand_1_1Hand.html#a7d81b5eb146e5c391efc6de31776f148',1,'shadow_hand::Hand']]],
+  ['_5ffsr_5ftopic',['_fsr_topic',['../structshadow__finger_1_1Finger.html#a70e55c23fccee74dc0fa1c20dafc967f',1,'shadow_finger::Finger']]],
   ['_5fjoint_5fcontroller_5fpublishers',['_joint_controller_publishers',['../structshadow__finger_1_1Finger.html#aab4b8ef7f8c642a15571669f1ff19751',1,'shadow_finger::Finger']]],
   ['_5fjoint_5flimits',['_joint_limits',['../structshadow__finger_1_1Finger.html#a43426f61d08acbc71b4d4183c9741639',1,'shadow_finger::Finger']]],
   ['_5fjoint_5fnames',['_joint_names',['../structshadow__finger_1_1Finger.html#a9201462b5a3f1af9f8df65fe91afac0c',1,'shadow_finger::Finger']]],

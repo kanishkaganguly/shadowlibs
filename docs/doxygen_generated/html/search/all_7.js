@@ -1,12 +1,13 @@
 var searchData=
 [
   ['getbiotacidx',['getBiotacIdx',['../namespaceshadow__finger.html#a50671123b0ef4c4ad1a1f7cf8b9efc81',1,'shadow_finger']]],
-  ['getbiotacimpedance',['getBiotacImpedance',['../structshadow__finger_1_1Finger.html#ab51a07854b3a766f997e3c9350d9889a',1,'shadow_finger::Finger']]],
-  ['getbiotacimpedancepressure',['getBiotacImpedancePressure',['../structshadow__finger_1_1Finger.html#a557e04a15bc5032d6cccfd91eb0ef9de',1,'shadow_finger::Finger']]],
-  ['getbiotacpressure',['getBiotacPressure',['../structshadow__finger_1_1Finger.html#a8c650813af4ecb93c463c6cc02b6a526',1,'shadow_finger::Finger']]],
+  ['getbiotacimpedance',['getBioTacImpedance',['../structshadow__finger_1_1Finger.html#a96ee2d7f42968ac7a1016799fd25c75e',1,'shadow_finger::Finger']]],
+  ['getbiotacimpedancepressure',['getBioTacImpedancePressure',['../structshadow__finger_1_1Finger.html#a8389338b2651d447ffd527c38f83cb70',1,'shadow_finger::Finger']]],
+  ['getbiotacpressure',['getBioTacPressure',['../structshadow__finger_1_1Finger.html#a77fbeca7aeb792cca2591dcb1cb2d1d5',1,'shadow_finger::Finger']]],
   ['getcontrollertopic',['getControllerTopic',['../namespaceshadow__utils.html#ad9ef1120dc56ac2896fc5441d32a3b26',1,'shadow_utils']]],
   ['getfingerjointlimits',['getFingerJointLimits',['../namespaceshadow__finger.html#a6b752ac496f32f7a82545277a7de9f08',1,'shadow_finger']]],
   ['getfingers',['getFingers',['../classshadow__hand_1_1Hand.html#a3e2827b6b9304fc97551a0f5c35970b6',1,'shadow_hand::Hand']]],
+  ['getfsrvalue',['getFSRValue',['../structshadow__finger_1_1Finger.html#a9f69194c2bce2a0297041cd1981b9551',1,'shadow_finger::Finger']]],
   ['getjointnames',['getJointNames',['../namespaceshadow__finger.html#ad7df68d80721f9e6cf716d92d4f7c34c',1,'shadow_finger::getJointNames(moveit::planning_interface::MoveGroupInterface &amp;move_group_interface)'],['../namespaceshadow__finger.html#a79ef225725ecb0a0a9d73fc4f5bae301',1,'shadow_finger::getJointNames(moveit::planning_interface::MoveGroupInterface::Plan &amp;plan)'],['../namespaceshadow__finger.html#a1f42333c0bb2e52273f8b204f9e8189b',1,'shadow_finger::getJointNames(shadow_finger::Finger &amp;finger)']]],
   ['getjointvalues',['getJointValues',['../namespaceshadow__finger.html#a1cf1130f745f27bf735124ee0ba404af',1,'shadow_finger::getJointValues(moveit::planning_interface::MoveGroupInterface &amp;move_group_interface)'],['../namespaceshadow__finger.html#af8301d69a48964cb0f54e140a1ae0489',1,'shadow_finger::getJointValues(shadow_finger::Finger &amp;finger)']]],
   ['getmovegroupname',['getMoveGroupName',['../namespaceshadow__finger.html#a0d9b0145e3c9252b0a010f1bde2a00e6',1,'shadow_finger']]],

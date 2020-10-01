@@ -110,12 +110,14 @@ Functions</h2></td></tr>
 <tr class="memitem:aaa5a641eecb4c6c899d058619a2d0f7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#aaa5a641eecb4c6c899d058619a2d0f7a">quat2ypr</a> (tf::Quaternion &amp;q, double &amp;r, double &amp;p, double &amp;y)</td></tr>
 <tr class="memdesc:aaa5a641eecb4c6c899d058619a2d0f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion from Quaternion to YPR.  <a href="#aaa5a641eecb4c6c899d058619a2d0f7a">More...</a><br /></td></tr>
 <tr class="separator:aaa5a641eecb4c6c899d058619a2d0f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabe9d4fc60efb5abfd9553e52892b950"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#aabe9d4fc60efb5abfd9553e52892b950">deg2rad</a> (double deg)</td></tr>
-<tr class="memdesc:aabe9d4fc60efb5abfd9553e52892b950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion from degree to radians.  <a href="#aabe9d4fc60efb5abfd9553e52892b950">More...</a><br /></td></tr>
-<tr class="separator:aabe9d4fc60efb5abfd9553e52892b950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a413f32e074ddc1b92feaf9f0e3d9aea9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a413f32e074ddc1b92feaf9f0e3d9aea9">rad2deg</a> (double rad)</td></tr>
-<tr class="memdesc:a413f32e074ddc1b92feaf9f0e3d9aea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion from radians to degrees.  <a href="#a413f32e074ddc1b92feaf9f0e3d9aea9">More...</a><br /></td></tr>
-<tr class="separator:a413f32e074ddc1b92feaf9f0e3d9aea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d453fcef8ac7fb6866763eaf0396c3"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a04d453fcef8ac7fb6866763eaf0396c3"><td class="memTemplItemLeft" align="right" valign="top">F&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a04d453fcef8ac7fb6866763eaf0396c3">deg2rad</a> (F deg)</td></tr>
+<tr class="memdesc:a04d453fcef8ac7fb6866763eaf0396c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion from degree to radians.  <a href="#a04d453fcef8ac7fb6866763eaf0396c3">More...</a><br /></td></tr>
+<tr class="separator:a04d453fcef8ac7fb6866763eaf0396c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac911ab254e52a1584aaeb8f44711e0cd"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:ac911ab254e52a1584aaeb8f44711e0cd"><td class="memTemplItemLeft" align="right" valign="top">F&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#ac911ab254e52a1584aaeb8f44711e0cd">rad2deg</a> (F rad)</td></tr>
+<tr class="memdesc:ac911ab254e52a1584aaeb8f44711e0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion from radians to degrees.  <a href="#ac911ab254e52a1584aaeb8f44711e0cd">More...</a><br /></td></tr>
+<tr class="separator:ac911ab254e52a1584aaeb8f44711e0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4da03bcd77ed4dd26ee88c43744a9399"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshadow__utils.html#a4da03bcd77ed4dd26ee88c43744a9399">createCollisionObjectFromPrimitive</a> (moveit_msgs::CollisionObject &amp;collision_obj, std::string primitive_id, shape_msgs::SolidPrimitive &amp;primitive, geometry_msgs::Pose &amp;obj_pose, <a class="el" href="namespaceshadow__utils.html#a9eb0714da02c4df274c506170666fcaf">shadow_utils::SHAPE_PRIMITIVES</a> primitive_type, const std::vector&lt; double &gt; &amp;primitive_dims)</td></tr>
 <tr class="memdesc:a4da03bcd77ed4dd26ee88c43744a9399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create collision object for the planning scene, used by MoveIt planning.  <a href="#a4da03bcd77ed4dd26ee88c43744a9399">More...</a><br /></td></tr>
 <tr class="separator:a4da03bcd77ed4dd26ee88c43744a9399"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -593,17 +595,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aabe9d4fc60efb5abfd9553e52892b950"></a>
+<a class="anchor" id="a04d453fcef8ac7fb6866763eaf0396c3"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double shadow_utils::deg2rad </td>
+          <td class="memname">F shadow_utils::deg2rad </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">F&#160;</td>
           <td class="paramname"><em>deg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1130,17 +1134,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a413f32e074ddc1b92feaf9f0e3d9aea9"></a>
+<a class="anchor" id="ac911ab254e52a1584aaeb8f44711e0cd"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double shadow_utils::rad2deg </td>
+          <td class="memname">F shadow_utils::rad2deg </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">F&#160;</td>
           <td class="paramname"><em>rad</em></td><td>)</td>
           <td></td>
         </tr>
