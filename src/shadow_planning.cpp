@@ -75,7 +75,7 @@ bool shadow_planning::planToNamedTarget(shadow_finger::Finger &finger,
 bool shadow_planning::planToPoseTarget(
     shadow_planning::PlanningOptions &options,
     moveit::planning_interface::MoveGroupInterface &move_group_interface,
-    geometry_msgs::Pose &target_pose, std::string &reference_frame,
+    geometry_msgs::Pose &target_pose, std::string &reference_frame = "",
     moveit::planning_interface::MoveGroupInterface::Plan &plan,
     std::string &end_effector_name) {
   move_group_interface.clearPoseTargets();

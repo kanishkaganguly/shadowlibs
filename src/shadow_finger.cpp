@@ -58,8 +58,12 @@ float shadow_finger::Finger::getFSRValue() {
   try {
     std_msgs::Float32ConstPtr curr_fsr_data =
         ros::topic::waitForMessage<std_msgs::Float32>(
-            this->_fsr_topic, this->_node_handle, ros::Duration(1));
-    return curr_fsr_data->data;
+            this->_fsr_topic, this->_node_handle, ros::Duration(10));
+    if (curr_fsr_data) {
+      return curr_fsr_data->data;
+    } else {
+      return 0.0;
+    }
   } catch (std::exception e) {
     ROS_ERROR("Did not get message in time");
     return 0.0;
