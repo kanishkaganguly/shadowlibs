@@ -75,17 +75,21 @@ bool shadow_planning::planToNamedTarget(shadow_finger::Finger &finger,
 bool shadow_planning::planToPoseTarget(
     shadow_planning::PlanningOptions &options,
     moveit::planning_interface::MoveGroupInterface &move_group_interface,
-    geometry_msgs::Pose &target_pose, std::string &reference_frame = "",
+    geometry_msgs::Pose &target_pose, std::string &reference_frame,
     moveit::planning_interface::MoveGroupInterface::Plan &plan,
     std::string &end_effector_name) {
   move_group_interface.clearPoseTargets();
-  move_group_interface.setPoseReferenceFrame(reference_frame);
   move_group_interface.setPlanningTime(options.set_planning_time);
   move_group_interface.allowReplanning(options.allow_replanning);
   move_group_interface.setNumPlanningAttempts(options.num_attempts);
   move_group_interface.setStartState(*move_group_interface.getCurrentState());
   move_group_interface.setPoseTarget(target_pose);
-  move_group_interface.setEndEffector(end_effector_name + "_ee");
+  if (reference_frame != "") {
+    move_group_interface.setPoseReferenceFrame(reference_frame);
+  }
+  if (end_effector_name != "") {
+    move_group_interface.setEndEffector(end_effector_name + "_ee");
+  }
   move_group_interface.setPlannerId("TRRTkConfigDefault");
   ROS_INFO("Planning for: %s", move_group_interface.getEndEffector().c_str());
 
@@ -162,7 +166,8 @@ bool shadow_planning::executePlan(
   std_msgs::Float64 control_target;
   ros::Rate loop_rate(250);
   // trajectoryPoints.size() is the total number of points in the trajectory
-  // Each JointTrajectoryPoint has jointNames.size() values, one for each joint
+  // Each JointTrajectoryPoint has jointNames.size() values, one for each
+  // joint
   for (auto &trajectoryPoint : trajectoryPoints) {
     for (int j = 0; j < jointNames.size(); j++) {
       // MoveIt plans give joint order in reverse order
@@ -210,7 +215,8 @@ bool shadow_planning::executePlan(shadow_finger::Finger &finger) {
   std_msgs::Float64 control_target;
   ros::Rate loop_rate(250);
   // trajectoryPoints.size() is the total number of points in the trajectory
-  // Each JointTrajectoryPoint has jointNames.size() values, one for each joint
+  // Each JointTrajectoryPoint has jointNames.size() values, one for each
+  // joint
   for (auto &trajectoryPoint : trajectoryPoints) {
     for (int j = 0; j < jointNames.size(); j++) {
       // MoveIt plans give joint order in reverse order
