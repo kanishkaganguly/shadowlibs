@@ -189,9 +189,9 @@ void shadow_planning::moveFingerJoints(shadow_finger::Finger &finger,
   for (int i = 0; i < targetJointAngles.size(); i++) {
     control_target.data = targetJointAngles[i];
 
-    // ROS_INFO("%s --> %s --> %f", joint_names[i].c_str(),
-    // finger._joint_controller_publishers[i].getTopic().c_str(),
-    // targetJointAngles[i]);
+    ROS_INFO("%s --> %s --> %f", joint_names[i].c_str(),
+             finger._joint_controller_publishers[i].getTopic().c_str(),
+             targetJointAngles[i]);
 
     finger._joint_controller_publishers[i].publish(control_target);
     ros::Duration(0.5).sleep();
