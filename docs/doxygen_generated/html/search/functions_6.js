@@ -6,6 +6,7 @@ var searchData=
   ['getbiotacpressure',['getBioTacPressure',['../structshadow__finger_1_1Finger.html#a77fbeca7aeb792cca2591dcb1cb2d1d5',1,'shadow_finger::Finger']]],
   ['getcontrollertopic',['getControllerTopic',['../namespaceshadow__utils.html#ad9ef1120dc56ac2896fc5441d32a3b26',1,'shadow_utils']]],
   ['getfingerjointlimits',['getFingerJointLimits',['../namespaceshadow__finger.html#a6b752ac496f32f7a82545277a7de9f08',1,'shadow_finger']]],
+  ['getfingername',['getFingerName',['../structshadow__finger_1_1Finger.html#a6f79b189a87bd3534ecb0444b6e1a80a',1,'shadow_finger::Finger']]],
   ['getfingers',['getFingers',['../classshadow__hand_1_1Hand.html#a3e2827b6b9304fc97551a0f5c35970b6',1,'shadow_hand::Hand']]],
   ['getfsrvalue',['getFSRValue',['../structshadow__finger_1_1Finger.html#a9f69194c2bce2a0297041cd1981b9551',1,'shadow_finger::Finger']]],
   ['getjointnames',['getJointNames',['../namespaceshadow__finger.html#ad7df68d80721f9e6cf716d92d4f7c34c',1,'shadow_finger::getJointNames(moveit::planning_interface::MoveGroupInterface &amp;move_group_interface)'],['../namespaceshadow__finger.html#a79ef225725ecb0a0a9d73fc4f5bae301',1,'shadow_finger::getJointNames(moveit::planning_interface::MoveGroupInterface::Plan &amp;plan)'],['../namespaceshadow__finger.html#a1f42333c0bb2e52273f8b204f9e8189b',1,'shadow_finger::getJointNames(shadow_finger::Finger &amp;finger)']]],

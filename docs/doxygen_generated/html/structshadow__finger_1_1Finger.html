@@ -120,6 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abd4128eeb7fc117c9783fff5011073be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshadow__finger_1_1Finger.html#abd4128eeb7fc117c9783fff5011073be">Finger</a> (std::string &amp;finger_name, ros::NodeHandle &amp;node_handle)</td></tr>
 <tr class="memdesc:abd4128eeb7fc117c9783fff5011073be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for each finger. Requires name of finger and a ROS node handle reference. Everything else is populated by constructor.  <a href="#abd4128eeb7fc117c9783fff5011073be">More...</a><br /></td></tr>
 <tr class="separator:abd4128eeb7fc117c9783fff5011073be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f79b189a87bd3534ecb0444b6e1a80a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshadow__finger_1_1Finger.html#a6f79b189a87bd3534ecb0444b6e1a80a">getFingerName</a> ()</td></tr>
+<tr class="memdesc:a6f79b189a87bd3534ecb0444b6e1a80a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function for finger name.  <a href="#a6f79b189a87bd3534ecb0444b6e1a80a">More...</a><br /></td></tr>
+<tr class="separator:a6f79b189a87bd3534ecb0444b6e1a80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab53873d8904cc4058a7080414cb85fcd"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshadow__finger_1_1Finger.html#ab53873d8904cc4058a7080414cb85fcd">jointLimitsFromName</a> (std::string &amp;joint_name)</td></tr>
 <tr class="memdesc:ab53873d8904cc4058a7080414cb85fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joint limits from joint name, from vector of tuples populated by <a class="el" href="namespaceshadow__finger.html#a6b752ac496f32f7a82545277a7de9f08" title="Get limits of each joint in given vector of joint names. This is obtained from the /robot_description...">getFingerJointLimits()</a>  <a href="#ab53873d8904cc4058a7080414cb85fcd">More...</a><br /></td></tr>
 <tr class="separator:ab53873d8904cc4058a7080414cb85fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,6 +269,32 @@ Public Attributes</h2></td></tr>
 
 <p>Get populated struct containing <a class="el" href="structshadow__finger_1_1Finger_1_1BioTac.html" title="Utility struct for managing the BioTac sensor attached to each finger. Holds the pressure and impedan...">BioTac</a> pressure data. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="structshadow__finger_1_1Finger_1_1BioTac.html" title="Utility struct for managing the BioTac sensor attached to each finger. Holds the pressure and impedan...">shadow_finger::Finger::BioTac</a> struct </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6f79b189a87bd3534ecb0444b6e1a80a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string shadow_finger::Finger::getFingerName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Getter function for finger name. </p>
+<dl class="section return"><dt>Returns</dt><dd>String with the finger name </dd></dl>
 
 </div>
 </div>

@@ -215,6 +215,12 @@ struct Finger {
   };
 
   /**
+   * @brief Getter function for finger name
+   * @return String with the finger name
+   */
+  inline std::string getFingerName() { return _finger_name; }
+
+  /**
    * @brief Get joint limits from joint name, from vector of tuples populated by
    * getFingerJointLimits()
    * @param joint_name Name of the joint whose limits are to be fetched
@@ -280,3 +286,9 @@ inline std::vector<double> getJointValues(shadow_finger::Finger &finger) {
   return joint_vals;
 }
 } // namespace shadow_finger
+
+inline std::ostream &operator<<(std::ostream &os,
+                                const shadow_finger::Finger &finger) {
+  os << finger._finger_name << '\n';
+  return os;
+}
