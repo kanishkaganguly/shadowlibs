@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ypr2quat',['ypr2quat',['../namespaceshadow__utils.html#a289bac7dbccf0658450030e7b3c861d9',1,'shadow_utils']]]
+  ['velocity_5fscaling_5ffactor',['velocity_scaling_factor',['../structshadow__planning_1_1PlanningOptions.html#a38cf1f5473c0fc488c79637f40055b2c',1,'shadow_planning::PlanningOptions']]]
 ];
