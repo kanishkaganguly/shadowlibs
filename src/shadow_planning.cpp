@@ -82,6 +82,10 @@ bool shadow_planning::planToPoseTarget(
   move_group_interface.setPlanningTime(options.set_planning_time);
   move_group_interface.allowReplanning(options.allow_replanning);
   move_group_interface.setNumPlanningAttempts(options.num_attempts);
+  move_group_interface.setMaxAccelerationScalingFactor(
+      options.acceleration_scaling_factor);
+  move_group_interface.setMaxVelocityScalingFactor(
+      options.velocity_scaling_factor);
   move_group_interface.setStartState(*move_group_interface.getCurrentState());
   move_group_interface.setPoseTarget(target_pose);
   if (reference_frame != "") {

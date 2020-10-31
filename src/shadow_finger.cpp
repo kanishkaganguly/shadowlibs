@@ -60,7 +60,8 @@ float shadow_finger::Finger::getFSRValue() {
         ros::topic::waitForMessage<std_msgs::Float32>(
             this->_fsr_topic, this->_node_handle, ros::Duration(10));
     if (curr_fsr_data) {
-      return curr_fsr_data->data;
+      float fsr_data = curr_fsr_data->data;
+      return fsr_data;
     } else {
       return 0.0;
     }
