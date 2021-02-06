@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
 		moveit_ros_planning moveit_ros_planning_interface moveit_core moveit_visual_tools
 		kdl_parser
 		sr_robot_msgs
+		sr_mechanism_controllers pluginlib ros_ethercat_model realtime_tools controller_interface
 		)
 
 # ========================== Find Eigen ========================================================= #
@@ -78,8 +79,9 @@ catkin_package(
 		tf roscpp rospy actionlib interactive_markers
 		moveit_ros_planning moveit_ros_planning_interface moveit_core moveit_visual_tools
 		sr_robot_msgs
+		sr_mechanism_controllers pluginlib ros_ethercat_model realtime_tools controller_interface
 		DEPENDS Boost
-		LIBRARIES ${PROJECT_NAME}
+		LIBRARIES ${PROJECT_NAME} shadow_realtime_controllers
 )
 
 # ========================== Include headers ==================================================== #
@@ -94,6 +96,7 @@ include_directories(
 file(GLOB lib_src ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
 add_library(${PROJECT_NAME} ${lib_src})
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+add_library(shadow_realtime_controllers src/shadow_realtime_controller.cpp)
 
 # ========================== Setup installation locations ======================================= #
 install(DIRECTORY include/${PROJECT_NAME}/

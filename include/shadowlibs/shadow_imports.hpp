@@ -9,6 +9,7 @@
 #include <controller_manager_msgs/SwitchController.h>
 #include <geometry_msgs/Pose.h>
 #include <geometry_msgs/PoseStamped.h>
+#include <pluginlib/class_list_macros.h>
 #include <pluginlib/class_loader.h>
 #include <ros/console.h>
 #include <ros/master.h>
@@ -53,6 +54,9 @@
 #include <sr_robot_msgs/Biotac.h>
 #include <sr_robot_msgs/BiotacAll.h>
 
+// Controller
+#include <sr_mechanism_controllers/sr_controller.hpp>
+
 // CPP
 #include "../shadowlibs/prettyprint.hpp"
 #include "../shadowlibs/shadow_planning_options.hpp"
@@ -66,6 +70,7 @@
 #include <iostream>
 #include <map>
 #include <mutex>
+#include <numeric>
 #include <string>
 #include <thread>
 #include <time.h>
