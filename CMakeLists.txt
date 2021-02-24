@@ -92,11 +92,15 @@ include_directories(
 		${EIGEN3_INCLUDE_DIRS}
 )
 
-# ========================== Setup catkin packages and libraries ================================ #
+# ========================== Add shadowlibs library ================================ #
 file(GLOB lib_src ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
 add_library(${PROJECT_NAME} ${lib_src})
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+
+# ========================== Add shadow_realtime_controllers library ================================ #
 add_library(shadow_realtime_controllers src/shadow_realtime_controller.cpp)
+add_dependencies(shadow_realtime_controllers ${catkin_EXPORTED_TARGETS})
+target_link_libraries(shadow_realtime_controllers ${catkin_LIBRARIES})
 
 # ========================== Setup installation locations ======================================= #
 install(DIRECTORY include/${PROJECT_NAME}/
@@ -108,3 +112,9 @@ install(TARGETS ${PROJECT_NAME}
 		LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 		RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
 		)
+install(TARGETS shadow_realtime_controllers
+        LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+        RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+		)
+install(FILES shadowhand_controller_plugins.xml
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})

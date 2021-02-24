@@ -72,7 +72,7 @@ bool controller::ShadowRealtimeController::init(
     // Get the pointer to the joint state for *J1
     joint_state_ = robot_->getJointState(j1);
     if (!joint_state_) {
-      ROS_ERROR("SrhMixedPositionVelocityController could not find joint named "
+      ROS_ERROR("ShadowRealtimeController could not find joint named "
                 "\"%s\"\n",
                 joint_name.c_str());
       return false;
@@ -147,7 +147,7 @@ void controller::ShadowRealtimeController::update(const ros::Time &time,
   // Here I'm simply doing a dummy P controller, with a fixed gain.
   // It can't be used in the real life obviously. That's where you
   // should WRITE YOUR ALGORITHM
-  double commanded_effort = 10 * error_position;
+  double commanded_effort = 100000 * error_position;
 
   // Update the commanded effort.
   if (has_j2) { // The motor in *J0 is attached to the *J2

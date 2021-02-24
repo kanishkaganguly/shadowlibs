@@ -1,0 +1,3 @@
+<launch>
+    <node name="controller_spawner" ns="/" pkg="controller_manager" type="spawner" args="shadowlibs/ShadowRealtimeController" output="screen"/>
+</launch>

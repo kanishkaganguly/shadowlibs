@@ -67,6 +67,6 @@
 
     <!-- The export tag contains other, unspecified, tags -->
     <export>
-        <controller_interface plugin="${prefix}/shadow_plugins.xml" />
+        <controller_interface plugin="${prefix}/shadowhand_controller_plugins.xml" />
     </export>
 </package>

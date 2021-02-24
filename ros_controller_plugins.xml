@@ -1,7 +1,0 @@
-<library path="lib/libshadow_realtime_controllers">
-    <class name="shadowlibs/ShadowRealtimeController" type="controller::ShadowRealtimeController" base_class_type="controller_interface::ControllerBase"
-    <description>
-    Custom realtime controller for the Shadow Dexterous Hand.
-    </description>
-    </class>
-</library>
