@@ -27,7 +27,7 @@ std::ostream &operator<<(std::ostream &out, const std::vector<T> &joint_data) {
   }
   out << "\n";
 
-  return out; // return std::ostream so we can chain calls to operator<<
+  return out;  // return std::ostream so we can chain calls to operator<<
 };
 
 /**
@@ -43,18 +43,49 @@ namespace shadow_utils {
  */
 enum struct SHAPE_PRIMITIVES { BOX, CYLINDER, CONE, SPHERE };
 
+/**
+ * @class shadow_utils::COLORS_CLASS
+ * @brief Colors for ROS_INFO printing
+ */
+class COLORS {
+ public:
+  static const std::string COLOR_NORMAL;
+  static const std::string COLOR_RED;
+  static const std::string COLOR_GREEN;
+  static const std::string COLOR_YELLOW;
+};  // class COLORS
+
+void ROS_INFO_COLOR(const std::stringstream &print_str,
+                    const std::string &color);
+
 /** @brief Conversion from YPR to Quaternion */
 Eigen::Quaternionf ypr2quat(float y, float p, float r);
 /** @brief Conversion from Quaternion to YPR */
 void quat2ypr(tf::Quaternion &q, double &r, double &p, double &y);
 
 /** @brief Conversion from degree to radians */
-template<typename F>
-inline F deg2rad(F deg) { return deg * M_PI / 180.0; };
+template <typename F>
+inline F deg2rad(F deg) {
+  return deg * M_PI / 180.0;
+};
 
 /** @brief Conversion from radians to degrees */
-template<typename F>
-inline F rad2deg(F rad) { return rad * (180.0 / M_PI); };
+template <typename F>
+inline F rad2deg(F rad) {
+  return rad * (180.0 / M_PI);
+};
+
+/**
+ * @brief Rosbag recording utility function
+ * @param bag_path The path where to record bag
+ * @param bag_name The name of the bag file
+ * @param topic_name
+ */
+rosbag::Bag startRecordBag(const std::string &bag_path,
+                           const std::string &bag_name,
+                           const std::string &topic_name);
+
+inline void stopRecordBag(rosbag::Bag &bag) { bag.close(); };
 
 /**
  * @brief Create collision object for the planning scene, used by MoveIt
@@ -226,9 +257,8 @@ std::string getControllerTopic(std::string &joint_name);
  * @param n The ROS node handle
  * @return Vector of publishers for each joint given as input
  */
-std::vector<ros::Publisher>
-createJointControllerPublishers(std::vector<std::string> &joint_names,
-                                ros::NodeHandle &n);
+std::vector<ros::Publisher> createJointControllerPublishers(
+    std::vector<std::string> &joint_names, ros::NodeHandle &n);
 
 /**
  * @brief Broadcasts a transform from the wrist to given frame, which can be
@@ -282,4 +312,4 @@ void startTrajectoryController(ros::NodeHandle n, std::string controller_name);
  * (rh_trajectory_controller OR ra_trajectory_controller)
  */
 void stopTrajectoryController(ros::NodeHandle n, std::string controller_name);
-}; // namespace shadow_utils
+};  // namespace shadow_utils

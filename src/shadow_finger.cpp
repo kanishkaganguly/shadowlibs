@@ -7,7 +7,7 @@
 shadow_finger::Finger::BioTac shadow_finger::Finger::getBioTacPressure() {
   sr_robot_msgs::BiotacAllConstPtr biotac_packet =
       ros::topic::waitForMessage<sr_robot_msgs::BiotacAll>(
-          "/rh/tactile", this->_node_handle, ros::Duration(1));
+          "/rh/tactile", this->_node_handle, ros::Duration(0.5));
   shadow_finger::Finger::BioTac biotac_out;
   if (biotac_packet) {
     sr_robot_msgs::Biotac biotac_data =
@@ -23,7 +23,7 @@ shadow_finger::Finger::BioTac shadow_finger::Finger::getBioTacPressure() {
 shadow_finger::Finger::BioTac shadow_finger::Finger::getBioTacImpedance() {
   sr_robot_msgs::BiotacAllConstPtr biotac_packet =
       ros::topic::waitForMessage<sr_robot_msgs::BiotacAll>(
-          "/rh/tactile", this->_node_handle, ros::Duration(1));
+          "/rh/tactile", this->_node_handle, ros::Duration(0.5));
   shadow_finger::Finger::BioTac biotac_out;
   if (biotac_packet) {
     sr_robot_msgs::Biotac biotac_data =
@@ -40,7 +40,7 @@ shadow_finger::Finger::BioTac
 shadow_finger::Finger::getBioTacImpedancePressure() {
   sr_robot_msgs::BiotacAllConstPtr biotac_packet =
       ros::topic::waitForMessage<sr_robot_msgs::BiotacAll>(
-          "/rh/tactile", this->_node_handle, ros::Duration(1));
+          "/rh/tactile", this->_node_handle, ros::Duration(0.5));
   shadow_finger::Finger::BioTac biotac_out;
   if (biotac_packet) {
     sr_robot_msgs::Biotac biotac_data =
@@ -58,7 +58,7 @@ float shadow_finger::Finger::getFSRValue() {
   try {
     std_msgs::Float32ConstPtr curr_fsr_data =
         ros::topic::waitForMessage<std_msgs::Float32>(
-            this->_fsr_topic, this->_node_handle, ros::Duration(10));
+            this->_fsr_topic, this->_node_handle, ros::Duration(0.5));
     if (curr_fsr_data) {
       float fsr_data = curr_fsr_data->data;
       return fsr_data;

@@ -4,13 +4,24 @@
 
 #include <shadowlibs/shadow_utils.hpp>
 
+const std::string shadow_utils::COLORS::COLOR_NORMAL = "\033[0m";
+const std::string shadow_utils::COLORS::COLOR_RED = "\033[31m";
+const std::string shadow_utils::COLORS::COLOR_GREEN = "\033[32m";
+const std::string shadow_utils::COLORS::COLOR_YELLOW = "\033[33m";
+
+void shadow_utils::ROS_INFO_COLOR(const std::stringstream &print_str,
+                                  const std::string &color) {
+  ROS_INFO_STREAM(color << print_str.str()
+                        << shadow_utils::COLORS::COLOR_NORMAL);
+}
+
 std::ostream &operator<<(std::ostream &out, const geometry_msgs::Pose &pose) {
   out << "Trans(" << pose.position.x << ", " << pose.position.y << ", "
       << pose.position.z << ")\n"
       << "Rot(" << pose.orientation.x << ", " << pose.orientation.y << ", "
       << pose.orientation.z << ", " << pose.orientation.w << ")";
 
-  return out; // return std::ostream so we can chain calls to operator<<
+  return out;  // return std::ostream so we can chain calls to operator<<
 }
 
 Eigen::Quaternionf shadow_utils::ypr2quat(float y, float p, float r) {
@@ -90,6 +101,10 @@ void shadow_utils::getPoseFromPositionYPR(geometry_msgs::Pose &pose, float x,
   pose.orientation.z = q.z();
 }
 
+rosbag::Bag startRecordBag(const std::string &bag_path,
+                           const std::string &bag_name,
+                           const std::string &topic_name) {}
+
 void shadow_utils::createCollisionObjectFromPrimitive(
     moveit_msgs::CollisionObject &collision_obj, std::string primitive_id,
     shape_msgs::SolidPrimitive &primitive, geometry_msgs::Pose &obj_pose,
@@ -102,22 +117,22 @@ void shadow_utils::createCollisionObjectFromPrimitive(
     collision_obj.header.frame_id = "/world";
 
     switch (primitive_type) {
-    case shadow_utils::SHAPE_PRIMITIVES::BOX:
-      primitive.type = primitive.BOX;
-      primitive.dimensions.resize(3);
-      break;
-    case shadow_utils::SHAPE_PRIMITIVES::SPHERE:
-      primitive.type = primitive.SPHERE;
-      primitive.dimensions.resize(1);
-      break;
-    case shadow_utils::SHAPE_PRIMITIVES::CYLINDER:
-      primitive.type = primitive.CYLINDER;
-      primitive.dimensions.resize(2);
-      break;
-    case shadow_utils::SHAPE_PRIMITIVES::CONE:
-      primitive.type = primitive.CONE;
-      primitive.dimensions.resize(2);
-      break;
+      case shadow_utils::SHAPE_PRIMITIVES::BOX:
+        primitive.type = primitive.BOX;
+        primitive.dimensions.resize(3);
+        break;
+      case shadow_utils::SHAPE_PRIMITIVES::SPHERE:
+        primitive.type = primitive.SPHERE;
+        primitive.dimensions.resize(1);
+        break;
+      case shadow_utils::SHAPE_PRIMITIVES::CYLINDER:
+        primitive.type = primitive.CYLINDER;
+        primitive.dimensions.resize(2);
+        break;
+      case shadow_utils::SHAPE_PRIMITIVES::CONE:
+        primitive.type = primitive.CONE;
+        primitive.dimensions.resize(2);
+        break;
     }
 
     for (size_t i = 0; i < primitive_dim.size(); i++) {
@@ -141,22 +156,22 @@ void shadow_utils::createAttachedObjectFromPrimitive(
   attached_obj.object.id = primitive_id;
   attached_obj.object.header.frame_id = "/world";
   switch (primitive_type) {
-  case shadow_utils::SHAPE_PRIMITIVES::BOX:
-    primitive.type = primitive.BOX;
-    primitive.dimensions.resize(3);
-    break;
-  case shadow_utils::SHAPE_PRIMITIVES::SPHERE:
-    primitive.type = primitive.SPHERE;
-    primitive.dimensions.resize(1);
-    break;
-  case shadow_utils::SHAPE_PRIMITIVES::CYLINDER:
-    primitive.type = primitive.CYLINDER;
-    primitive.dimensions.resize(2);
-    break;
-  case shadow_utils::SHAPE_PRIMITIVES::CONE:
-    primitive.type = primitive.CONE;
-    primitive.dimensions.resize(2);
-    break;
+    case shadow_utils::SHAPE_PRIMITIVES::BOX:
+      primitive.type = primitive.BOX;
+      primitive.dimensions.resize(3);
+      break;
+    case shadow_utils::SHAPE_PRIMITIVES::SPHERE:
+      primitive.type = primitive.SPHERE;
+      primitive.dimensions.resize(1);
+      break;
+    case shadow_utils::SHAPE_PRIMITIVES::CYLINDER:
+      primitive.type = primitive.CYLINDER;
+      primitive.dimensions.resize(2);
+      break;
+    case shadow_utils::SHAPE_PRIMITIVES::CONE:
+      primitive.type = primitive.CONE;
+      primitive.dimensions.resize(2);
+      break;
   }
 
   for (size_t i = 0; i < primitive_dim.size(); i++) {
@@ -302,13 +317,13 @@ std::string shadow_utils::getControllerTopic(std::string &joint_name) {
   std::string out;
   if (check_not_thumb == std::string::npos &&
       check_not_wrist == std::string::npos) {
-      std::size_t check_j1 = formatted_joint_name.find("j1");
-      std::size_t check_j2 = formatted_joint_name.find("j2");
-      if (check_j1 != std::string::npos) {
-        formatted_joint_name.replace(check_j1, 2, "j0");
-      } else if (check_j2 != std::string::npos) {
-        formatted_joint_name.replace(check_j2, 2, "j0");
-      }
+    std::size_t check_j1 = formatted_joint_name.find("j1");
+    std::size_t check_j2 = formatted_joint_name.find("j2");
+    if (check_j1 != std::string::npos) {
+      formatted_joint_name.replace(check_j1, 2, "j0");
+    } else if (check_j2 != std::string::npos) {
+      formatted_joint_name.replace(check_j2, 2, "j0");
+    }
     out = "/sh_rh_" + formatted_joint_name + "_position_controller/command";
   } else {
     out = "/sh_rh_" + formatted_joint_name + "_position_controller/command";
@@ -329,16 +344,16 @@ std::vector<ros::Publisher> shadow_utils::createJointControllerPublishers(
     // Advertise topic
     controller_target_pub =
         n.advertise<std_msgs::Float64>(controller_name.c_str(), 1000);
-    ROS_INFO("Initializing joint controller publisher: %s", controller_target_pub.getTopic().c_str());
+    ROS_INFO("Initializing joint controller publisher: %s",
+             controller_target_pub.getTopic().c_str());
     // Push back the publisher
     joint_controller_pubs.emplace_back(controller_target_pub);
   }
   return joint_controller_pubs;
 }
 
-geometry_msgs::Pose
-shadow_utils::getPoseBetweenFrames(const std::string parent_frame,
-                                   const std::string child_frame) {
+geometry_msgs::Pose shadow_utils::getPoseBetweenFrames(
+    const std::string parent_frame, const std::string child_frame) {
   /* Get transform from wrist to world for final grasping */
   tf::TransformListener lr;
   tf::StampedTransform tform;

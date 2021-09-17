@@ -15,6 +15,7 @@
 #include <ros/master.h>
 #include <ros/ros.h>
 #include <ros/topic_manager.h>
+#include <rosbag/bag.h>
 #include <sensor_msgs/JointState.h>
 #include <std_msgs/Float32.h>
 #include <std_msgs/Float64.h>
@@ -58,8 +59,8 @@
 #include <sr_mechanism_controllers/sr_controller.hpp>
 
 // CPP
-#include "../shadowlibs/prettyprint.hpp"
-#include "../shadowlibs/shadow_planning_options.hpp"
+#include <time.h>
+
 #include <Eigen/Dense>
 #include <Eigen/Geometry>
 #include <algorithm>
@@ -73,5 +74,7 @@
 #include <numeric>
 #include <string>
 #include <thread>
-#include <time.h>
 #include <tuple>
+
+#include "../shadowlibs/prettyprint.hpp"
+#include "../shadowlibs/shadow_planning_options.hpp"
