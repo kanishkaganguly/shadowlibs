@@ -11,7 +11,9 @@ find_package(catkin REQUIRED COMPONENTS
 		moveit_ros_planning moveit_ros_planning_interface moveit_core moveit_visual_tools
 		kdl_parser
 		sr_robot_msgs
-		sr_mechanism_controllers pluginlib ros_ethercat_model realtime_tools controller_interface
+		sr_hardware_interface
+		sr_mechanism_controllers pluginlib ros_ethercat_model realtime_tools
+		controller_interface controller_manager_msgs
 		)
 
 # ========================== Find Eigen ========================================================= #
@@ -80,6 +82,7 @@ catkin_package(
 		moveit_ros_planning moveit_ros_planning_interface moveit_core moveit_visual_tools
 		sr_robot_msgs
 		sr_mechanism_controllers pluginlib ros_ethercat_model realtime_tools controller_interface
+		sr_hardware_interface controller_manager_msgs control_toolbox
 		DEPENDS Boost
 		LIBRARIES ${PROJECT_NAME} shadow_realtime_controllers
 )

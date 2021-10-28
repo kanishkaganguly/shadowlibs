@@ -72,18 +72,20 @@ bool controller::ShadowRealtimeController::init(
     // Get the pointer to the joint state for *J1
     joint_state_ = robot_->getJointState(j1);
     if (!joint_state_) {
-      ROS_ERROR("ShadowRealtimeController could not find joint named "
-                "\"%s\"\n",
-                joint_name.c_str());
+      ROS_ERROR(
+          "ShadowRealtimeController could not find joint named "
+          "\"%s\"\n",
+          joint_name.c_str());
       return false;
     }
 
     // Get the pointer to the joint state for *J2
     joint_state_2 = robot_->getJointState(j2);
     if (!joint_state_2) {
-      ROS_ERROR("ShadowRealtimeController could not find joint named "
-                "\"%s\"\n",
-                joint_name.c_str());
+      ROS_ERROR(
+          "ShadowRealtimeController could not find joint named "
+          "\"%s\"\n",
+          joint_name.c_str());
       return false;
     }
     // "normal" joints: one controller controls one joint
@@ -93,12 +95,17 @@ bool controller::ShadowRealtimeController::init(
     // get the pointer to the joint state
     joint_state_ = robot_->getJointState(joint_name);
     if (!joint_state_) {
-      ROS_ERROR("ShadowRealtimeController could not find joint named "
-                "\"%s\"\n",
-                joint_name.c_str());
+      ROS_ERROR(
+          "ShadowRealtimeController could not find joint named "
+          "\"%s\"\n",
+          joint_name.c_str());
       return false;
     }
   }
+
+  // init the pointer to the biotacs data, updated at 1kHz
+  actuator_ = static_cast<sr_actuator::SrMotorActuator *>(
+      robot_->getActuator(joint_name_));
 
   // after init creates the subscriber to the /command topic
   after_init();
@@ -107,7 +114,7 @@ bool controller::ShadowRealtimeController::init(
 
 void controller::ShadowRealtimeController::starting(const ros::Time &time) {
   // Here we set the command to be = to the current position
-  if (has_j2) { // if it's *J0, then pos = *J1->pos + *J2->pos
+  if (has_j2) {  // if it's *J0, then pos = *J1->pos + *J2->pos
     command_ = joint_state_->position_ + joint_state_2->position_;
   } else {
     command_ = joint_state_->position_;
@@ -147,16 +154,16 @@ void controller::ShadowRealtimeController::update(const ros::Time &time,
   // Here I'm simply doing a dummy P controller, with a fixed gain.
   // It can't be used in the real life obviously. That's where you
   // should WRITE YOUR ALGORITHM
-  double commanded_effort = 100000 * error_position;
+  double commanded_effort = 1000000000 * error_position;
 
   // Update the commanded effort.
-  if (has_j2) { // The motor in *J0 is attached to the *J2
+  if (has_j2) {  // The motor in *J0 is attached to the *J2
     joint_state_2->commanded_effort_ = commanded_effort;
   } else {
     joint_state_->commanded_effort_ = commanded_effort;
   }
 
-  if (loop_count_ % 10 == 0) // publishes the joint state at 100Hz
+  if (loop_count_ % 10 == 0)  // publishes the joint state at 100Hz
   {
     if (controller_state_publisher_ && controller_state_publisher_->trylock()) {
       controller_state_publisher_->msg_.header.stamp = time;

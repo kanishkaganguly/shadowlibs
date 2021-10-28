@@ -1,0 +1,36 @@
+# Position Controllers ---------------------------------------
+sh_rh_ffj1_custom_position_controller:
+  type: position_controllers/JointPositionController
+  joint: rh_FFJ1
+  pid:
+    d: 0.005,
+    i: 0.1,
+    i_clamp: 0.05,
+    p: 0.5,
+    position_deadband: 0.0,
+    friction_deadband: 0.0,
+    max_force: 1.0
+  
+sh_rh_ffj2_custom_position_controller:
+  type: position_controllers/JointPositionController
+  joint: rh_FFJ2
+  pid:
+    d: 0.005,
+    i: 0.1,
+    i_clamp: 0.05,
+    p: 0.5,
+    position_deadband: 0.0,
+    friction_deadband: 0.0,
+    max_force: 1.0
+
+sh_rh_ffj3_custom_position_controller:
+  type: position_controllers/JointPositionController
+  joint: rh_FFJ3
+  pid:
+    d: 0.005,
+    i: 0.1,
+    i_clamp: 0.05,
+    p: 0.5,
+    position_deadband: 0.0,
+    friction_deadband: 0.0,
+    max_force: 1.0

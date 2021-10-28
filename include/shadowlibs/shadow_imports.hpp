@@ -57,6 +57,9 @@
 
 // Controller
 #include <sr_mechanism_controllers/sr_controller.hpp>
+#include <sr_robot_msgs/JointControllerState.h>
+#include <sr_hardware_interface/tactile_sensors.hpp>
+#include <sr_hardware_interface/sr_actuator.hpp>
 
 // CPP
 #include <time.h>

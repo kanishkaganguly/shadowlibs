@@ -39,6 +39,10 @@
     <build_depend>sr_mechanism_controllers</build_depend>
     <build_depend>realtime_tools</build_depend>
     <build_depend>controller_interface</build_depend>
+    <build_depend>sr_hardware_interface</build_depend>
+    <build_depend>controller_manager_msgs</build_depend>
+    <build_depend>control_toolbox</build_depend>
+    <build_depend>control_msgs</build_depend>
 
     <exec_depend>geometry_msgs</exec_depend>
     <exec_depend>control_msgs</exec_depend>
@@ -64,6 +68,10 @@
     <exec_depend>sr_mechanism_controllers</exec_depend>
     <exec_depend>realtime_tools</exec_depend>
     <exec_depend>controller_interface</exec_depend>
+    <exec_depend>sr_hardware_interface</exec_depend>
+    <exec_depend>controller_manager_msgs</exec_depend>
+    <exec_depend>control_msgs</exec_depend>
+    <exec_depend>control_toolbox</exec_depend>
 
     <!-- The export tag contains other, unspecified, tags -->
     <export>

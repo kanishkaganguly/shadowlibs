@@ -4,9 +4,9 @@
 
 namespace controller {
 class ShadowRealtimeController : public SrController {
-public:
+ public:
   /**
-   * The controller manager will instanciate one instance of this
+   * The controller manager will instantiate one instance of this
    * class per controlled joint.
    */
   ShadowRealtimeController();
@@ -52,5 +52,13 @@ public:
    * by the main loop.
    */
   virtual void update(const ros::Time &time, const ros::Duration &period);
+
+ private:
+  // publish our joint controller state
+  boost::scoped_ptr<
+      realtime_tools::RealtimePublisher<sr_robot_msgs::JointControllerState>>
+      controller_state_publisher_;
+
+  sr_actuator::SrMotorActuator *actuator_;
 };
-} // namespace controller
+}  // namespace controller

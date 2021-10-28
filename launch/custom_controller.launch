@@ -1,3 +1,22 @@
 <launch>
-    <node name="controller_spawner" ns="/" pkg="controller_manager" type="spawner" args="shadowlibs/ShadowRealtimeController" output="screen"/>
+      <!-- Launch arguments -->
+      <arg name="load_controllers" default="true" />
+      <arg name="unload_controllers" default="false" />
+
+      <group if="$(arg load_controllers)">
+            <!-- Load joint controller configurations from YAML file to parameter server -->
+            <rosparam file="$(find shadowlibs)/controller_config/shadow_custom_control.yaml" command="load" />
+
+            <!-- Stop existing controllers -->
+            <node pkg="rosservice" type="rosservice" name="stop_controllers" args="call --wait stop_controllers: ['rh_trajectory_controller', 'sh_rh_ffj0_position_controller', 'sh_rh_ffj3_position_controller']" output="screen" respawn="false" />
+
+            <!-- Load the controllers -->
+            <!-- Spawner automatically unloads once exited -->
+            <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="sh_rh_ffj1_custom_position_controller sh_rh_ffj2_custom_position_controller sh_rh_ffj3_custom_position_controller" />
+      </group>
+
+      <group if="$(arg unload_controllers)">
+            <!-- Restart existing controllers -->
+            <node pkg="rosservice" type="rosservice" name="start_controllers" args="call --wait start_controllers: ['rh_trajectory_controller', 'sh_rh_ffj0_position_controller', 'sh_rh_ffj3_position_controller']" output="screen" respawn="false" />
+      </group>
 </launch>
