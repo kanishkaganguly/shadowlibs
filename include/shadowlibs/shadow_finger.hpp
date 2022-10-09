@@ -321,6 +321,30 @@ inline std::vector<double> getJointValues(shadow_finger::Finger &finger) {
   joint_vals = finger._finger_move_group.getCurrentJointValues();
   return joint_vals;
 }
+
+/** @brief Get current joint efforts for each joint in finger
+ * @return The vector of floats containing joint effort values
+ */
+inline std::vector<float> getJointEfforts(shadow_finger::Finger &finger) {
+  std::vector<float> joint_efforts;
+  sensor_msgs::JointState::ConstPtr joint_state_ptr;
+  joint_state_ptr = ros::topic::waitForMessage<sensor_msgs::JointState>(
+      "/joint_states", finger._node_handle, ros::Duration(1.0));
+
+  for (auto jname : finger._joint_names) {
+    auto it = std::find(joint_state_ptr->name.begin(),
+                        joint_state_ptr->name.end(), jname);
+    // Element found
+    int joint_idx = -1;
+    if (it != joint_state_ptr->name.end()) {
+      joint_idx = it - joint_state_ptr->name.begin();
+      joint_efforts.emplace_back(joint_state_ptr->effort[joint_idx]);
+    }
+  }
+
+  return joint_efforts;
+}
+
 }  // namespace shadow_finger
 
 inline std::ostream &operator<<(std::ostream &os,

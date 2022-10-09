@@ -28,18 +28,6 @@ class ShadowRealtimeController : public SrController {
   bool init(ros_ethercat_model::RobotStateInterface *robot, ros::NodeHandle &n);
 
   /**
-   * This init funciton is called by the previous init function. It
-   * finishes to initalise the different necessary variables.
-   *
-   * @param robot A pointer to the robot state (used to get the joint_state)
-   * @param joint_name The name of the joint which is controlled.
-   *
-   * @return true if initialized.
-   */
-  bool init(ros_ethercat_model::RobotStateInterface *robot,
-            const std::string &joint_name);
-
-  /**
    * This method is called when the controller is started. The command is then
    * to be the current position (or effort / velocity / ... depending on what
    * you're controlling), so that the first command won't move the joint.

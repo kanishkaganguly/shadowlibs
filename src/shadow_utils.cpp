@@ -16,11 +16,16 @@ void shadow_utils::ROS_INFO_COLOR(const std::stringstream &print_str,
 }
 
 std::ostream &operator<<(std::ostream &out, const geometry_msgs::Pose &pose) {
-  out << "Trans(" << pose.position.x << ", " << pose.position.y << ", "
-      << pose.position.z << ")\n"
-      << "Rot(" << pose.orientation.x << ", " << pose.orientation.y << ", "
-      << pose.orientation.z << ", " << pose.orientation.w << ")";
-
+  out << "geometry_msgs::Pose \n";
+  out << "  Translation:\n";
+  out << "    x: " << pose.position.x << "\n";
+  out << "    y: " << pose.position.y << "\n";
+  out << "    z: " << pose.position.z << "\n";
+  out << "  Rotation:\n";
+  out << "    x: " << pose.orientation.x << "\n";
+  out << "    y: " << pose.orientation.y << "\n";
+  out << "    z: " << pose.orientation.z << "\n";
+  out << "    w: " << pose.orientation.w << std::endl;
   return out;  // return std::ostream so we can chain calls to operator<<
 }
 

@@ -105,19 +105,27 @@ add_library(shadow_realtime_controllers src/shadow_realtime_controller.cpp)
 add_dependencies(shadow_realtime_controllers ${catkin_EXPORTED_TARGETS})
 target_link_libraries(shadow_realtime_controllers ${catkin_LIBRARIES})
 
-# ========================== Setup installation locations ======================================= #
+# ========================== shadowlibs Setup installation locations ======================================= #
 install(DIRECTORY include/${PROJECT_NAME}/
 		DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
 		FILES_MATCHING PATTERN "*.hpp"
 		)
+
 install(TARGETS ${PROJECT_NAME}
 		ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 		LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 		RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
 		)
+
+# ====================== shadow_realtime_controllers Setup installation locations =========================== #
 install(TARGETS shadow_realtime_controllers
-        LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+		LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
         RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 		)
+
+install(FILES include/shadow_realtime_controller.hpp
+        DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
+
+
 install(FILES shadowhand_controller_plugins.xml
         DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})

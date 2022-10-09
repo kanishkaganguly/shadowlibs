@@ -19,6 +19,7 @@
 #include <sensor_msgs/JointState.h>
 #include <std_msgs/Float32.h>
 #include <std_msgs/Float64.h>
+#include <std_msgs/Int16.h>
 #include <tf/transform_broadcaster.h>
 #include <tf/transform_listener.h>
 #include <trajectory_msgs/JointTrajectory.h>
@@ -74,6 +75,7 @@
 #include <iostream>
 #include <map>
 #include <mutex>
+#include <condition_variable>
 #include <numeric>
 #include <string>
 #include <thread>

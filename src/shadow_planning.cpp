@@ -185,7 +185,7 @@ void shadow_planning::moveFingerJoints(shadow_finger::Finger &finger,
   // Prepare for control commands
   std_msgs::Float64 control_target;
   std::vector<std::string> joint_names = shadow_finger::getJointNames(finger);
-  ros::Rate loop_rate(100);
+  ros::Rate loop_rate(200);
   for (int i = 0; i < targetJointAngles.size(); i++) {
     control_target.data = targetJointAngles[i];
 
@@ -194,7 +194,7 @@ void shadow_planning::moveFingerJoints(shadow_finger::Finger &finger,
              targetJointAngles[i]);
 
     finger._joint_controller_publishers[i].publish(control_target);
-    ros::Duration(0.1).sleep();
+    loop_rate.sleep();
   }
 }
 
